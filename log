@@ -1,3 +1,3 @@
 #!/bin/bash
 fname=$(date '+%Y-%m-%d %H:%M:%S').log
-./query | tee -a "$fname"
+./mon | tee -a "$fname"

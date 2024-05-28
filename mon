@@ -30,6 +30,8 @@ function truncate () {
      echo $1 | grep -Eo '^\-*[0-9]+\.*[0-9]'
 }
 
+echo -e time'\t'T hot'\t'T cold
+
 while true; do
     Thot=$(query 1 11) 
     Tcold=$(query 1 13)

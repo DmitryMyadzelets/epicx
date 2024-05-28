@@ -25,10 +25,18 @@ function query () {
         done
 }
 
+# Given a float number 1.567 truncate it to 1.5 
+function truncate () {
+     echo $1 | grep -Eo '^[0-9]+\.*[0-9]'
+}
 
 while true; do
-    Thot=$(query 1 11)
+    Thot=$(query 1 11) 
     Tcold=$(query 1 13)
+
+    Thot=$(truncate $Thot)
+    Tcold=$(truncate $Tcold)
+
     echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold 
     sleep 1
 done

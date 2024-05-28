@@ -1,0 +1,34 @@
+#!/bin/bash
+
+PORT=/dev/ttyUSB0
+
+function query () {
+    ADR=$1
+    REG=$2
+    sudo stdbuf -oL mbpoll -1 \
+        $PORT -b2400 -Pnone \
+        -a$ADR -r$REG -t4:float -B \
+        | 
+        # Process std output line by line
+        while IFS= read -r line
+        do
+            # Get the Modbus register number
+            REG=$(echo "$line" | grep -Eo '\[[0-9]+]: ' | grep -Eo '[0-9]+')
+            if [ -z "${REG}" ]; then
+               continue 
+            fi
+
+            # Get the value of the register
+            VAL=$(echo "$line" | grep -Eo '[0-9]+\.*[0-9]*$')
+
+            echo "$VAL"
+        done
+}
+
+
+while true; do
+    Thot=$(query 1 11)
+    Tcold=$(query 1 13)
+    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold 
+    sleep 1
+done

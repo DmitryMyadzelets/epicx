@@ -30,7 +30,7 @@ The image below shows the internals of the Peltier module. This module has two c
 
 The reason the Pelter module was damaged with no obviouse reason is likely due to different expansion coefficeints of the module and adherent Al plate wich coused shear forces. It was found that bounding by adhesive is permitted but limited to small sizes of Peltier elements (i.e. [25 mm](https://customthermoelectric.com/tech-info/install/tec-installation.html)). In general, gluing isn't reccomended.
 
-## Week 20 - Setup
+## Week 20 - Working space and Lab
 Setup of the working space and the lab setup.
 
 Preliminary studing:

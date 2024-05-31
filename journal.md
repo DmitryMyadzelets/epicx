@@ -1,4 +1,6 @@
-# EPICX jornal
+# EPICX journal
+This journal is written backwards 
+
 ## Week 22
 Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermoelectric effect. No LCR meter was found around, so we use a sine signal generator, amplifier and a resistance bridge with a regular multimeter.
 

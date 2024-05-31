@@ -1,5 +1,7 @@
 # EPICX jornal
 ## Week 22
+Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermoelectric effect. No LCR meter was found around, so we use a sine signal generator, amplifier and a resistance bridge with a regular multimeter.
+
 ## Week 21
 Fist measurements tests.
 
@@ -21,10 +23,9 @@ In the tird test (day later) the Peltier module had no current while increasing 
 
 To recover the glued Al plates for another Peltier module we put it to the owen at 300 degrees for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350 degrees.
 
-<img alt="Internals of a Peltier module" src="img/20240524_101106.jpg" width=200px>
+<img alt="Internals of a Peltier module" src="img/20240524_101106.jpg" width=400px>
 
 The reason the Pelter module was damaged with no obviouse reason is likely due to different expansion coefficeints of the module and adherent Al plate wich coused shear forces. It was found that bounding by adhesive is permitted but limited to small sizes of Peltier elements (i.e. [25 mm](https://customthermoelectric.com/tech-info/install/tec-installation.html)). In general, gluing isn't reccomended.
-
 
 ## Week 20
 Setup of the working space and the lab setup.

@@ -11,19 +11,19 @@ The first setup with Peltier modue is prepared. The hot and cold sides of the mo
 
 In the first test we measure T at the cold side only. The V was increased gradually untill the I reached 1.5 A. The T went down to -11 degrees.
 
-![img/20240521_125408.jpg]
+!(img/20240521_125408.jpg)
 
 In the second test (next day) the T went down to -4 degrees only, much slower. The reason wasn't clear, so we decided to cool all the parts down to room temperature and start over again.
 
-The reistance (R) of the Peltier module was measured using multimeter. It wasn't stable but decreasing from 11.5 to 9.2 Om during measurement.
+The R of the Peltier module was measured using multimeter. It wasn't stable but decreasing from 11.5 to 9.2 Om during measurement.
 
 In the tird test (day later) the Peltier module had no current while increasing voltage from 0 to 15V. Resistance of the module coudn't be measured (like of isolator). It's clear the module is damaged.
 
 To recover the glued Al plates for another Peltier module we put it to the owen at 300 degrees for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350 degrees.
 
-![img/20240524_101106.jpg]
+!(img/20240524_101106.jpg)
 
-The reason the Pelter module was damaged with no obviouse reason is likely due to different expansion coefficeints of the module and adherent Al plate wich coused shear forces. It was found that bounding by adhesive is permitted but limited to small sizes of Peltier elements (i.e. [25 mm](https://customthermoelectric.com/tech-info/install/tec-installation.html). In general, gluing isn't reccomended.
+The reason the Pelter module was damaged with no obviouse reason is likely due to different expansion coefficeints of the module and adherent Al plate wich coused shear forces. It was found that bounding by adhesive is permitted but limited to small sizes of Peltier elements (i.e. [25 mm](https://customthermoelectric.com/tech-info/install/tec-installation.html)). In general, gluing isn't reccomended.
 
 
 ## Week 20

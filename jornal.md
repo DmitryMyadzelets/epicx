@@ -19,7 +19,7 @@ In the second test (next day) the T went down to -4 degrees only, much slower. T
 
 The R of the Peltier module was measured using multimeter. It wasn't stable but decreasing from 11.5 to 9.2 Om during measurement.
 
-In the tird test (day later) the Peltier module had no current while increasing voltage from 0 to 15V. Resistance of the module coudn't be measured (like of isolator). It's clear the module is damaged.
+In the third test (day later) the Peltier module had no current while increasing voltage from 0 to 15V. Resistance of the module coudn't be measured (like of isolator). It's clear the module is damaged.
 
 To recover the glued Al plates for another Peltier module we put it to the owen at 300 degrees for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350 degrees.
 

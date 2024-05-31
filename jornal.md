@@ -11,7 +11,7 @@ The first setup with Peltier modue is prepared. The hot and cold sides of the mo
 
 In the first test we measure T at the cold side only. The V was increased gradually untill the I reached 1.5 A. The T went down to -11 degrees.
 
-![Fist test of a Peltier module](img/20240521_125408.jpg)
+<img alt="Fist test of a Peltier module" src="img/20240521_125408.jpg" width=800px>
 
 In the second test (next day) the T went down to -4 degrees only, much slower. The reason wasn't clear, so we decided to cool all the parts down to room temperature and start over again.
 

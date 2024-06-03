@@ -29,6 +29,7 @@ In the third test (day later) the Peltier module had no current while increasing
 To recover the glued Al plates for another Peltier module we put it to the owen at 300 degrees for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350 degrees.
 
 The image below shows the internals of the Peltier module. This module has two cascades, you can see that one cascade has about 120 simiconductor pellets, and the second cascade has twice the number.
+
 <img alt="Internals of th Peltier module" src="img/20240524_101106.jpg" width=400px>
 
 The reason the Pelter module was damaged with no obviouse reason is likely due to different expansion coefficeints of the module and adherent Al plate wich coused shear forces. It was found that bounding by adhesive is permitted but limited to small sizes of Peltier elements (i.e. [25 mm](https://customthermoelectric.com/tech-info/install/tec-installation.html)). In general, gluing isn't reccomended.

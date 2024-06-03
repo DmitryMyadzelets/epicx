@@ -8,7 +8,7 @@ Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermo
 Fist measurements tests.
 
 ### Temperature measurement errors
-The CAL9900 controller shows 29&deg;C while the Fluke multimeter shows 23 degrees with the same thermocouple. No equipment is calibrated. We can expect **high measurements errors** of absolute temperature values.
+The CAL9900 controller shows 29&deg;C while the Fluke multimeter shows 23&deg;C with the same thermocouple. No equipment is calibrated. We can expect **high measurements errors** of absolute temperature values.
 
 Neither the CAL9900 nor Fluke have ouptuts for temperature registrations. An options to do it could be to use existing data aqusition modules from [Seneca](https://www.seneca.it/), in particular Z-8TC-1 module for thermocouples.The module can be connected to laptop by USB, the measurements recieved using Mudbus RTU protocol. For the later the `mbpoll` command line utility is choosen, with some wrapper scripting for data aqusition and logging.
 
@@ -16,17 +16,17 @@ Neither the CAL9900 nor Fluke have ouptuts for temperature registrations. An opt
 The first setup with Peltier modue is prepared. The hot and cold sides of the module are glued to Al plates (dimensions 50x30x4 mm) with Loctite bicomponent epoxy. A hole of 1mm diameter 20mm length is drilled in each plate for termocouples. This sandwich was mounted on the Al cap of the vacuum chamber.
 
 ### Experiments
-In the first test we measure T at the cold side only. The V was increased gradually untill the I reached 1.5 A. The T went down to -11 degrees.
+In the first test we measure T at the cold side only. The V was increased gradually untill the I reached 1.5 A. The T went down to -11&deg;C.
 
 <img alt="Fist test of a Peltier module" src="img/20240521_125408.jpg" width=400px>
 
-In the second test (next day) the T went down to -4 degrees only, much slower. The reason wasn't clear, so we decided to cool all the parts down to room temperature and start over again.
+In the second test (next day) the T went down to -4&deg;C only, much slower. The reason wasn't clear, so we decided to cool all the parts down to room temperature and start over again.
 
 The R of the Peltier module was measured using multimeter. It wasn't stable but decreasing from 11.5 to 9.2 Om during measurement.
 
 In the third test (day later) the Peltier module had no current while increasing voltage from 0 to 15V. Resistance of the module coudn't be measured (like of isolator). It's clear the module is damaged.
 
-To recover the glued Al plates for another Peltier module we put it to the owen at 300 degrees for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350 degrees.
+To recover the glued Al plates for another Peltier module we put it to the owen at 300&deg;C for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350&deg;C.
 
 The image below shows the internals of the Peltier module. This module has two cascades, you can see that one cascade has about 120 simiconductor pellets, and the second cascade has twice the number.
 
@@ -60,4 +60,4 @@ $Q = \sigma e A (T_1^4 - T_2^4)$, where:
 
 The maximum heat exchange, given the black bodies, is 4.47 W. Wrapping with Al foil reduces the heat exchage down to 0.045 W.
 
-The Peltier specification (for the ET..1212 module) states the heat removed from the cold side is about 5 Watts at temperature difference 65 degrees and the current 2.1A (75% of Imax). It's the same heat amount the cold side can get due to the thermal radiation in vacuum.
+The Peltier specification (for the ET..1212 module) states the heat removed from the cold side is about 5 Watts at temperature difference 65&deg;C and the current 2.1A (75% of Imax). It's the same heat amount the cold side can get due to the thermal radiation in vacuum.

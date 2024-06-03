@@ -28,7 +28,7 @@ In the third test (day later) the Peltier module had no current while increasing
 
 To recover the glued Al plates for another Peltier module we put it to the owen at 300&deg;C for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350&deg;C.
 
-The image below shows the internals of the Peltier module. This module has two cascades, you can see that one cascade has about 120 simiconductor pellets, and the second cascade has twice the number.
+The image below shows the internals of the Peltier module. This module has two cascades, you can see that one cascade has about 120 simiconductor pellets, and the second cascade has twice the number of them.
 
 <img alt="Internals of th Peltier module" src="img/20240524_101106.jpg" width=400px>
 

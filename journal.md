@@ -4,15 +4,18 @@ This journal is written backwards
 ## Week 22 - Compare Peltier in air, vacuum, with active cooling
 Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermoelectric effect. No LCR meter was found around, so we use a sine signal generator, amplifier and a resistance bridge with a regular multimeter.
 
-## Week 21 - Peltier runs and fail
+## Week 21 - Peltier runs and fails
 Fist measurements tests.
 
-The CAL9900 controller shows 29 degrees whild the Fluke meter shows 23 degrees, with same thermocouple. No equipment is calibrated. We can expect hight measurements errors.
+### Temperature measurement errors
+The CAL9900 controller shows 29 degrees while the Fluke multimeter shows 23 degrees with the same thermocouple. No equipment is calibrated. We can expect **high measurements errors** of absolute temperature values.
 
 Neither the CAL9900 nor Fluke have ouptuts for temperature registrations. An options to do it could be to use existing data aqusition modules from [Seneca](https://www.seneca.it/), in particular Z-8TC-1 module for thermocouples.The module can be connected to laptop by USB, the measurements recieved using Mudbus RTU protocol. For the later the `mbpoll` command line utility is choosen, with some wrapper scripting for data aqusition and logging.
 
+### Peltier bouded with epoxy
 The first setup with Peltier modue is prepared. The hot and cold sides of the module are glued to Al plates (dimensions 50x30x4 mm) with Loctite bicomponent epoxy. A hole of 1mm diameter 20mm length is drilled in each plate for termocouples. This sandwich was mounted on the Al cap of the vacuum chamber.
 
+### Experiments
 In the first test we measure T at the cold side only. The V was increased gradually untill the I reached 1.5 A. The T went down to -11 degrees.
 
 <img alt="Fist test of a Peltier module" src="img/20240521_125408.jpg" width=400px>

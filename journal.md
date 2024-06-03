@@ -8,7 +8,7 @@ Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermo
 Fist measurements tests.
 
 ### Temperature measurement errors
-The CAL9900 controller shows 29 degrees while the Fluke multimeter shows 23 degrees with the same thermocouple. No equipment is calibrated. We can expect **high measurements errors** of absolute temperature values.
+The CAL9900 controller shows 29&degC while the Fluke multimeter shows 23 degrees with the same thermocouple. No equipment is calibrated. We can expect **high measurements errors** of absolute temperature values.
 
 Neither the CAL9900 nor Fluke have ouptuts for temperature registrations. An options to do it could be to use existing data aqusition modules from [Seneca](https://www.seneca.it/), in particular Z-8TC-1 module for thermocouples.The module can be connected to laptop by USB, the measurements recieved using Mudbus RTU protocol. For the later the `mbpoll` command line utility is choosen, with some wrapper scripting for data aqusition and logging.
 

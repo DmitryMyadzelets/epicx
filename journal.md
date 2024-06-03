@@ -12,7 +12,7 @@ The CAL9900 controller shows 29 degrees while the Fluke multimeter shows 23 degr
 
 Neither the CAL9900 nor Fluke have ouptuts for temperature registrations. An options to do it could be to use existing data aqusition modules from [Seneca](https://www.seneca.it/), in particular Z-8TC-1 module for thermocouples.The module can be connected to laptop by USB, the measurements recieved using Mudbus RTU protocol. For the later the `mbpoll` command line utility is choosen, with some wrapper scripting for data aqusition and logging.
 
-### Peltier bonded with epoxy
+### Peltier glued with epoxy
 The first setup with Peltier modue is prepared. The hot and cold sides of the module are glued to Al plates (dimensions 50x30x4 mm) with Loctite bicomponent epoxy. A hole of 1mm diameter 20mm length is drilled in each plate for termocouples. This sandwich was mounted on the Al cap of the vacuum chamber.
 
 ### Experiments

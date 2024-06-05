@@ -1,9 +1,14 @@
 # EPICX journal
 
-## Week 23
-The Peltier module placed in the vacuum camera dessipates heat mainly from the surface of the Al cap of the camera.  
+## Week 23 - Water cooling, lower heat lost
+### Experiment - PE-16 in vacuumm, water cooling
+Here we cool down the Al cap with a water flow at room temperature.
 
-## Week 22 - Compare Peltier in air, vacuum, with active cooling
+<img alt="Vacuum camera with water cooling" src="img/20240603_161938.jpg" width=400px>
+
+<img src="img/2024-06-03 - PE-16 in vacuum camera with water cooling.png">
+
+## Week 22 - Compare Peltier in air, vacuum, with CPU cooler
 ### Risistance of Peltiers
 Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermoelectric effect. No LCR meter was found around, so we use a sine signal generator, amplifier and a resistance bridge with a regular multimeter.
 

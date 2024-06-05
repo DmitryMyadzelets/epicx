@@ -78,7 +78,7 @@ The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. W
 ### Experiment - T min -23&deg;C in air, fixed 2.1A
 The PE-16 start from a room temperature. Now we fix the current at 2.1A which is 75% of I max 2.8A. Higher currents are not reccomended. We observe minimal T cold = -23&deg;C and &#916;T = 67&deg;C before the temperatures rise.
 
-Starging from this experiement the temperatures are recorded every second ina tab-separated file [TSV](https://en.wikipedia.org/wiki/Tab-separated_values). See the [log file](</logs/2024-05-28 163804.tsv>) for this experiment.
+Starting from this experiement the temperatures are recorded every second ina tab-separated file [TSV](https://en.wikipedia.org/wiki/Tab-separated_values). See the [log file](</logs/2024-05-28 163804.tsv>) for this experiment.
 
 ### Experiment - T min -31.5&deg;C in vacuum, fixed 2.1A
 We [recorded](</logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the fist time the temperature seems stable.

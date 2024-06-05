@@ -21,6 +21,24 @@ One measurements for a PE-16:
 
 The AC resistance of all the PE-16 modules is about 14 Om, the PE-51 is about 13 Om. Note that the PN pellets of Peltier modules are connected in series, the **entire module fails** if only one pellet is dammaged.
 
+### Experiment - PE-16 in air, fixed V
+The PE-16 runs under fixed 5V, temperatures stabilise, then runs under 8V:
+| V | A | T hot | T cold | T diff |
+| --- | --- | --- | --- | --- |
+| 5 | 0.73 | 29.2 | -2 | ~30 |
+| 8 | 1.19 | 41.6 | -7 | ~49 |
+
+<img alt="Peltier module in air" src="img/20240527_124013.jpg" width=400px>
+
+### Experiment - Minimal T in air, fixed V
+The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What would be the minimal temperature?
+| V | A | T hot | T cold | T diff | Note |
+| --- | --- | --- | --- | --- | --- |
+| 7.9 | 1.5 | 25.8 | 13 |  | Limited I mode |
+| 8 | 1.35 | 29.2 | -11 | ~40 | |
+| 8 | 1.35 | 30 | -14 | 44 | |
+| 8 | 1.3 | 32.5 | -14 | 46.5 | Max diff |
+
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.
 

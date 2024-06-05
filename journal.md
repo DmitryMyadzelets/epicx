@@ -2,11 +2,11 @@
 
 ## Week 23 - Water cooling, lower heat lost
 ### Experiment - PE-16 in vacuumm, water cooling
-Here we cool down the Al cap with a water flow at room temperature.
+Here we cool down the Al cap with water flow at room temperature.
 
 <img alt="Vacuum camera with water cooling" src="img/20240603_161938.jpg" width=400px>
 
-<img src="img/2024-06-03 - PE-16 in vacuum camera with water cooling.png">
+<img src="img/2024-06-03 - PE-16 in vacuum camera with water cooling.png" width=400px>
 
 ## Week 22 - Compare Peltier in air, vacuum, with CPU cooler
 ### Risistance of Peltiers

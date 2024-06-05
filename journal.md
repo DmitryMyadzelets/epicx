@@ -34,10 +34,11 @@ The PE-16 runs under fixed 5V, temperatures stabilise, then runs under 8V:
 The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What would be the minimal temperature?
 | V | A | T hot | T cold | T diff | Note |
 | --- | --- | --- | --- | --- | --- |
-| 7.9 | 1.5 | 25.8 | 13 |  | Limited I mode |
-| 8 | 1.35 | 29.2 | -11 | ~40 | |
-| 8 | 1.35 | 30 | -14 | 44 | |
-| 8 | 1.3 | 32.5 | -14 | 46.5 | Max diff |
+| 7.9 | 1.5 | 25.8 | 13 |  | Fixed I mode |
+| 8 | 1.35 | 29.2 | -11 | ~40 | Fixed U mode |
+| 8 | 1.35 | 30 | -14 | 44 | Min T cold |
+| 8 | 1.3 | 32.5 | -14 | 46.5 | Max T diff |
+| 8 | 1.27 | 34.4 | -13 | | T goes up |
 
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.

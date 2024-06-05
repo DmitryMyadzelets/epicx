@@ -30,7 +30,7 @@ The PE-16 runs under fixed 5V, temperatures stabilise, then runs under 8V:
 
 <img alt="Peltier module in air" src="img/20240527_124013.jpg" width=400px>
 
-### Experiment - T min -14&deg; in air, fixed 8V
+### Experiment - T min -14&deg;C in air, fixed 8V
 The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What would be the minimal temperature?
 | V | A | T hot | T cold | T diff | Note |
 | --- | --- | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What woul
 | 8 | 1.3 | 32.5 | -14 | 46.5 | Max T diff |
 | 8 | 1.27 | 34.4 | -13 | | T goes up |
 
-### Experiment - T min -21&deg; in vacuum, fixed 8V
+### Experiment - T min -21&deg;C in vacuum, fixed 8V
 The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. What would be the minimal temperature? We can't measure T hot due to lack of additional sensors in the vacuum camera.
 | V | A | T hot | T cold | T diff | Note |
 | --- | --- | --- | --- | --- | --- |
@@ -49,10 +49,12 @@ The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. W
 | 8 | 1.23 | | -21 | | Min T cold |
 | 8 | 1.23 | | -20 | | T goes up |
 
-### Experiment - T min -23&deg; in air, fixed 2.1A
-The PE-16 start from a room temperature. Now we fix the current at 2.1A which is 75% of I max 2.8A. Higher currents are not reccomended. We observe minimal T cold = -23&deg; and T diff = 67&deg; before the temperatures rise.
+### Experiment - T min -23&deg;C in air, fixed 2.1A
+The PE-16 start from a room temperature. Now we fix the current at 2.1A which is 75% of I max 2.8A. Higher currents are not reccomended. We observe minimal T cold = -23&deg;C and T diff = 67&deg;C before the temperatures rise.
 
 Starging from this experiement the temperatures are recorded every second ina tab-separated file [TSV](https://en.wikipedia.org/wiki/Tab-separated_values). See the [log file](<logs/2024-05-28 163804.tsv>) for this experiment.
+
+### Experiment - T min -31.5&deg;C in vacuum, fixed 2.1A
 
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.

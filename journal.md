@@ -1,7 +1,7 @@
 # EPICX journal
 
 ## Week 23 - Water cooling, lower heat lost
-### Experiment - PE-16 in vacuumm, water cooling
+### Experiment - PE-16 in vacuum, water cooling
 Here we cool down the Al cap with water flow at room temperature.
 
 <img alt="Vacuum camera with water cooling" src="img/20240603_161938.jpg" width=400px>

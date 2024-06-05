@@ -30,7 +30,7 @@ The PE-16 runs under fixed 5V, temperatures stabilise, then runs under 8V:
 
 <img alt="Peltier module in air" src="img/20240527_124013.jpg" width=400px>
 
-### Experiment - Minimal T in air, fixed V
+### Experiment - T min -14&deg; in air, fixed 8V
 The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What would be the minimal temperature?
 | V | A | T hot | T cold | T diff | Note |
 | --- | --- | --- | --- | --- | --- |
@@ -39,6 +39,15 @@ The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What woul
 | 8 | 1.35 | 30 | -14 | 44 | Min T cold |
 | 8 | 1.3 | 32.5 | -14 | 46.5 | Max T diff |
 | 8 | 1.27 | 34.4 | -13 | | T goes up |
+
+### Experiment - T min -21&deg; in vacuum, fixed 8V
+The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. What would be the minimal temperature? We can't measure T hot due to lack of additinoal sensors in the vacuum camera.
+| V | A | T hot | T cold | T diff | Note |
+| --- | --- | --- | --- | --- | --- |
+| 7.9 | 1.5 | | 21 |  | Fixed I mode |
+| 8 | 1.27 | | -20 | | Fixed U mode |
+| 8 | 1.23 | | -21 | | Min T cold |
+| 8 | 1.23 | | -20 | | T goes up |
 
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.

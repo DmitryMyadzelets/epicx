@@ -55,6 +55,11 @@ The PE-16 start from a room temperature. Now we fix the current at 2.1A which is
 Starging from this experiement the temperatures are recorded every second ina tab-separated file [TSV](https://en.wikipedia.org/wiki/Tab-separated_values). See the [log file](<logs/2024-05-28 163804.tsv>) for this experiment.
 
 ### Experiment - T min -31.5&deg;C in vacuum, fixed 2.1A
+We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the fist time the temperature seems stable.
+
+<img src="img/2024-05-29 Response of the Peltier module to I=2.1A (I_Imax = 75%) in the vacuum camera.jpg">
+
+**Note** In the vacuum the minimal T cold -7.5&deg;C lower then in air in the previous experiment.
 
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.

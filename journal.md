@@ -57,7 +57,7 @@ Starging from this experiement the temperatures are recorded every second ina ta
 ### Experiment - T min -31.5&deg;C in vacuum, fixed 2.1A
 We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the fist time the temperature seems stable.
 
-<img src="img/2024-05-29 Response of the Peltier module to I=2.1A (I_Imax = 75%) in the vacuum camera.jpg">
+<img src="img/2024-05-29 Response of the Peltier module to I=2.1A (I_Imax = 75%) in the vacuum camera.png">
 
 **Note** In the vacuum the minimal T cold -7.5&deg;C lower then in air in the previous experiment.
 

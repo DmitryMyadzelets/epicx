@@ -41,13 +41,16 @@ The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What woul
 | 8 | 1.27 | 34.4 | -13 | | T goes up |
 
 ### Experiment - T min -21&deg; in vacuum, fixed 8V
-The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. What would be the minimal temperature? We can't measure T hot due to lack of additinoal sensors in the vacuum camera.
+The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. What would be the minimal temperature? We can't measure T hot due to lack of additional sensors in the vacuum camera.
 | V | A | T hot | T cold | T diff | Note |
 | --- | --- | --- | --- | --- | --- |
 | 7.9 | 1.5 | | 21 |  | Fixed I mode |
 | 8 | 1.27 | | -20 | | Fixed U mode |
 | 8 | 1.23 | | -21 | | Min T cold |
 | 8 | 1.23 | | -20 | | T goes up |
+
+### Experiment - T min -23&deg; in air, fixed 2.1A
+The PE-16 start from a room temperature. Now we fix the current at 2.1A which is 75% of I max 2.8A. Higher currents are not reccomended. We observe minimal T cold = -23&deg; and T diff = 67&deg; before the temperatures rise.
 
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.

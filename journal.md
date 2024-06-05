@@ -1,12 +1,21 @@
 # EPICX journal
+This journal is written backwards.
 
 ## Week 23 - Water cooling, lower heat lost
 ### Experiment - PE-16 in vacuum, water cooling
-Here we cool down the Al cap with water flow at room temperature.
+Here we cool down the Al cap with water flow at room temperature. 
 
 <img alt="Vacuum camera with water cooling" src="img/20240603_161938.jpg" width=400px>
 
 <img src="img/2024-06-03 - PE-16 in vacuum camera with water cooling.png" width=400px>
+
+The temperatures are stable now. Compare the results of stable results in air and vacuum:
+| max T hot | min T cold | max T diff | Note |
+| --- | --- | --- | --- |
+| 32.5 | -37.8 | 69.5 | In vacuum, cooling with water at room T | 
+| 33.4 | -30.9 | 63.7 | In air, cooling with CPU cooler |
+
+**Note:** As was observed earlier, in the vacuum we get -7&deg;C lower w.r.t. the in air condition.
 
 ## Week 22 - Compare Peltier in air, vacuum, with CPU cooler
 ### Risistance of Peltiers
@@ -66,7 +75,7 @@ We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the 
 **Note:** In the vacuum the minimal T cold -7.5&deg;C lower (-31.5&deg;C) then in air (-23&deg;C) in the previous experiment.
 
 ### Experiment - T min -31&deg;C in air, CPU cooler + insulation
-[Recorded](<logs/2024-05-30 151429.tsv>) minimal T cold -30.9&deg;C, T diff 63.7&deg;C.
+[Recorded](<logs/2024-05-30 151429.tsv>) min T cold -30.9&deg;C, max T diff 63.7&deg;C, max T hot 33.d&deg;C.
 
 <img alt="Pelter with CPU cooler and insulation" src="img/20240529_142728.jpg" width=400px>
 <img src="img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png" width=400px>

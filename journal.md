@@ -59,6 +59,8 @@ We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the 
 
 <img src="img/2024-05-29 Response of the Peltier module to I=2.1A (I_Imax = 75%) in the vacuum camera.png">
 
+[test](<img/2024-05-29%20Response%20of%20the%20Peltier%20module%20to%20I%3D2.1A%20(I_Imax%20%3D%2075%25)%20in%20the%20vacuum%20camera.png>)
+
 **Note** In the vacuum the minimal T cold -7.5&deg;C lower then in air in the previous experiment.
 
 ## Week 21 - Peltier runs and fails

@@ -5,9 +5,9 @@ This journal is written backwards.
 ### Experiment - T min -37.8&deg;C in vacuum, water cooling
 Here we cool down the Al cap with water flow at room temperature. 
 
-<img alt="Vacuum camera with water cooling" src="img/20240603_161938.jpg" width=400px>
+<img alt="Vacuum camera with water cooling" src="/img/20240603_161938.jpg" width=400px>
 
-<img src="img/2024-06-03 - PE-16 in vacuum camera with water cooling.png" width=400px>
+<img src="/img/2024-06-03 - PE-16 in vacuum camera with water cooling.png" width=400px>
 
 [See datalog](<logs/2024-06-03 162001.tsv>). The temperatures are stable now. Compare the results in air and vacuum:
 | max T hot | min T cold | max &#916;T | Note |
@@ -22,7 +22,7 @@ When glue bonding was replaced with machine screws and plastic sleeves, we added
 
 [See datalog](</logs/2024-06-04 123004.tsv>)
 
-<img src="img/2024-06-04 - PE-16 in vacuum and air with water cooling and nylon screws.png" width=400px>
+<img src="/img/2024-06-04 - PE-16 in vacuum and air with water cooling and nylon screws.png" width=400px>
 
 ## Week 22 - Compare Peltier in air, vacuum, with CPU cooler
 ### Risistance of Peltiers
@@ -48,7 +48,7 @@ The PE-16 runs under fixed 5V, temperatures stabilise, then runs under 8V:
 | 5 | 0.73 | 29.2 | -2 | ~30 |
 | 8 | 1.19 | 41.6 | -7 | ~49 |
 
-<img alt="Peltier module in air" src="img/20240527_124013.jpg" width=400px>
+<img alt="Peltier module in air" src="/img/20240527_124013.jpg" width=400px>
 
 ### Experiment - T min -14&deg;C in air, fixed 8V
 The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What would be the minimal temperature?
@@ -77,20 +77,20 @@ Starging from this experiement the temperatures are recorded every second ina ta
 ### Experiment - T min -31.5&deg;C in vacuum, fixed 2.1A
 We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the fist time the temperature seems stable.
 
-<img src="img/2024-05-29 - PE-16 2.1A in the vacuum camera.png" width=400px>
+<img src="/img/2024-05-29 - PE-16 2.1A in the vacuum camera.png" width=400px>
 
 **Note:** In the vacuum the minimal T cold -7.5&deg;C lower (-31.5&deg;C) then in air (-23&deg;C) in the previous experiment.
 
 ### Experiment - T min -31&deg;C in air, CPU cooler + insulation
 [Recorded](<logs/2024-05-30 151429.tsv>) min T cold -30.9&deg;C, max &#916;T 63.7&deg;C, max T hot 33.d&deg;C.
 
-<img alt="Pelter with CPU cooler and insulation" src="img/20240529_142728.jpg" width=400px>
-<img src="img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png" width=400px>
+<img alt="Pelter with CPU cooler and insulation" src="/img/20240529_142728.jpg" width=400px>
+<img src="/img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png" width=400px>
 
 ### Experiment - T min -29.3&deg;C in vacuum, T hot recorded
 Added the second K-type thermocouple in the vacuum camera. The temperature of the hot side of the PE-16 is [recorded now](<logs/2024-05-31 154000.tsv>).The min T cold -29.3&deg;C, max &#916;T 79.8&deg;C, max T hot 57&deg;C.
 
-<img src="img/2024-05-31 - PE16 in vacuum.png" width=400px>
+<img src="/img/2024-05-31 - PE16 in vacuum.png" width=400px>
 
 **Note:** The temperature rises after the Al thermal mass is heated. Additional cooling is required. 
 
@@ -108,7 +108,7 @@ The first setup with PE-16 is prepared. The hot and cold sides of the module are
 ### Experiments
 In the first test we measure T at the cold side only. The V was increased gradually untill the I reached 1.5 A. The T went down to -11&deg;C.
 
-<img alt="Fist test of a Peltier module" src="img/20240521_125408.jpg" width=400px>
+<img alt="Fist test of a Peltier module" src="/img/20240521_125408.jpg" width=400px>
 
 In the second test (next day) the T went down to -4&deg;C only, much slower. The reason wasn't clear, so we decided to cool all the parts down to room temperature and start over again.
 
@@ -120,7 +120,7 @@ To recover the glued Al plates for later use we put it to the owen at 300&deg;C 
 
 The image below shows the internals of the PE-16. This module has two cascades, you can see that one cascade has about 120 simiconductor pellets, and the second cascade has twice the number of them.
 
-<img alt="Internals of th Peltier module" src="img/20240524_101106.jpg" width=400px>
+<img alt="Internals of th Peltier module" src="/img/20240524_101106.jpg" width=400px>
 
 The reason the Pelter module was damaged with no obviouse reason is likely due to different expansion coefficeints of the module and adherent Al plate, wich coused shear forces. It was found that bounding by adhesive is permitted, but is limited to small sizes of Peltier elements (i.e. [25 mm](https://customthermoelectric.com/tech-info/install/tec-installation.html)). In general, bonding with a glue isn't reccomended.
 

@@ -17,7 +17,7 @@ Here we cool down the Al cap with water flow at room temperature.
 ### Experiment - T min -40&deg;C in vacuum, plastic screws
 When glue bonding was replaced with machine screws and plastic sleeves, we added heat transfer from the cold side of Peltier module to the hot side. Here we replace metal screws with nylon screws.
 
-[See datalog](</logs/2024-06-04 123004.tsv>). Note that after 10 minutes the vacuum camera was opened. Thus we can compare temperatures in both vacuum and air with the same water cooling:
+[See datalog](</logs/2024-06-04 123004.tsv>). Note that after 10 minutes the vacuum camera was opened. Thus we can compare temperatures in vacuum and air with the same water cooling:
 | max T hot | min T cold | max &#916;T | Note |
 | --- | --- | --- | --- |
 | 33.2 | -40.0 | 73.2 | In vacuum | 

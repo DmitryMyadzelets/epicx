@@ -58,13 +58,20 @@ We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the 
 
 <img src="img/2024-05-29 - PE-16 2.1A in the vacuum camera.png">
 
-**Note** In the vacuum the minimal T cold -7.5&deg;C lower (-31.5&deg;C) then in air (-23&deg;C) in the previous experiment.
+**Note:** In the vacuum the minimal T cold -7.5&deg;C lower (-31.5&deg;C) then in air (-23&deg;C) in the previous experiment.
 
 ### Experiment - T min -31&deg;C in air, CPU cooler + insulation
 [Recorded](<logs/2024-05-30 151429.tsv>) minimal T cold -30.9&deg;C, T diff 63.7&deg;C.
 
 <img alt="Pelter with CPU cooler and insulation" src="img/20240529_142728.jpg" width=400px>
 <img src="img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png">
+
+### Experiment - T min -29.3&deg;C in vacuum, T hot recorded
+Added the second K-type thermocouple in the vacuum camera. The temperature of the hot side of the PE-16 is [recorded now](<logs/2024-05-31 154000.tsv>).
+
+<img src="img/2024-05-31 - PE16 in vacuum.png">
+
+**Note:** The temperature rises after the Al thermal mass is heated. Additional cooling is required. 
 
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.

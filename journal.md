@@ -61,7 +61,7 @@ Starging from this experiement the temperatures are recorded every second ina ta
 ### Experiment - T min -31.5&deg;C in vacuum, fixed 2.1A
 We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the fist time the temperature seems stable.
 
-<img src="img/2024-05-29 - PE-16 2.1A in the vacuum camera.png">
+<img src="img/2024-05-29 - PE-16 2.1A in the vacuum camera.png" width=400px>
 
 **Note:** In the vacuum the minimal T cold -7.5&deg;C lower (-31.5&deg;C) then in air (-23&deg;C) in the previous experiment.
 
@@ -69,12 +69,12 @@ We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the 
 [Recorded](<logs/2024-05-30 151429.tsv>) minimal T cold -30.9&deg;C, T diff 63.7&deg;C.
 
 <img alt="Pelter with CPU cooler and insulation" src="img/20240529_142728.jpg" width=400px>
-<img src="img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png">
+<img src="img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png" width=400px>
 
 ### Experiment - T min -29.3&deg;C in vacuum, T hot recorded
 Added the second K-type thermocouple in the vacuum camera. The temperature of the hot side of the PE-16 is [recorded now](<logs/2024-05-31 154000.tsv>).The min T cold -29.3&deg;C, max T diff 79.8&deg;C, max T hot 57&deg;C.
 
-<img src="img/2024-05-31 - PE16 in vacuum.png">
+<img src="img/2024-05-31 - PE16 in vacuum.png" width=400px>
 
 **Note:** The temperature rises after the Al thermal mass is heated. Additional cooling is required. 
 

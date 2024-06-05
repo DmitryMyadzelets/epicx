@@ -13,6 +13,7 @@ where:
 - Ua - Amplifier output voltage
 - Ur - Bridge resistor voltage
 - Rp - AC resistance of the peltier module
+
 One measurements for a PE-16:
 | Ua, mV | Ur, mV | Rp, Om |
 | --- | --- | --- |

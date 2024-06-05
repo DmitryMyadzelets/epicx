@@ -67,7 +67,7 @@ We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the 
 <img src="img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png">
 
 ### Experiment - T min -29.3&deg;C in vacuum, T hot recorded
-Added the second K-type thermocouple in the vacuum camera. The temperature of the hot side of the PE-16 is [recorded now](<logs/2024-05-31 154000.tsv>).
+Added the second K-type thermocouple in the vacuum camera. The temperature of the hot side of the PE-16 is [recorded now](<logs/2024-05-31 154000.tsv>).The min T cold -29.3&deg;C, max T diff 79.8&deg;C, max T hot 57&deg;C.
 
 <img src="img/2024-05-31 - PE16 in vacuum.png">
 

@@ -9,7 +9,7 @@ Here we cool down the Al cap with water flow at room temperature.
 
 <img src="img/2024-06-03 - PE-16 in vacuum camera with water cooling.png" width=400px>
 
-The temperatures are stable now. Compare the results of stable results in air and vacuum:
+The temperatures are stable now. Compare the results in air and vacuum:
 | max T hot | min T cold | max T diff | Note |
 | --- | --- | --- | --- |
 | 32.5 | -37.8 | 69.5 | In vacuum, cooling with water at room T | 

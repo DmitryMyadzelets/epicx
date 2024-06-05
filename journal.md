@@ -10,7 +10,7 @@ Here we cool down the Al cap with water flow at room temperature.
 <img src="img/2024-06-03 - PE-16 in vacuum camera with water cooling.png" width=400px>
 
 The temperatures are stable now. Compare the results in air and vacuum:
-| max T hot | min T cold | max &#916;T diff | Note |
+| max T hot | min T cold | max &#916;T | Note |
 | --- | --- | --- | --- |
 | 32.5 | -37.8 | 69.5 | In vacuum, cooling with water at room T | 
 | 33.4 | -30.9 | 63.7 | In air, cooling with CPU cooler |
@@ -36,7 +36,7 @@ The AC resistance of all the PE-16 modules is about 14 Om, the PE-51 is about 13
 
 ### Experiment - PE-16 in air, fixed V
 The PE-16 runs under fixed 5V, temperatures stabilise, then runs under 8V:
-| V | A | T hot | T cold | T diff |
+| V | A | T hot | T cold | &#916;T |
 | --- | --- | --- | --- | --- |
 | 5 | 0.73 | 29.2 | -2 | ~30 |
 | 8 | 1.19 | 41.6 | -7 | ~49 |
@@ -45,17 +45,17 @@ The PE-16 runs under fixed 5V, temperatures stabilise, then runs under 8V:
 
 ### Experiment - T min -14&deg;C in air, fixed 8V
 The PE-16 starts from a room temperature ander fixed 8V and I=1.5 max. What would be the minimal temperature?
-| V | A | T hot | T cold | T diff | Note |
+| V | A | T hot | T cold | &#916;T | Note |
 | --- | --- | --- | --- | --- | --- |
 | 7.9 | 1.5 | 25.8 | 13 |  | Fixed I mode |
 | 8 | 1.35 | 29.2 | -11 | ~40 | Fixed U mode |
 | 8 | 1.35 | 30 | -14 | 44 | Min T cold |
-| 8 | 1.3 | 32.5 | -14 | 46.5 | Max T diff |
+| 8 | 1.3 | 32.5 | -14 | 46.5 | Max &#916;T |
 | 8 | 1.27 | 34.4 | -13 | | T goes up |
 
 ### Experiment - T min -21&deg;C in vacuum, fixed 8V
 The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. What would be the minimal temperature? We can't measure T hot due to lack of additional sensors in the vacuum camera.
-| V | A | T hot | T cold | T diff | Note |
+| V | A | T hot | T cold | &#916;T | Note |
 | --- | --- | --- | --- | --- | --- |
 | 7.9 | 1.5 | | 21 |  | Fixed I mode |
 | 8 | 1.27 | | -20 | | Fixed U mode |
@@ -63,7 +63,7 @@ The PE-16 starts from a room temperature under vixed 8V, in the vacuum camera. W
 | 8 | 1.23 | | -20 | | T goes up |
 
 ### Experiment - T min -23&deg;C in air, fixed 2.1A
-The PE-16 start from a room temperature. Now we fix the current at 2.1A which is 75% of I max 2.8A. Higher currents are not reccomended. We observe minimal T cold = -23&deg;C and T diff = 67&deg;C before the temperatures rise.
+The PE-16 start from a room temperature. Now we fix the current at 2.1A which is 75% of I max 2.8A. Higher currents are not reccomended. We observe minimal T cold = -23&deg;C and &#916;T = 67&deg;C before the temperatures rise.
 
 Starging from this experiement the temperatures are recorded every second ina tab-separated file [TSV](https://en.wikipedia.org/wiki/Tab-separated_values). See the [log file](<logs/2024-05-28 163804.tsv>) for this experiment.
 
@@ -75,13 +75,13 @@ We [recorded](<logs/2024-05-29 113448.tsv>) minimal T cold -31.5&deg;C. For the 
 **Note:** In the vacuum the minimal T cold -7.5&deg;C lower (-31.5&deg;C) then in air (-23&deg;C) in the previous experiment.
 
 ### Experiment - T min -31&deg;C in air, CPU cooler + insulation
-[Recorded](<logs/2024-05-30 151429.tsv>) min T cold -30.9&deg;C, max T diff 63.7&deg;C, max T hot 33.d&deg;C.
+[Recorded](<logs/2024-05-30 151429.tsv>) min T cold -30.9&deg;C, max &#916;T 63.7&deg;C, max T hot 33.d&deg;C.
 
 <img alt="Pelter with CPU cooler and insulation" src="img/20240529_142728.jpg" width=400px>
 <img src="img/2024-05-30 - PE-16 2.1 with a CPU cooler and polyethilen foam.png" width=400px>
 
 ### Experiment - T min -29.3&deg;C in vacuum, T hot recorded
-Added the second K-type thermocouple in the vacuum camera. The temperature of the hot side of the PE-16 is [recorded now](<logs/2024-05-31 154000.tsv>).The min T cold -29.3&deg;C, max T diff 79.8&deg;C, max T hot 57&deg;C.
+Added the second K-type thermocouple in the vacuum camera. The temperature of the hot side of the PE-16 is [recorded now](<logs/2024-05-31 154000.tsv>).The min T cold -29.3&deg;C, max &#916;T 79.8&deg;C, max T hot 57&deg;C.
 
 <img src="img/2024-05-31 - PE16 in vacuum.png" width=400px>
 

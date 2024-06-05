@@ -17,7 +17,7 @@ where:
 - Ua - Amplifier output voltage
 - Ur - Bridge resistor voltage
 - Rp - AC resistance of the peltier module, calculated:
-$Rp = (Ua \cdot times R / Ur) - 1$
+$Rp = (Ua \cdot R / Ur) - 1$
 
 The AC resistance of all the PE-16 modules is about 14 Om, the PE-51 is about 13 Om. Note that the PN pellets of peltier modules are connected in series, the entire module would fail if only one pellet fails.
 

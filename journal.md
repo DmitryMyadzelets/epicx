@@ -8,18 +8,17 @@ The Peltier module placed in the vacuum camera dessipates heat mainly from the s
 ### Risistance of Peltiers
 Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermoelectric effect. No LCR meter was found around, so we use a sine signal generator, amplifier and a resistance bridge with a regular multimeter.
 
-AC resistance of one PE-16:
+AC resistance of a PE-16 is caculated as: $Rp = (Ua \cdot R / Ur) - 1$, 
+where:
+- Ua - Amplifier output voltage
+- Ur - Bridge resistor voltage
+- Rp - AC resistance of the peltier module
+One measurements for a PE-16:
 | Ua, mV | Ur, mV | Rp, Om |
 | --- | --- | --- |
 | 128.4 | 85.2 | 14.4 |
 
-where:
-- Ua - Amplifier output voltage
-- Ur - Bridge resistor voltage
-- Rp - AC resistance of the peltier module, calculated:
-$Rp = (Ua \cdot R / Ur) - 1$
-
-The AC resistance of all the PE-16 modules is about 14 Om, the PE-51 is about 13 Om. Note that the PN pellets of peltier modules are connected in series, the entire module would fail if only one pellet fails.
+The AC resistance of all the PE-16 modules is about 14 Om, the PE-51 is about 13 Om. Note that the PN pellets of Peltier modules are connected in series, the **entire module fails** if only one pellet is dammaged.
 
 ## Week 21 - Peltier runs and fails
 Fist measurements tests.

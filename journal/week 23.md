@@ -32,6 +32,6 @@ Removed power at the cold side (Qc) depends on the hot side temperature (T hot) 
 
 With `Origin` software (special thanks to Raimondo Cecchini) we applied a **plane model**, and got the **function for I=2.1A**:
 
-$$Q_c = (T_hot + 179.5 - 2.476 * &#916;T) / 14.68$$
+$$Q_c = (T_{hot} + 179.5 - 2.476 * &#916;T) / 14.68$$
 
 Using this model we get AVEDEV 0.17W at &#916;T = 70&deg;C.

@@ -30,7 +30,7 @@ When glue bonding was replaced with machine screws and plastic sleeves, we added
 ### Mathematical model for removed power at the cold side
 Removed power at the cold side (Qc) depends on the hot side temperature (T hot) and &#916;T. The specification of PE-16 provides only 3 charts for T hot: 27, 50 and 75&deg;C. Using the chart for e.g. &#916;T = 70&deg;C the Qc = 3.98W at 50&deg;C and 2.05W at 27&deg;C (AVEDEV is 0.97W). To get more precse values of Qc we can make a mathematical model using data fitting.
 
-With `Origin` software (special thanks to Riamondo Cecchini) we applied a **plane model**, and got the following function:
+With `Origin` software (special thanks to Raimondo Cecchini) we applied a **plane model**, and got the following function:
 
 $$Q_c = (T_hot + 179.5 - 2.476 * &#916;T) / 14.68$$
 

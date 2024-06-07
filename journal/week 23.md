@@ -34,7 +34,7 @@ With `Origin` software (special thanks to Raimondo Cecchini) we applied a **plan
 
 $$Q_c = (T_{hot} + 179.5 - 2.476 * &#916;T) / 14.68$$
 
-Using this model we get AVEDEV 0.17W at &#916;T = 70&deg;C.
+Using this model we get AVEDEV 0.17W at &#916;T = 70&deg;C (versus 0.97W using the chart).
 
 Let's substitute $&#916;T$ with $T_{hot} - T_{cold}$
 

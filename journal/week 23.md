@@ -50,4 +50,4 @@ $$T_{cold} = 5.55 * Q_c - 71.93 + 0.59 * T_{hot}$$
 
 Assuming we need constant heat removal:
 $$T_{cold} = const + 0.59 * T_{hot}$$
-I.e. for PE-16 with current 2.1A **1&deg;C change at the hot side results in 0.6&deg;C change at the cold size**. 
+I.e. for PE-16 with current 2.1A the **1&deg;C change at the hot side results in 0.6&deg;C change at the cold size**. 

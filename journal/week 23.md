@@ -36,13 +36,13 @@ $$Q_c = (T_{hot} + 179.5 - 2.476 * &#916;T) / 14.68$$
 
 Using this model we get AVEDEV 0.17W at &#916;T = 70&deg;C.
 
-Lets substitute $&#916;T$ with $T_hot - T cold$:
+Let's substitute $&#916;T$ with $T_{hot} - T_{cold}$
 
-$$Q_c = T_{hot}/14.68 + 179.5/14.68 - 2.476 * T_{hot}/14.68 + 2.476 * T_{cold} / 14.68;$$
-$$Q_c = 12.23 - 0.10 * T_{hot} = 0.17 * T_{cold};$$
+$$Q_c = T_{hot}/14.68 + 179.5/14.68 - 2.476 * T_{hot}/14.68 + 2.476 * T_{cold} / 14.68$$
+$$Q_c = 12.23 - 0.10 * T_{hot} = 0.17 * T_{cold}$$
 
-Let's express it for $T_{cold}$:
+Let's express it for $T_{cold}$
 
-$$T_{cold} = (Q_c - 12.23)/0.17 + T_{hot} * 0.10 / 0.17$$;
+$$T_{cold} = (Q_c - 12.23)/0.17 + T_{hot} * 0.10 / 0.17$$
 
 It shows that that for PE-16 at I = 2.1A the temperature at the cold side has more effect on the removed power.

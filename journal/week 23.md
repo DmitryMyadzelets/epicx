@@ -48,4 +48,4 @@ $$T_{cold} = Q_c/0.17 - 12.23/0.17 + T_{hot} * 0.10 / 0.17$$
 
 $$T_{cold} = 5.55 * Q_c - 71.93 + 0.59 * T_{hot}$$
 
-Assuming we need constant heat removal, it follows that for **1&deg;C change at the hot side results to 0.6&deg;C change at the cold size** for the PE-16 with current 2.1A.
+Assuming we need constant heat removal, it follows that for **1&deg;C change at the hot side results in 0.6&deg;C change at the cold size** for the PE-16 with current 2.1A.

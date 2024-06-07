@@ -40,7 +40,7 @@ Let's substitute $&#916;T$ with $T_{hot} - T_{cold}$
 
 $$Q_c = T_{hot}/14.68 + 179.5/14.68 - 2.476 * T_{hot}/14.68 + 2.476 * T_{cold} / 14.68$$
 
-$$Q_c = 12.23 - 0.10 * T_{hot} = 0.17 * T_{cold}$$
+$$Q_c = 12.23 - 0.10 * T_{hot} + 0.17 * T_{cold}$$
 
 Let's express it for $T_{cold}$
 

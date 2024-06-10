@@ -1,4 +1,5 @@
-## Week 24 - 
+## Week 24 - Charts
+### Removed heat charts
 The mathematical models we created previously can be used to represent the discrete chart from the the specification for PE-16 as a continious chart, for better understanding:
 
 <img alt="3D chart - Qc wrt T diff and T hot" src="/img/2024-06-10 - 3D chart - Qc wrt T diff and T hot.png" width=400px>
@@ -19,4 +20,9 @@ The same chart zoomed in to the experimental data:
 
 <img alt="3D chart - Qc wrt T cold and T hot" src="/img/2024-06-10 - 3D chart - Qc wrt T cold and T hot (zoom in).png" width=400px>
 
-
+## Heat loss 
+From the experimental data we can now evaluate the aproximate heat loss for some parts of the setup:
+| Due to | Heat loss, W | 
+| --- | --: |
+| Air in the vacuum camera | 1.0 |
+| Metal fateners | 0.52 |

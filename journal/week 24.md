@@ -26,3 +26,6 @@ From the experimental data we can now evaluate the aproximate heat loss for some
 | :-- | --: |
 | Air in the vacuum camera | 1.0 |
 | Metal fateners | 0.52 |
+
+Assuming the all heat removed from the cold side is due to its loss, there is still 2.14 W of heat loss due to, at least, thermal radiation and nylon fasteners.
+

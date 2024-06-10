@@ -1,4 +1,4 @@
-## Week 24 - Charts
+## Week 24 - Charts, heat loss
 ### Removed heat charts
 The mathematical models we created previously can be used to represent the discrete chart from the the specification for PE-16 as a continious chart, for better understanding:
 
@@ -23,6 +23,6 @@ The same chart zoomed in to the experimental data:
 ## Heat loss 
 From the experimental data we can now evaluate the aproximate heat loss for some parts of the setup:
 | Due to | Heat loss, W | 
-| --- | --: |
+| :-- | --: |
 | Air in the vacuum camera | 1.0 |
 | Metal fateners | 0.52 |

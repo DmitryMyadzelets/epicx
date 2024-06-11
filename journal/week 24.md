@@ -50,4 +50,13 @@ Recall the results without Al foil:
 
 From the above we see no significant difference for the conditions in vacuum, and 0.2W increased heat loss for the case with Al foil in air. Note that the temperature of the cooling water wasn't neither measured nor stable. Still, addition of  **alluminium foil has no positive effect** for heat loss due to thermal radiation in our case.
 
+## Experiment - PE-16 in vacuum camera with Al foil and insulation
+We add a polyethilen foam insulatin. It supposed to have no effect in vacuum, but to reduce the heat loss in air. It's the first time we test this insulation alogn with the water cooling.
 
+[See datalog](</logs/2024-06-11 121000.tsv>):
+| max T hot | min T cold | max &#916;T | Qc, W | Note |
+| --: | --: | --: | --: | :-- |
+| 33.5 | -39.9 | 73.3 | 2.14 | In vacuum | 
+| 33.8 | -38.7 | 72.4 | 2.31 | In air |
+
+As expected, in vacuum the results are equal to the described in the previous experiment. In air, though, the insulation provides about -5&deg;C cooling gain.

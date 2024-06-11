@@ -25,7 +25,7 @@ From the experimental data we can now evaluate the aproximate heat loss:
 | Due to | Heat loss, W | 
 | :-- | --: |
 | Air in the vacuum camera | 1.0 |
-| Metal fateners | 0.52 |
+| Metal fasteners | 0.52 |
 
 Assuming the all heat removed from the cold side is due to its loss, there is still 2.14 W of heat loss due to, at least, the thermal radiation and the nylon fasteners.
 
@@ -59,4 +59,4 @@ We add a polyethilen foam insulatin. It supposed to have no effect in vacuum, bu
 | 33.5 | -39.9 | 73.3 | 2.14 | In vacuum | 
 | 33.8 | -38.7 | 72.4 | 2.31 | In air |
 
-As expected, in vacuum the results are equal to the described in the previous experiment. In air, though, the insulation provides about -5&deg;C cooling gain.
+As expected, in vacuum the results are equal to the described in the previous experiment. In air, though, the insulation in air provides about -5&deg;C cooling gain versus -7&deg;C gain with vacuum.

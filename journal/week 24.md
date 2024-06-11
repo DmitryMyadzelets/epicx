@@ -21,7 +21,7 @@ The same chart zoomed in to the experimental data:
 <img alt="3D chart - Qc wrt T cold and T hot" src="/img/2024-06-10 - 3D chart - Qc wrt T cold and T hot (zoom in).png" width=400px>
 
 ## Heat loss 
-From the experimental data we can now evaluate the aproximate heat loss for some parts of the setup:
+From the experimental data we can now evaluate the aproximate heat loss: 
 | Due to | Heat loss, W | 
 | :-- | --: |
 | Air in the vacuum camera | 1.0 |

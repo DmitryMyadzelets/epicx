@@ -34,7 +34,7 @@ To evaluate the heat loss by thermal radiation we add an aluminium kitchen foil 
 
 We estimated earlier (see week 20) the heat loss by thermal radiation as 4.47W for a black body, and as 0.045W for Al foil. We can correct now the surface area, as 20cm^2 versus 100cm^2, and increase emissivity of the kitchen Al foil (0.1 vs 0.03, suggested by Emanuele). Thus, the heat loss due to thermal ratiation is ~3W for a black body, and 0.03W for a setup with Al foil.
 
-<img alt="Vacuum camera with Al foil" src="/img/220240611_112537.jpg " width=400px>
+<img alt="Vacuum camera with Al foil" src="/img/20240611_112537.jpg " width=400px>
 
 [See datalog](</logs/2024-06-11 113000.tsv>). Note that after 10 minutes the vacuum camera was opened. Thus we can compare temperatures in vacuum and air with the same cooling codition:
 | max T hot | min T cold | max &#916;T | Qc, W | Note |

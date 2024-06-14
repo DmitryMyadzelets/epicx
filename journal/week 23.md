@@ -15,7 +15,7 @@ Here we cool down the Al cap with water flow at room temperature.
 **Note:** As was observed earlier, in the vacuum we get -7&deg;C lower w.r.t. the in air condition.
 
 ### Experiment - T min -40&deg;C in vacuum, plastic screws
-When glue bonding was replaced with machine screws and plastic sleeves, we added heat transfer from the cold side of Peltier module to the hot side. Here we replace metal screws with nylon screws.
+When the glue bonding was replaced with machine screws and plastic sleeves, the screwes added a heat transfer from the cold side of Peltier module to the hot side. Here we replace the metal screws with nylon screws. The both types of screws are M3 size.
 
 [See datalog](</logs/2024-06-04 123004.tsv>). Note that after 10 minutes the vacuum camera was opened. Thus we can compare temperatures in vacuum and air with the same water cooling:
 | max T hot | min T cold | max &#916;T | Note |
@@ -25,7 +25,7 @@ When glue bonding was replaced with machine screws and plastic sleeves, we added
 
 <img src="/img/2024-06-04 - PE-16 in vacuum and air with water cooling and nylon screws.png" width=400px>
 
-**Note:** Again, we see the -7&deg;C improvement in the vacuum.
+**Note:** Again, we see the -7&deg;C improvement in the vacuum. The screws added 3.7&deg;C temperature difference (73.2 - 69.5).    
 
 ### Mathematical model for removed power at the cold side
 Removed power at the cold side (Qc) depends on the hot side temperature (T hot) and &#916;T. The specification of PE-16 provides only 3 charts for T hot: 27, 50 and 75&deg;C. Using the chart for e.g. &#916;T = 70&deg;C the Qc = 3.98W at 50&deg;C and 2.05W at 27&deg;C (AVEDEV is 0.97W). To get more precise values of Qc we can make a mathematical model using data fitting.

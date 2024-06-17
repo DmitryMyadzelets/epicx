@@ -11,3 +11,4 @@
 - [x] Make mathematical model of the Peltier module 16.4 W (PE-16) to get more precise value of heat removed power from the cold side (Qc). This value depends on the hot side temperature. The specification of PE-16 provides only 3 charts for hot side temperatures 27, 50 and 75&deg;C. Using the chart for e.g. &#916;T = 70&deg;C the Qc = 3.98W at 50&deg;C and 2.05W at 27&deg;C (AVDEV is 0.97W);
 - [x] Valuate the temperature gains we get from vacuum, plastic fasteners, thermal radiation reduction with AL foil.
 - [ ] Valuate two-step cooling approaches.
+    - [ ] Check if the PE-16 in the climate chamber at -10...-20&deg;C. can reach -60&deg;C at the cold side.

@@ -23,10 +23,10 @@ We use a climate chamber at the Department of Physics at Univercity of Bologna. 
 
 | max T hot | min T cold | max &#916;T | Qc, W | Note |
 | --: | --: | --: | --: | :-- |
-| -4.1 | -55.5 | 55.5 | 3.35 | Climate control set for -13&deg;C | 
+| -4.1 | -55.5 | 55.5 | 3.36 | Climate control set for -13&deg;C | 
 | -15.9 | -62.2 | 45.8 | 3.39 | Climate control set for -25&deg;C |
 
-It should be noted that the temperatures set by the climate control, and the temperatures we observed with our sensor at the hot side of the PE-16 before it was powered on, are different:
+It should be noted that the temperatures set by the climate control, and the temperatures we observed with our sensor at the hot side of the PE-16 before it was powered on, are different (for unknown reason):
 
 | T set | T measured | Error |
 | --: | --: | --: | 

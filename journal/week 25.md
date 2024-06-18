@@ -16,20 +16,20 @@ We used water for domestic usage and a 800W chiller to cool it down. The tempera
 **Note** We can't calculate the performance of the cooling sistem due to the lack of mesurement data, though we can state that its performance was sufficient to achieve stable thermal conditions of the PE-16.
 
 ### Experiment - PE-16 in the climate chamber 
-This experiemnt is to confirm that lower temperatrues can be achieved by cooling down the hot side of the module, and compare the results against the mathematical model of the PE-16 we built earlier. 
+This experiment is to confirm that lower temperatrues can be achieved by cooling down the hot side of the module, and compare the results against the mathematical model of the PE-16 we built earlier. 
 
-We use a climate chamber at the Department of Physics at Univercity of Bologna.
+We use a climate chamber at the Department of Physics at Univercity of Bologna. The results:
 
 | max T hot | min T cold | max &#916;T | Qc, W | Note |
 | --: | --: | --: | --: | :-- |
-| -4.1 | -55.5 | 55.5 | 3.35 | Climate control set is -13&deg;C | 
-| -10.2 | -62.3 | 45.8 | 3.39 | Climate control set is -25&deg;C |
+| -4.1 | -55.5 | 55.5 | 3.35 | Climate control set for -13&deg;C | 
+| -10.2 | -62.3 | 45.8 | 3.39 | Climate control set for -25&deg;C |
 
-It should be noted that the temperatures set by the climate control, and the temperature (of the hot side) we observed with our sensors before the PE-16 before it was powered on, are different:
+It should be noted that the temperatures set by the climate control, and the temperatures we observed with our sensor at the hot side of the PE-16 before it was powered on, are different:
 
-| T set | T measured |
-| --: | --: | 
-| -13 | -9.6 | 
-| -25 | -20.8 |
+| T set | T measured | Error |
+| --: | --: | --: | 
+| -13 | -9.6 | 3.4 | 
+| -25 | -20.8 | 4.2 |
 
 See the [records for -13&deg;C](</logs/2024-06-17 163254.tsv>) and [for -25&deg;C](</logs/2024-06-17 170748.tsv>).

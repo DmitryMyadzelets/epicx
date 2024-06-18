@@ -37,7 +37,7 @@ See the [records for -13&deg;C](</logs/2024-06-17 163254.tsv>) and [for -25&deg;
 
 The chart below depicts some of the experimental data. Cooling with water is colored by blue, air - by white. The circle imply the cases under atmospheric pressue, the romb - use of the vacuum camera.
 
-<img alt="3D chart with cooling with water and in air" src="2024-06-11 - 3D chart - Qc wrt T cold and T hot.png" width=400px>
+<img alt="3D chart with cooling with water and in air" src="/img/2024-06-11 - 3D chart - Qc wrt T cold and T hot.png" width=400px>
 
 L
 

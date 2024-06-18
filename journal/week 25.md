@@ -2,6 +2,7 @@
 
 ### Experiment - Cooling PE-16 with cold water
 This experiment is an intermidiate step before the experiement in the climate camera. We exploit the existing setup for water cooling.
+
 <img alt="Cooling Pelter with cold water" src="/img/20240617_113001.jpg" width=400px>
 
 Logs with [water at 24&deg;C](</logs/2024-06-17 100000.tsv>) and [water at 5&deg;C](</logs/2024-06-17 121523.tsv>).
@@ -33,3 +34,10 @@ It should be noted that the temperatures set by the climate control, and the tem
 | -25 | -20.8 | 4.2 |
 
 See the [records for -13&deg;C](</logs/2024-06-17 163254.tsv>) and [for -25&deg;C](</logs/2024-06-17 170748.tsv>).
+
+The chart below depicts some of the experimental data. Cooling with water is colored by blue, air - by white. The circle imply the cases under atmospheric pressue, the romb - use of the vacuum camera.
+
+<img alt="3D chart with cooling with water and in air" src="2024-06-11 - 3D chart - Qc wrt T cold and T hot.png" width=400px>
+
+L
+

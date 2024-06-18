@@ -11,7 +11,7 @@ Logs with [water at 24&deg;C](</logs/2024-06-17 100000.tsv>) and [water at 5&deg
 | 33.0 | -33.6 | 65.6 | 3.34 | Water 24&deg;C | 
 | 9.3 | -45.3 | 53.6 | 3.75 | Water 5&deg;C |
 
-We used water for domestic usage and a 800W cillier to cool it down. The temperature of the warm water was measured with a mercury thermometer. The temprerature of the cooled water was measured by the chiller.
+We used water for domestic usage and a 800W chiller to cool it down. The temperature of the warm water was measured with a mercury thermometer. The temprerature of the cooled water was measured by the chiller.
 
 **Note** We can't calculate the performance of the cooling sistem due to the lack of mesurement data, though we can state that its performance was sufficient to achieve stable thermal conditions of the PE-16.
 

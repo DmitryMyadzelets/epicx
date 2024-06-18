@@ -39,5 +39,3 @@ The chart below depicts some of the experimental data. Cooling with water is col
 
 <img alt="3D chart with cooling with water and in air" src="/img/2024-06-11 - 3D chart - Qc wrt T cold and T hot.png" width=400px>
 
-L
-

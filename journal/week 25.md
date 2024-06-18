@@ -19,8 +19,11 @@ We used water for domestic usage and a 800W chiller to cool it down. The tempera
 ### Experiment - PE-16 in the climate chamber 
 This experiment is to confirm that lower temperatrues can be achieved by cooling down the hot side of the module, and compare the results against the mathematical model of the PE-16 we built earlier. 
 
-We use a climate chamber at the Department of Physics at Univercity of Bologna. The results:
+We use a climate chamber at the Department of Physics at Univercity of Bologna. 
 
+<img alt="Internal camera of the climate chamber" src="/img/20240614_165333.jpg" width=400px>
+
+The results:
 | max T hot | min T cold | max &#916;T | Qc, W | Note |
 | --: | --: | --: | --: | :-- |
 | -4.1 | -55.5 | 55.5 | 3.36 | Climate control set for -13&deg;C | 

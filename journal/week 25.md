@@ -1,4 +1,4 @@
-## Week 25 - Pelter in the Climate camera
+## Week 25 - Freezing Pelter 
 
 ### Experiment - Cooling PE-16 with cold water
 This experiment is an intermidiate step before the experiement in the climate camera. We exploit the existing setup for water cooling.

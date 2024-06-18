@@ -1,6 +1,6 @@
 # EPICX journal
 
-- [Week 25 - Freezing Pelter](<journal/week 25.md>)
+- [Week 25 - Freezing Peltier](<journal/week 25.md>)
 - [Week 24 - Charts, heat loss](<journal/week 24.md>)
 - [Week 23 - Water cooling, lower heat loss, mathematical model](<journal/week 23.md>)
 - [Week 22 - Compare Peltier in air, vacuum, with CPU cooler](<journal/week 22.md>)

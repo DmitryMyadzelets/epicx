@@ -35,7 +35,7 @@ It should be noted that the temperatures set by the climate control, and the tem
 
 See the [records for -13&deg;C](</logs/2024-06-17 163254.tsv>) and [for -25&deg;C](</logs/2024-06-17 170748.tsv>).
 
-The chart below depicts some of the experimental data. Cooling with water is colored by blue, air - by white. The circle imply the cases under atmospheric pressue, the romb - use of the vacuum camera.
+The chart below depicts some of the experimental data. Cooling with water is colored by blue, air - by white. The circles imply the cases under atmospheric pressue, the romb - use of the vacuum camera.
 
 <img alt="3D chart with cooling with water and in air" src="/img/2024-06-11 - 3D chart - Qc wrt T cold and T hot.png" width=400px>
 

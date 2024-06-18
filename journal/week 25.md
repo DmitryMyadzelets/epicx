@@ -4,7 +4,7 @@
 This experiment is an intermidiate step before the experiement in the climate camera. We exploit the existing setup for water cooling.
 <img alt="Cooling Pelter with cold water" src="/img/20240617_113001.jpg" width=400px>
 
-Logs with [water at 24&deg;C](/logs/2024-06-17 100000.tsv) and [water at 5&deg;C](/logs/2024-06-17 121523.tsv).
+Logs with [water at 24&deg;C](</logs/2024-06-17 100000.tsv>) and [water at 5&deg;C](</logs/2024-06-17 121523.tsv>).
 
 | max T hot | min T cold | max &#916;T | Qc, W | Note |
 | --: | --: | --: | --: | :-- |

@@ -50,4 +50,4 @@ Given the maximum 4.2&deg;C difference between our measuremnts in the climate ch
 | 100.0 | 101.5 | 99.8 | Boiling water |
 | 30.5 | 30.0 | 30.5 | Room temperature |
 
-The maximal difference is -0.5 ... +1.5&deg;C. This is the error range we ma use and should take into account during measurements. 
+The maximal difference is -0.5 ... +1.5&deg;C. This is the error range we may and should take into account during the measurements. 

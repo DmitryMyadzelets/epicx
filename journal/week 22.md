@@ -1,12 +1,13 @@
 ## Week 22 - Compare Peltier in air, vacuum, with CPU cooler
 ### Risistance of Peltiers
-Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermoelectric effect. No LCR meter was found around, so we use a sine signal generator, amplifier and a resistance bridge with a regular multimeter.
+Resistance of Peltier elements has to be measured at about 1kHz, to avoid thermoelectric effect. No LCR meter was found around, so we use a sine signal generator, amplifier and a voltage divider with a general purpose multimeter.
 
 AC resistance of a PE-16 is caculated as: $Rp = (Ua \cdot R / Ur) - 1$, 
 where:
 - Ua - Amplifier output voltage
 - Ur - Bridge resistor voltage
-- Rp - AC resistance of the peltier module
+- Rp - AC resistance of the Peltier module
+- R - Resistance of the voltage divider
 
 One measurements for a PE-16:
 | Ua, mV | Ur, mV | Rp, Om |

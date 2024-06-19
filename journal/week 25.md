@@ -42,3 +42,12 @@ The chart below depicts some of the experimental data. Cooling with water is col
 
 <img alt="3D chart with cooling with water and in air" src="/img/2024-06-11 - 3D chart - Qc wrt T cold and T hot.png" width=400px>
 
+### Temperature measurement errors
+Given the maximum 4.2&deg;C difference between our measuremnts in the climate chamber and its preset values have raised a concern about precision of the equipment we use. We have conducted an experiment comparing readings from a mercury thermometer with readings from the Seneca's Z-8TC-1 module and the K-type thermocouples (marked as they were used in the previous expreriments).
+
+| T mercury | T hot | T cold | Condition |
+| --: | --: | --: | :-- |
+| 100.0 | 101.5 | 99.8 | Boiling water |
+| 30.5 | 30.0 | 30.5 | Room temperature |
+
+The maximal difference is -0.5 ... +1.5&deg;C. This is the error range we ma use and should take into account during measurements. 

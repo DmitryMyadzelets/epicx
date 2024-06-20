@@ -61,4 +61,4 @@ For comparision, in the table below the results in air are added. The minimal te
 | 9.2 | 13.6 | -52.1 | 65.8 | 2.08 | In vacuum, water 6.1&deg;C |
 | 4.9 | 9.3 | -45.3 | 53.6 | 3.75 | In air with insulation, water 5.1&deg;C |
 
-**Note:** Earlier we estimated heat loss in air as ~1.0W, w.r.t. vacuum. Now it looks like the vacuum provides about 1.6W of the improvment. If we could have in the vacuum the max T hot = 9.3&deg;C as in the air then, according to the model, **min T cold = -54&deg;C**.
+**Note:** Earlier we estimated heat loss in air as ~1.0W, w.r.t. vacuum. Now it looks like the vacuum provides about 1.6W of the improvment. If we could have max T hot = 9.3&deg;C in the vacuum as in the air, then, according to the model, we would get **min T cold = -54&deg;C**.

@@ -51,3 +51,14 @@ Given the maximum 4.2&deg;C difference between our measuremnts in the climate ch
 | 30.5 | 30.0 | 30.5 | Room temperature |
 
 The maximal difference is -0.5 ... +1.5&deg;C. This is the error range we may and should take into account during the measurements. 
+
+### Experiment - PE-16 in vacuum with cold water colling
+This experiment is to check the minimal temperature we can achieve with currently existing (at CNR) equipment, and to confirm the temperature gain the vacuum camera provides.
+
+For comparision, in the table below the results in air are added. The minimal temperature of the hot side `min T hot` is added to show the significant difference of the setups for heat transwer water to the hot side of the Peltier module. 
+| min T hot | max T hot | min T cold | max &#916;T | Qc, W | Note |
+| --: | --: | --: | --: | --: | :-- |
+| 9.2 | 13.6 | -52.1 | 65.8 | 2.08 | In vacuum, water 6.1&deg;C |
+| 4.9 | 9.3 | -45.3 | 53.6 | 3.75 | In air with insulation, water 5.1&deg;C |
+
+**Note:** Earlier we estimated heat loss in air as ~1.0W, w.r.t. vacuum. Now it looks like the vacuum provides about 1.6W of the improvment. If we could have in the vacuum the max T hot = 9.3&deg;C as in the air then, according to the model, **min T cold = -54&deg;C**.

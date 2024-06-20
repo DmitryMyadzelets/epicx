@@ -13,6 +13,7 @@
     - [x] Check if the PE-16 in the climate chamber at -10...-20&deg;C. can reach -60&deg;C at the cold side.
 
 ## Order list
-RS code x Items - Description
+RS code x Items - Description - Note
 - [ ] 193-8250 x 1 - [Grasso termico 7W/mK -50...+200&deg;C](https://it.rs-online.com/web/p/grasso-termico/1938250)
-- [ ] 169-4404 x ? - [Scambiatore di calore x Peltier](https://it.rs-online.com/web/p/scambiatori-di-calore-a-piastre/1694404)
+- [ ] 169-4404 x ? - [Scambiatore di calore x Peltier](https://it.rs-online.com/web/p/scambiatori-di-calore-a-piastre/1694404) - For the cell only
+- [ ] 122-2219 x ? - [Alimenentatore DIN 12V 5A](https://it.rs-online.com/web/p/alimentatori-per-guida-din/1222219) - 1 module per 2 Peltier

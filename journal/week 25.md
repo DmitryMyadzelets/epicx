@@ -64,4 +64,4 @@ For comparision, in the table below the results in air are added. The minimal te
 **Note:** Earlier we estimated heat loss in air as ~1.0W, w.r.t. vacuum. Now it looks like the vacuum provides about 1.6W of the improvment. If we could have max T hot = 9.3&deg;C in the vacuum as in the air, then, according to the model, we would get **min T cold = -54&deg;C**.
 
 ### Two-stage cooling
-<img alt="Two-stage cooling diagram" src="</img/2024-06-20 - Two-stage colling.png>" width=400px>
+<img alt="Two-stage cooling diagram" src="/img/2024-06-20 - Two-stage colling.png" width=400px>

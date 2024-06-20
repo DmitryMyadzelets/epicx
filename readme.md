@@ -17,3 +17,6 @@ RS code x Items - Description - Note
 - [ ] 193-8250 x 1 - [Grasso termico 7W/mK -50...+200&deg;C](https://it.rs-online.com/web/p/grasso-termico/1938250)
 - [ ] 169-4404 x ? - [Scambiatore di calore x Peltier](https://it.rs-online.com/web/p/scambiatori-di-calore-a-piastre/1694404) - For the cell only
 - [ ] 122-2219 x ? - [Alimenentatore DIN 12V 5A](https://it.rs-online.com/web/p/alimentatori-per-guida-din/1222219) - 1 module per 2 Peltier
+- [ ] 122-2220 x ? - [Alimentatore DIN 24V 2.5A](https://it.rs-online.com/web/p/alimentatori-per-guida-din/1222220) - for 2 Peltiers in series
+- [ ] 257-357 x ? - [Shunt 3A](https://it.rs-online.com/web/p/shunt/0257357)
+

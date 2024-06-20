@@ -11,3 +11,8 @@
 
 - [ ] Valuate two-step cooling approaches.
     - [x] Check if the PE-16 in the climate chamber at -10...-20&deg;C. can reach -60&deg;C at the cold side.
+
+## Order list
+RS code x Items - Description
+- [ ] 193-8250 x 1 - [Grasso termico 7W/mK -50...+200&deg;C](https://it.rs-online.com/web/p/grasso-termico/1938250)
+- [ ] 169-4404 x ? - [Scambiatore di calore x Peltier](https://it.rs-online.com/web/p/scambiatori-di-calore-a-piastre/1694404)

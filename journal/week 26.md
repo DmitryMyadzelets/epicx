@@ -9,4 +9,6 @@
 * Usage of a liquid introduces an efficiency loss due to additional heat exchangers (and 4.5&deg;C rise as described above) but allows us to place the cumbersome parts of the system apart from the cryogenic cell.
 
 ### Two-steps Peltier cooling
+Preliminary calculation by hand gives the following temperature destribution across the system:
+
 <img alt="Two-stage cooling diagram" src="/img/2024-06-20 - Two-stage colling.png" width=400px>

@@ -1,5 +1,6 @@
 # EPICX journal
 
+- [Week 26 - Thermal design](<journal/week 26.md>)
 - [Week 25 - Freezing Peltier](<journal/week 25.md>)
 - [Week 24 - Charts, heat loss](<journal/week 24.md>)
 - [Week 23 - Water cooling, lower heat loss, mathematical model](<journal/week 23.md>)
@@ -11,6 +12,8 @@
 
 - [ ] Valuate two-step cooling approaches.
     - [x] Check if the PE-16 in the climate chamber at -10...-20&deg;C. can reach -60&deg;C at the cold side.
+    - [ ] Calculate parameters for the 2-step water cooling
+    - [ ] Calculate parameters for an additional cooling with Pelter and the water cooling 
 
 ## Order list
 RS code x Items - Description - Note

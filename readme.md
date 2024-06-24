@@ -19,4 +19,5 @@ RS code x Items - Description - Note
 - [ ] 122-2219 x ? - [Alimenentatore DIN 12V 5A](https://it.rs-online.com/web/p/alimentatori-per-guida-din/1222219) - 1 module per 2 Peltier
 - [ ] 122-2220 x ? - [Alimentatore DIN 24V 2.5A](https://it.rs-online.com/web/p/alimentatori-per-guida-din/1222220) - for 2 Peltiers in series
 - [ ] 257-357 x ? - [Shunt 3A](https://it.rs-online.com/web/p/shunt/0257357)
+- [ ] 125-3578 x 2 - [Pompa 12V 2.6L/min](https://it.rs-online.com/web/p/pompe-per-acqua/1253578)
 

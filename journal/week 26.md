@@ -19,4 +19,4 @@ In order to find optimal parameters of the two-stage cooling by Peltier elements
 * **Model of Emanuele** shows good results for Qc=f(dT) function but fails for V=f(dT) and Qh=f(dT).
 * **[Model of Belovsky, Staneva](https://www.researchgate.net/publication/317584219_Mathematical_Model_of_Thermoelectric_Peltier_Module)** fails for all parameters.
 
-The reason the above models faile is likely that the Peltier module we use has two stages. Two-stage modules may require another approach.
+The reason the above models fails is likely due to the Peltier module we use has two stages. Two-stage modules may require another approach.

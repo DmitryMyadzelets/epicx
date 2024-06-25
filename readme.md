@@ -23,4 +23,8 @@ RS code x Items - Description - Note
 - [ ] 122-2220 x ? - [Alimentatore DIN 24V 2.5A](https://it.rs-online.com/web/p/alimentatori-per-guida-din/1222220) - for 2 Peltiers in series
 - [ ] 257-357 x ? - [Shunt 3A](https://it.rs-online.com/web/p/shunt/0257357)
 - [ ] 125-3578 x 2 - [Pompa 12V 2.6L/min](https://it.rs-online.com/web/p/pompe-per-acqua/1253578)
+- [ ] 444-1247 x 5 - [Termocoppia diametro 0.5 mm con passante filettato](https://it.rs-online.com/web/p/termocoppie/4441247)
+- [ ] 455-9758 x 10 - [Connettore termocoppia femmina](https://it.rs-online.com/web/p/accessori-per-sensori/4559758)
+- [ ] 455-9764 x 10 - [Connettore termocoppia maschio](https://it.rs-online.com/web/p/accessori-per-sensori/4559764)
+
 

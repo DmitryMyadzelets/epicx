@@ -22,7 +22,7 @@ In the third test (day later) the PE-16 had no current while increasing voltage 
 
 To recover the glued Al plates for later use we put it to the owen at 300&deg;C for a few hours. The epoxy glue didn't burn out though. It did burn out in another owen at 350&deg;C.
 
-The image below shows the internals of the PE-16. This module has two cascades, you can see that one cascade has about 120 simiconductor pellets, and the second cascade has twice the number of them.
+The image below shows the internals of the PE-16. This module has two cascades, you can see that one cascade has about 60 simiconductor couples (also called pellets), and the second cascade has 129 couples, 189 in total. 
 
 <img alt="Internals of th Peltier module" src="/img/20240524_101106.jpg" width=400px>
 

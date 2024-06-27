@@ -67,22 +67,6 @@ function getQh (tc, th, i) {
 console.log("Qh at the cell:", getQh(config.tc, th, config.current))
 
 /*
-// Get data from the Peltier's charts
-var { data } = load("./qcdt.json") // Qc=f(dT) chart
-var { data } = load("./qhdt.json") // Qh=f(dT) chart
-
-// Inputs
-const x = data
-    .filter(byCurrent)
-    .map(([tc, q, th, i]) => [tc, th])
-    //.map(([tc, q, th, i]) => [tc, q, i])
-
-// Outputs
-const y = data
-    .filter(byCurrent)
-    .map(([tc, q, th, i]) => [q])
-
-const mlr = new MLR(x, y)
 // Standard error for Qc:
 // 1.24 Watt when the I is used for ML
 // 0.32 Watt when the I isn't used for the model
@@ -94,7 +78,4 @@ const mlr = new MLR(x, y)
 // Standard error for Th:
 // 10.1 degrees C when the I is used for ML
 // 3.10 degrees C when the I isn't used for the model
-console.log(mlr.predict([27, 27, current]))
-console.log(mlr.predict([50, 50, current]))
-//console.log(mlr.toJSON())
 */

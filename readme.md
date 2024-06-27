@@ -10,10 +10,11 @@
 
 ## TODO
 
-- [ ] Valuate two-step cooling approaches.
-    - [x] Check if the PE-16 in the climate chamber at -10...-20&deg;C. can reach -60&deg;C at the cold side.
-    - [ ] Calculate parameters for the 2-step water cooling
-    - [ ] Calculate parameters for an additional cooling with Pelter and the water cooling 
+- [x] Valuate two-step cooling approaches
+    - [x] Check if the PE-16 in the climate chamber at -10...-20&deg;C. can reach -60&deg;C at the cold side
+    - [x] Calculate parameters for the 2-step water cooling
+    - [x] Calculate parameters for the 2-step direct cooling
+- [ ] Sketch the cell
 
 ## Order list
 RS code x Items - Description - Note

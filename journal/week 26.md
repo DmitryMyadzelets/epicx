@@ -34,7 +34,13 @@ The resulting tempearatures and the number of the Peltier modules are shown belo
 
 <img alt="Two-stage cooling diagram" src="/img/2024-06-27 - Two-stage colling.png" width=400px>
 
-These results are for the current I=2.1A for all the modules (lower currents don't improve the results), the remove power Qc=4.8 Watt. We are going to use two modules for the cell, so the total Qc=9.2 Watt and twice number of the modules.
+These results are for the current I=2.1A for all the modules (lower currents don't improve the results). The removed power depends depends on the interstage temperature rise:
+| dT between the stages, &deg;C | Qc, Watt | Note |
+| --: | --: | :-- |
+| 9 | 4.8 | Water cooling |
+| 0 | 5.8 | Direct mounting |
+
+We are going to use two modules for the cell, so the total Qc doubles, as wee as the number of the modules.
 
 The standard error for the models are:
 | Model | Standard error |

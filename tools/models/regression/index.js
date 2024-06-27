@@ -14,7 +14,7 @@ function load (fname) {
 // Config
 const config = {
     tc:  -60, // Temperature in the cell, Celsius
-    th: 9.4, // Temperature Th of the water cooler
+    th: 9.4, // Temperature Th from the cold water
     i1: 2.1, // Constant current for the all Peltiers @ 1st stage
     i2: 2.1, // Constant current for the all Peltiers @ 2nd stage
     dt: 9, // Temperature rise in the interstage heat exchange

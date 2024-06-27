@@ -30,7 +30,7 @@ The **algorithm** to find paremeters for two-stage cooling with Peltier (let 1 b
 4. Given (Qc, Th, I) find Tc for the stae 2.
 5. If (Tc < Tc2) then the stage 2 provides enough cooling, end. Otherwise add modules N=N+1 and go to the step 3.
 
-The resulting tempearatures and number of the Peltire modules are shown below:
+The resulting tempearatures and the number of the Peltier modules are shown below:
 
 <img alt="Two-stage cooling diagram" src="/img/2024-06-27 - Two-stage colling.png" width=400px>
 

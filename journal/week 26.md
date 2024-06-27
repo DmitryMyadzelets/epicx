@@ -34,3 +34,13 @@ The resulting tempearatures and the number of the Peltier modules are shown belo
 
 <img alt="Two-stage cooling diagram" src="/img/2024-06-27 - Two-stage colling.png" width=400px>
 
+Note that we use I=2.1A for all the module. The standard error for the models are:
+| Model | Standard error |
+| :-- | --: |
+| Th=f(Tc,Q) | 3.1 &deg;C |
+| Tc=f(Th,Q) | 1.8 &deg;C |
+| Qh=f(Tc,Th) | 0.3 Watt |
+
+
+
+

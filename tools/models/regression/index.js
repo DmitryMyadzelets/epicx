@@ -24,12 +24,11 @@ const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
 const byCurrent = ([tc, q, th, i]) => i === config.current 
 
 // Returns Th for the Peltier attached to the cell
-function getTh () {
+function getTh (q, tc, i) {
     // Get data from the Peltier's Qc=f(dT) chart
     const data = load("./qcdt.json").data
         .map(convert)
         .filter(byCurrent)
-
     // Inputs
     const x = data.map(([tc, q, th, i]) => [tc, q])
     // Outputs
@@ -38,21 +37,34 @@ function getTh () {
     const mlr = new MLR(x, y)
     // Debug: show error
     console.log(mlr.toJSON().summary.regressionStatistics)
-
     // Predict
-    const [ th ] = mlr.predict([config.tc, config.q, config.current])
+    const [ th ] = mlr.predict([tc, q, i])
     return th
 }
 
 console.log("Config:", config)
-console.log("Th at the cell:", getTh())
+const th = getTh(config.q, config.tc, config.current)
+console.log("Th at the cell:", th)
 
-function getQh () {
+function getQh (tc, th, i) {
     // Get data from the Peltier's Qh=f(dT) chart
     const data = load("./qhdt.json").data
         .map(convert)
         .filter(byCurrent)
+    // Inputs
+    const x = data.map(([tc, q, th, i]) => [tc, th])
+    // Outputs
+    const y = data.map(([tc, q, th, i]) => [q])
+    // Learn
+    const mlr = new MLR(x, y)
+    // Debug: show error
+    console.log(mlr.toJSON().summary.regressionStatistics)
+    // Predict
+    const [ q ] = mlr.predict([tc, th, i])
+    return q 
 }
+
+console.log("Qh at the cell:", getQh(config.tc, th, config.current))
 
 /*
 // Get data from the Peltier's charts

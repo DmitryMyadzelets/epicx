@@ -14,9 +14,11 @@ Preliminary calculation by hand gives the following temperature destribution acr
 <img alt="Two-stage cooling diagram" src="/img/2024-06-20 - Two-stage colling.png" width=400px>
 
 ### Math for two-stage cooling
-In order to find optimal parameters of the two-stage cooling by Peltier elements we need to find a point where the temperature and power of the stages matches. The current model we've built doesn't provide so cold "waste heat" (Qh) parameter. We try other models.
+In order to find optimal parameters of the two-stage cooling by Peltier elements we need to find a point where the temperature and power of the stages matches. The current numerical model we've built doesn't provide so cold "waste heat" (Qh) parameter. We try other models.
 
-* **Model of Emanuele** shows good results for Qc=f(dT) function but fails for V=f(dT) and Qh=f(dT).
-* **[Model of Belovsky, Staneva](https://www.researchgate.net/publication/317584219_Mathematical_Model_of_Thermoelectric_Peltier_Module)** fails for all parameters.
+* **Model of Emanuele** shows good results for Qc=f(dT) function but fails for V=f(dT) and Qh=f(dT). [See the files](/tools/peltier/emanuele).
+* **[Model of Belovsky, Staneva](https://www.researchgate.net/publication/317584219_Mathematical_Model_of_Thermoelectric_Peltier_Module)** fails for all parameters. [See the files](/tools/peltier/belovski).
 
-The reason the above models fails is likely due to the Peltier module we use has two stages. Two-stage modules may require another approach.
+The above models are based on physical properties of Peltier modules wit single stage only. They fail for two-stage module we use. A two stage module requires an appropriate physical model. 
+
+We refine our mumerical model of the PE-16 module by adding the missing paremeters. We use Machine Learning and Multivariate Multiple Regression to predict necessary parameters from the existing Qc=f(dT) and Qh=f(dT) charts provided by the manufacture. [See the files](/tools/peltier/mlr).

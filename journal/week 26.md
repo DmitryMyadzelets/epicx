@@ -22,3 +22,10 @@ In order to find optimal parameters of the two-stage cooling by Peltier elements
 The above models are based on physical properties of Peltier modules wit single stage only. They fail for two-stage module we use. A two stage module requires an appropriate physical model, which seems too complicated to built. 
 
 We refine our mumerical model of the PE-16 module by adding the missing paremeters. We use Machine Learning and Multivariate Multiple Regression to predict necessary parameters from the existing Qc=f(dT) and Qh=f(dT) charts provided by the manufacture. [See the files](/tools/peltier/mlr).
+
+The **algorithm** to find paremeters for two-stage cooling with Peltier (let 1 be stage connected to the cell, 2 - the stage for precooling):
+1. Given (Qc, Tc, I) find Th for the stage 1.
+2. Given (Tc, Th, I) find Qh for the stage 1.
+3. Let N be a number of Peltier modules at the stage 2. Let output T and Q of the stage 2 be the input for the stage 2, and dT is the temperature rise in the heat exchanger. I.e. Tc2 = Th2 + dT, Qc2 = Qh1 / N.
+4. Given (Qc, Th, I) find Tc for the stae 2.
+5. If (Tc < Tc2) then the stage 2 provides enough cooling, end. Otherwise add modules N=N+1 and go to the step 3.

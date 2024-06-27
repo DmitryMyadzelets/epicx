@@ -91,20 +91,20 @@ const getQh = (function () {
 })()
 
 console.log("Config:", config)
-var th = getTh(config.q, config.tc, config.current1)
+var th = getTh(config.q, config.tc)
 console.log("Th at the cell:", th)
 if (th < config.tc) {
     throw new Error("Th < Tc, the model isn't valid outside reality")
 }
-const q = getQh(config.tc, th, config.current1)
+const q = getQh(config.tc, th)
 console.log("Qh at the cell:", q)
 
 th -= config.dt
-console.log("Tc at the cooler:", th);
+console.log("Tc at the cooler:", th)
 
 console.log("Modules:")
 for (let m=1; m<10; m++) {
-    const tc = getTc(q / m, config.th, config.current2)
+    const tc = getTc(q / m, config.th)
     console.log(m, "modules, Tc at the cooler:", tc)
     if (tc < th)  { break }
 }

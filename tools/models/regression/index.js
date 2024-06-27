@@ -14,20 +14,24 @@ function load (fname) {
 // Config
 const config = {
     tc:  -60, // Temperature in the cell, Celsius
-    current: 2.1, // Constant current for the all Peltiers, A
-    q: 5 // Power we need to remove from the cell, W
+    th: 9.4, // Temperature Th of the water cooler
+    i1: 2.1, // Constant current for the all Peltiers @ 1st stage
+    i2: 2.1, // Constant current for the all Peltiers @ 2nd stage
+    dt: 9, // Temperature rise in the interstage heat exchange
+    q: 4.8 // Power we need to remove from the cell, W
 }
 
 // Convert dT to T cold
 const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
 // The condition for a filter by the current I
-const byCurrent = ([tc, q, th, i]) => i === config.current 
+const current1 = ([tc, q, th, i]) => i === config.i1
+const current2 = ([tc, q, th, i]) => i === config.i2
 
 const getTh = (function () {
     // Get data from the Peltier's Qc=f(dT) chart
     const data = load("./qcdt.json").data
         .map(convert)
-        .filter(byCurrent)
+        .filter(current1)
     // Inputs
     const x = data.map(([tc, q, th, i]) => [tc, q])
     // Outputs
@@ -48,7 +52,7 @@ const getTc = (function () {
     // Get data from the Peltier's Qc=f(dT) chart
     const data = load("./qcdt.json").data
         .map(convert)
-        .filter(byCurrent)
+        .filter(current2)
     // Inputs
     const x = data.map(([tc, q, th, i]) => [th, q])
     // Outputs
@@ -69,7 +73,7 @@ const getQh = (function () {
     // Get data from the Peltier's Qh=f(dT) chart
     const data = load("./qhdt.json").data
         .map(convert)
-        .filter(byCurrent)
+        .filter(current1)
     // Inputs
     const x = data.map(([tc, q, th, i]) => [tc, th])
     // Outputs
@@ -87,15 +91,21 @@ const getQh = (function () {
 })()
 
 console.log("Config:", config)
-const th = getTh(config.q, config.tc, config.current)
+var th = getTh(config.q, config.tc, config.current1)
 console.log("Th at the cell:", th)
-const q = getQh(config.tc, th, config.current)
+if (th < config.tc) {
+    throw new Error("Th < Tc, the model isn't valid outside reality")
+}
+const q = getQh(config.tc, th, config.current1)
 console.log("Qh at the cell:", q)
+
+th -= config.dt
+console.log("Tc at the cooler:", th);
 
 console.log("Modules:")
 for (let m=1; m<10; m++) {
-    const tc = getTc(q / m, th, config.current)
+    const tc = getTc(q / m, config.th, config.current2)
     console.log(m, "modules, Tc at the cooler:", tc)
-    if (tc < th) { break }
+    if (tc < th)  { break }
 }
 

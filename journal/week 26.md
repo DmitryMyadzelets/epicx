@@ -40,7 +40,7 @@ These results are for the current I=2.1A for all the modules (lower currents don
 | 9 | 4.8 | Water cooling |
 | 0 | 5.8 | Direct mounting |
 
-We are going to use two modules for the cell, so the total Qc doubles, as wee as the number of the modules.
+We are going to use two modules for the cell, hence the total Qc and the number of the modules double.
 
 The standard error for the models are:
 | Model | Standard error |
@@ -48,7 +48,4 @@ The standard error for the models are:
 | Th=f(Tc,Q) | 3.1 &deg;C |
 | Tc=f(Th,Q) | 1.8 &deg;C |
 | Qh=f(Tc,Th) | 0.3 Watt |
-
-
-
 

@@ -53,5 +53,5 @@ With **manuall** optimisation we've found a better configuration: 2 modules at t
 
 The above configuration may be not optimal. To find an optimal solution we can reformulate the problem as follows:
 
-*Given &#916;T and (at most) N modules on the stages, maximise Qc/N* 
+*Given &#916;T and (at most) N modules on the stages, find N s.t. Qc/N is maximal* 
 

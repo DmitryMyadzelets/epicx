@@ -17,9 +17,13 @@ const config = {
     th: 9.4, // Temperature Th from the cold water
     i1: 2.1, // Constant current for the all Peltiers @ 1st stage
     i2: 2.1, // Constant current for the all Peltiers @ 2nd stage
-    dt: 9, // Temperature rise in the interstage heat exchange
-    q: 4.8 // Power we need to remove from the cell, W
+    dt: 0, // Temperature rise in the interstage heat exchange
+    q: 7.9 // Power we need to remove from the cell, W
 }
+
+// Let's use 2 modules at the 1st stage in series. Then:
+config.i1 = 1.4
+config.q /= 2
 
 // Convert dT to T cold
 const convert = ([dt, q, th, i]) => [th-dt, q, th, i]

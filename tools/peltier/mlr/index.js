@@ -7,7 +7,8 @@ const config = {
     i1: 1.4, // Constant current for the all Peltiers @ 1st stage
     i2: 2.1, // Constant current for the all Peltiers @ 2nd stage
     dt: 0, // Temperature rise in the interstage heat exchange
-    q: 7.8 // Power we need to remove from the cell, W
+    q: 7.8, // Power we need to remove from the cell, W
+    maxModules: 10 // Maximum amount of modules we can afford
 }
 
 // Let's use 2 modules at the 1st stage in series. Then:
@@ -32,12 +33,25 @@ const currents = [0.7, 1.4, 2.1, 2.8]
     th -= config.dt
     console.log("Tc at the cooler:", th)
 
-    console.log("Modules:")
-    for (let m=1; m<10; m++) {
-        const tc = getTc(q / m, config.th, config.i2)
-        console.log(m, "modules, Tc at the cooler:", tc)
-        if (tc < th)  { break }
+    // Given Qc and Tc from the 1st stage
+    // Returns a number of modules s.t. the Tc is <= t
+    function secondStage(q, t, th, current) {
+        let modules = 0
+        let tc
+
+        do {
+            modules += 1
+            tc = getTc(q / modules, th, current)
+            //console.log(m, "modules, Tc at the cooler:", tc)
+        } while ((tc > t) && (modules < config.maxModules))
+        return { modules, tc, current }
     }
+
+    console.log("Second stage:")
+    currents.forEach(current => {
+        console.log(secondStage(q, th, config.th, current))
+    })
+    
 })()
 
 ;(() => {

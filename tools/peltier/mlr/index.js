@@ -15,14 +15,13 @@ function load (fname) {
 const config = {
     tc:  -60, // Temperature in the cell, Celsius
     th: 9.4, // Temperature Th from the cold water
-    i1: 2.1, // Constant current for the all Peltiers @ 1st stage
+    i1: 1.4, // Constant current for the all Peltiers @ 1st stage
     i2: 2.1, // Constant current for the all Peltiers @ 2nd stage
     dt: 0, // Temperature rise in the interstage heat exchange
     q: 7.8 // Power we need to remove from the cell, W
 }
 
 // Let's use 2 modules at the 1st stage in series. Then:
-config.i1 = 1.4
 config.q /= 2
 
 // The currents from the charts

@@ -49,9 +49,11 @@ const currents = [0.7, 1.4, 2.1, 2.8]
 
     console.log("Second stage:")
     currents.forEach(current => {
-        console.log(secondStage(q, th, config.th, current))
+        const stage2 = secondStage(q, th, config.th, current)
+        // Recalculate the 1st stage backward
+        const qc = getQc(config.tc, stage2.tc + config.dt, current)
+        console.log(stage2, "Qc", qc)
     })
-    
 })()
 
 ;(() => {

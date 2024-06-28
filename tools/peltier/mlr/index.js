@@ -31,7 +31,7 @@ const currents = [0.7, 1.4, 2.1, 2.8]
 
     // Stage 2
     th -= config.dt
-    console.log("Tc at the cooler:", th)
+    console.log("Target Tc at the second stage:", th)
 
     // Given Qc and Tc from the 1st stage
     // Returns a number of modules s.t. the Tc is <= t

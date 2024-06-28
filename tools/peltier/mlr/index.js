@@ -21,13 +21,13 @@ const currents = [0.7, 1.4, 2.1, 2.8]
     console.log("Config:", config)
 
     // Stage 1
+    console.log("Stage 1")
     var th = getTh(config.q, config.tc, config.i1)
-    console.log("Th at the cell:", th)
     if (th < config.tc) {
         throw new Error("Th < Tc, the model isn't valid outside reality")
     }
     const q = getQh(config.tc, th, config.i1)
-    console.log("Qh at the cell:", q)
+    console.log({ th, qh: q})
 
     // Stage 2
     th -= config.dt

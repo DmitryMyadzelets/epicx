@@ -32,7 +32,7 @@ The **algorithm** to find paremeters for two-stage cooling with Peltier (let 1 b
 
 The resulting tempearatures and the number of the Peltier modules are shown below:
 
-<img alt="Heat diagram for two-stage cooling" src="/img/2024-06-27 - Heat diagram.png" width=400px>
+<img alt="Heat diagram for two-stage cooling" src="/img/2024-06-27 - Heat diagram.png">
 
 These results are for the current I=2.1A for all the modules (lower currents don't improve the results). The removed power depends depends on the interstage temperature rise:
 | dT between the stages, &deg;C | Qc, Watt | Note |

@@ -21,35 +21,40 @@ const currents = [0.7, 1.4, 2.1, 2.8]
     console.log("Config:", config)
 
     // Stage 1
-    console.log("Stage 1")
-    var th = getTh(config.q, config.tc, config.i1)
-    if (th < config.tc) {
-        throw new Error("Th < Tc, the model isn't valid outside reality")
+    function firstStage(qc, tc, current) {
+        const th = getTh(qc, tc, current)
+        const qh = getQh(tc, th, current)
+        return { th, qh }
     }
-    const q = getQh(config.tc, th, config.i1)
-    console.log({ th, qh: q})
+
+    console.log("Stage 1:")
+    const stage1 = firstStage(config.q, config.tc, config.i1)
+    console.log(stage1)
+    /*if (th < config.tc) {
+        throw new Error("Th < Tc, the model isn't valid outside reality")
+    }*/
 
     // Stage 2
-    th -= config.dt
-    console.log("Target Tc at the second stage:", th)
 
     // Given Qc and Tc from the 1st stage
     // Returns a number of modules s.t. the Tc is <= t
-    function secondStage(q, t, th, current) {
+    function secondStage(qc, t, th, current) {
         let modules = 0
         let tc
 
         do {
             modules += 1
-            tc = getTc(q / modules, th, current)
+            tc = getTc(qc / modules, th, current)
             //console.log(m, "modules, Tc at the cooler:", tc)
         } while ((tc > t) && (modules < config.maxModules))
         return { modules, tc, current }
     }
 
-    console.log("Second stage:")
+    console.log("Stage 2, iterative:")
     currents.forEach(current => {
-        const stage2 = secondStage(q, th, config.th, current)
+        const q = stage1.qh
+        const t = stage1.th -= config.dt
+        const stage2 = secondStage(q, t, config.th, current)
         // Recalculate the 1st stage backward
         const qc = getQc(config.tc, stage2.tc + config.dt, current)
         console.log(stage2, "Qc", qc)

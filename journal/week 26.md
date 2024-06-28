@@ -50,3 +50,8 @@ The standard error for the models are:
 | Qh=f(Tc,Th) | 0.3 Watt |
 
 With **manuall** optimisation we've found a better configuration: 2 modules at the stage 1 with I=1.4A (i.e. connected in series) and 2 modules at the stage 2 with current 2.1A can remove **Qc=7.8W**.
+
+The above configuration may be not optimal. To find an optimal solution we can reformulate the problem as follows:
+
+*Given &#916;T and (at most) N modules on the stages, maximise Qc/N* 
+

@@ -19,7 +19,7 @@ const stages = [{
 }, {
     th: 9.4,
     current: 2.1,
-    modules: 2
+    modules: 4
 }]
 
 // Let's use 2 modules at the 1st stage in series. Then:

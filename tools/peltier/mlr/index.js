@@ -12,10 +12,10 @@ const config = {
 }
 
 const stages = [{
-    qc: 7.8/2,
+    qc: 7.8,
     tc: -60,
     current: 1.4,
-    modules: 1
+    modules: 2
 }, {
     th: 9.4,
     current: 2.1,
@@ -30,7 +30,6 @@ const currents = [0.7, 1.4, 2.1, 2.8]
 //const currents = [2.1]
 
 ;(() => {
-    return
     // Use .sort to access two stages
     // Going from cold stage (a) to hot stage (b)
     stages.sort((b, a) => {
@@ -39,18 +38,15 @@ const currents = [0.7, 1.4, 2.1, 2.8]
         b.qc = a.qh
         b.tc = a.th -= config.dt
     })
-    console.log(stages)
-
-    stages
     .sort(ignore => -1) // flip the array
     // Going backward from hot stage (b) go cold stage (a)
     .sort((a, b) => {
         b.tc = getTc(b.qc / b.modules, b.th, b.current)
-        //console.log("A>>", b.qc, b.modules, b.current, b.tc)
         b.qh = getQh(b.tc, b.th, b.current) * b.modules
         a.th = b.tc + config.dt
         a.qc = getQc(a.tc, a.th, a.current) * a.modules
-    })
+        a.qh = getQh(a.tc, a.th, a.current) * a.modules
+     })
     .sort(ignore => -1) // flip the array
 
     console.log(stages)

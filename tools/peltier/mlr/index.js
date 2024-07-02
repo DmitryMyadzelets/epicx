@@ -15,7 +15,7 @@ const stages = [{
     current: 1.4,
     modules: 2
 }, {
-    th: 9.4,
+    th: 33,
     current: 2.1,
     modules: 4
 }]
@@ -64,9 +64,11 @@ currents.forEach(i => {
 
 ;(() => {
     // Reductor, returns number of modules on all stages
-    const modules = (sum, { modules }) => sum + modules
-    // Returns Qc/modules
+    const modules = (sum, { modules }) => sum + modules // reductor
     const qm = stages => stages[0].qc / stages.reduce(modules, 0) 
+    // Returns total electrical power
+    const power = (sum, { qc, qh }) => sum + qh - qc
+    const pw = stages => stages.reduce(power, 0)
     
     const report = results
         .filter(arr => arr.every(({ qc }) => qc > 0))
@@ -75,5 +77,6 @@ currents.forEach(i => {
 
     console.log("Top stages:\n", report)
     console.log("Top Qc/modules:\n", report.map(qm))
+    console.log("P total:\n", report.map(pw))
 })()
 

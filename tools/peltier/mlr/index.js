@@ -3,11 +3,11 @@ import { getQc, getQh, getTc, getTh } from "./model.js"
 // Config
 const config = {
     dt: 0, // Temperature rise in the interstage heat exchange
-    maxModules: 10 // Maximum amount of modules we can afford
+    maxModules: 12
 }
 
 // The currents from the charts
-const currents = [0.7, 1.4, 2.1, 2.8]
+const currents = [0.7, 1.4, 2.1]
 
 const stages = [{
     qc: 0,
@@ -42,5 +42,38 @@ function balance () {
     .sort(ignore => -1) // flip the array
 }
 
-balance()
-console.log(stages)
+const results = []
+
+;(() => {
+currents.forEach(i => {
+    currents.forEach(j => {
+        for (let n = 1; n <= config.maxModules; n++) {
+            for (let m = 1; m <= config.maxModules - n; m++) {
+                stages[0].modules = n
+                stages[1].modules = m
+                stages[0].current = i
+                stages[1].current = j
+                balance()
+                results.push(stages.map(o => Object.assign({}, o)))
+            }
+        }
+    })
+})
+})()
+
+
+;(() => {
+    // Reductor, returns number of modules on all stages
+    const modules = (sum, { modules }) => sum + modules
+    // Returns Qc/modules
+    const qm = stages => stages[0].qc / stages.reduce(modules, 0) 
+    
+    const report = results
+        .filter(arr => arr.every(({ qc }) => qc > 0))
+        .sort((b, a) => qm(a) - qm(b))
+        .filter((ignore, i) => i < 3) // Top 3
+
+    console.log("Top stages:\n", report)
+    console.log("Top Qc/modules:\n", report.map(qm))
+})()
+

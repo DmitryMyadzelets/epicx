@@ -14,3 +14,8 @@ Cooling with 24&deg;C tap water. Qc/module = 0.89 W. P total = 223 W.
 | 2 | 8 | 28.6 | 232.3 | -31.9 | 33.0 | 2.1 |
 
 Note that the above results assume that the interstage &#916;T = 0, i.e. for the direct contact between the Peltier modules.
+
+A general view of the cell cooler may look as follows:
+
+<img alt="Cell cooling design" src="/img/2024-07-02 - Cell.jpg" width=400px>
+

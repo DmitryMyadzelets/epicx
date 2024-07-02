@@ -6,6 +6,9 @@ const config = {
     maxModules: 10 // Maximum amount of modules we can afford
 }
 
+// The currents from the charts
+const currents = [0.7, 1.4, 2.1, 2.8]
+
 const stages = [{
     qc: 0,
     tc: -60,
@@ -17,11 +20,9 @@ const stages = [{
     modules: 4
 }]
 
-// The currents from the charts
-const currents = [0.7, 1.4, 2.1, 2.8]
-
-;(() => {
-    // Use .sort to access two stages
+// Solves thermal balance for the stages
+function balance () {
+    // Use .sort to access two stages at once
     // Going from cold stage (a) to hot stage (b)
     stages.sort((b, a) => {
         a.th = getTh(a.qc / a.modules, a.tc, a.current)
@@ -39,7 +40,7 @@ const currents = [0.7, 1.4, 2.1, 2.8]
         a.qh = getQh(a.tc, a.th, a.current) * a.modules
      })
     .sort(ignore => -1) // flip the array
+}
 
-    console.log(stages)
-})()
-
+balance()
+console.log(stages)

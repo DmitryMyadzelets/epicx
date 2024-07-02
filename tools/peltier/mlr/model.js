@@ -58,7 +58,7 @@ const getQc = (function () {
         const mlr = new MLR(x, y) // Learn 
         // Debug: show error
         // console.log("Qc=f(Tc,Th)", mlr.toJSON().summary.regressionStatistics)
-        const [ q ] = mlr.predict([tc, th])
+        const [ q ] = mlr.predict([tc, th, current])
         return q 
     }
 })()

@@ -17,5 +17,5 @@ Note that the above results assume that the interstage &#916;T = 0, i.e. for the
 
 A general view of the cell cooler may look as follows:
 
-<img alt="Cell cooling design" src="/img/2024-07-02 - Cell.jpg" width=400px>
+<img alt="Cell cooling design" src="/img/2024-07-02 - Cell.png" width=400px>
 

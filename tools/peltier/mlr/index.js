@@ -15,7 +15,7 @@ const stages = [{
     current: 1.4,
     modules: 2
 }, {
-    th: 33,
+    th: 9.4,
     current: 2.1,
     modules: 4
 }]

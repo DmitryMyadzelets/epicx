@@ -1,7 +1,7 @@
 ## Week 27 - Cell Cooler
 We've build numerical models for the PE-16 modules, and have found an optimal Qc per module performance for the two stages:
 
-Cooling with the chiller. Qc/module = 1.31 W. P total = 148 W.
+Cooling with the chiller. Qc/module = 1.31 W. P total = 197 W.
 | Stage | Modules | Qc, W | Qh, W | Tc, &deg;C | Th, &deg;C | Current, A |
 | --: | --: | --: | --: | --: | --: | --: |
 | 1 | 4 | 15.7 | 38.0 | -60.0 | -38.9 | 1.4 |

@@ -13,3 +13,4 @@ Cooling with 24&deg;C tap water. Qc/module = 0.89 W. P total = 223 W.
 | 1 | 3 | 9.7 | 28.6 | -60.0 | -31.9 | 1.4 |
 | 2 | 8 | 28.6 | 232.3 | -31.9 | 33.0 | 2.1 |
 
+Note that the above results assume that the interstage &#916;T = 0, i.e. for the direct contact between the Peltier modules.

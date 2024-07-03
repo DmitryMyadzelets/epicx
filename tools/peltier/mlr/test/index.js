@@ -1,9 +1,9 @@
-import { getQc, getQh, getTc, getTh } from "./model.js"
+import { getQc, getQh, getTc, getTh } from "../model.js"
 // getQc uses QcdT chart
 // getQh uses QhdT chart
 // getTc uses QcdT chart
 // getTh uses QcdT chart
-import load from "./load.js"
+import load from "../load.js"
 
 console.log("Test for the Linear Regression Model \"model.js\"\n")
 

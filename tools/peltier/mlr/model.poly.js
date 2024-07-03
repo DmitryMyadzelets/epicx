@@ -1,16 +1,5 @@
 import { PolynomialRegressor } from '@rainij/polynomial-regression-js';
-import fs from "fs"
-
-
-// Returns an object from a JSON file
-function load (fname) {
-    try {
-        const json = fs.readFileSync(fname, "utf8")
-        return JSON.parse(json)
-    } catch (e) {
-        console.error(e)
-    }
-}
+import load from "./load.js"
 
 const degree = 2
 const model = new PolynomialRegressor(degree)

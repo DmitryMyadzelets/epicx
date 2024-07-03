@@ -1,15 +1,5 @@
 import MLR from "ml-regression-multivariate-linear"
-import fs from "fs"
-
-// Returns an object from a JSON file
-function load (fname) {
-    try {
-        const json = fs.readFileSync(fname, "utf8")
-        return JSON.parse(json)
-    } catch (e) {
-        console.error(e)
-    }
-}
+import load from "./load.js"
 
 // Convert dT to T cold
 const convert = ([dt, q, th, i]) => [th-dt, q, th, i]

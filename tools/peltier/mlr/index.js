@@ -1,4 +1,4 @@
-import { getQc, getQh, getTc, getTh } from "./model.poly.js"
+import { getQc, getQh, getTc, getTh } from "./model.js"
 
 // Config
 const config = {

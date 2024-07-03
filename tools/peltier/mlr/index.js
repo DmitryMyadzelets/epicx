@@ -1,4 +1,4 @@
-import { getQc, getQh, getTc, getTh } from "./model.js"
+import { getQc, getQh, getTc, getTh } from "./model.poly.js"
 
 // Config
 const config = {
@@ -7,7 +7,9 @@ const config = {
 }
 
 // The currents from the charts
-const currents = [0.7, 1.4, 2.1]
+//const currents = [0.7, 1.4, 2.1]
+const currents = []
+for (let i=0.7; i<=2.1; i+=0.5) { currents.push(i) }
 const stages = [] 
 
 const initStages = () => {

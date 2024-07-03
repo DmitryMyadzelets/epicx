@@ -1,7 +1,7 @@
 import { PolynomialRegressor } from '@rainij/polynomial-regression-js';
 import load from "./load.js"
 
-const degree = 3
+const degree = 2
 const model = new PolynomialRegressor(degree)
 
 // Convert dT to T cold

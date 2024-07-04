@@ -1,4 +1,5 @@
 import model from "./model/polynomial.js"
+
 const [{ getQc, getQh, getTc, getTh }] = model
 
 // Config

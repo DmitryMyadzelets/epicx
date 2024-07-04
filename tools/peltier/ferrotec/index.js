@@ -3,14 +3,14 @@ This file is to model a Peltier element as in
 https://thermal.ferrotec.com/technology/thermoelectric-reference-guide/thermalref11/
 */
 
-// Returns Seebeck coefficient given temperatues
+// Returns Seebeck coefficient given temperatues, per couple
 // Tc - Temperature of the cold side, Kelvins
 // Th - Temperature of the hot side, Kelvins 
 function seebeck(Tc, Th) {
-    k1 = 1.33450e-2
-    k2 = -5.37574e-5
-    k3 = 7.42731e-7
-    k4 = -1.27141e-9
+    k1 = +1.33450e-2 / 71
+    k2 = -5.37574e-5 / 71
+    k3 = +7.42731e-7 / 71
+    k4 = -1.27141e-9 / 71
     if (Th != Tc) {
         const s = T => k1*T + k2*T*T/2 + k3*T*T*T/3 + k4*T*T*T*T/4
         return (s(Th) - s(Tc)) / (Th - Tc)
@@ -90,15 +90,17 @@ function heatPumpedFixed (Tc, Th, I) {
 }
 
 console.log("Seebeck coefficient, V/K:")
-console.log(seebeck(273, 273))
-console.log(seebeck(273, 273 + 25))
-console.log(seebeck(273 + 25, 273 + 50))
+console.log(0, seebeck(273, 273))
+console.log(25, seebeck(273, 273 + 25))
+console.log(25, seebeck(273 + 25, 273 + 50))
 console.log("Resistance, Ohm:")
 console.log(resistance(273, 273))
 console.log(resistance(273, 273.0001))
 console.log("Thermal conductance, W/K:")
 console.log(conductance(273, 273))
 console.log(conductance(273, 273.0001))
+
+return
 console.log("Heat pumped Qc, W")
 const t = (new Array(10))
     .fill(0)

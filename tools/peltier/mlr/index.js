@@ -9,7 +9,7 @@ const config = {
 // The currents from the charts
 //const currents = [0.7, 1.4, 2.1]
 const currents = []
-for (let i=0.7; i<=2.1; i+=0.5) { currents.push(i) }
+for (let i=0.7; i<=2.1; i+=0.1) { currents.push(i) }
 const stages = [] 
 
 const initStages = () => {
@@ -21,7 +21,7 @@ const initStages = () => {
         modules: 4
     })
     stages.push({
-        th: 9.4,
+        th: 33,
         current: 2.1,
         modules: 8
     })
@@ -34,8 +34,15 @@ function broken (o) {
     const values = Object.values(o)
     return values.some(isNaN) || !values.every(isFinite)
 }
-
-
+ 
+// Reductor, returns number of modules on all stages
+const modules = (sum, { modules }) => sum + modules // reductor
+// Retuns Qc per module for all the stages
+const getQcpm = stages => stages[0].qc / stages.reduce(modules, 0) 
+// Returns total electrical power
+const power = (sum, { qc, qh }) => sum + qh - qc
+const getP = stages => stages.reduce(power, 0)
+  
 // Solves thermal balance for the stages
 function balance () {
     // Use .sort to access two stages at once
@@ -61,6 +68,8 @@ function balance () {
 console.log(stages)
 balance()
 console.log(stages)
+console.log("Qc/module, W:", getQcpm(stages))
+console.log("P total, W:", getP(stages))
 
 const results = []
 
@@ -84,24 +93,19 @@ const results = []
 })()
 
 ;(() => {
-    // Reductor, returns number of modules on all stages
-    const modules = (sum, { modules }) => sum + modules // reductor
-    const qm = stages => stages[0].qc / stages.reduce(modules, 0) 
-    // Returns total electrical power
-    const power = (sum, { qc, qh }) => sum + qh - qc
-    const pw = stages => stages.reduce(power, 0)
-    
+   
     const report = results
         //.filter(arr => arr[0].modules == 4)
         //.filter(arr => arr[1].modules == 8)
         .filter(arr => arr.every(({ qc }) => qc > 0))
         .filter(arr => arr.every(({ qc, qh }) => qc < qh))
         .filter(arr => arr.every(({ tc, th }) => tc < th))
-        .sort((b, a) => qm(a) - qm(b))
+        //.sort((b, a) => getQcpm(a) - getQcpm(b))
+        .sort((b, a) => a[0].qc - b[0].qc)
         .filter((ignore, i) => i < 3) // Top 3
 
     console.log("Top stages:\n", report)
-    console.log("Top Qc/modules:\n", report.map(qm))
-    console.log("P total:\n", report.map(pw))
+    console.log("Qc/module, W:\n", report.map(getQcpm))
+    console.log("P total, W:\n", report.map(getP))
 })()
 

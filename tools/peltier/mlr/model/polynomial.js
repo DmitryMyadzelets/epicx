@@ -1,5 +1,9 @@
+import { dirname, join } from 'path'
+import { fileURLToPath } from 'url'
 import { PolynomialRegressor } from '@rainij/polynomial-regression-js';
 import load from "./load.js"
+
+const dir = dirname(fileURLToPath(import.meta.url))
 
 const degree = 2
 const model = new PolynomialRegressor(degree)
@@ -7,9 +11,9 @@ const model = new PolynomialRegressor(degree)
 // Convert dT to T cold
 const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
 
-const getTh = (function () {
+const getTh = function (fname) {
     // Get data from the Peltier's Qc=f(dT) chart
-    const source = load("./qcdt.json").data.map(convert)
+    const source = load(fname).data.map(convert)
 
     return function (q, tc, current) {
         const data = source
@@ -19,11 +23,11 @@ const getTh = (function () {
         const [[ th ]] = model.predict([[tc, q, current]])
         return th
     }
-})()
+}
 
-const getTc = (function () {
+const getTc = function (fname) {
     // Get data from the Peltier's Qc=f(dT) chart
-    const source = load("./qcdt.json").data.map(convert)
+    const source = load(fname).data.map(convert)
 
     return function (q, th, current) { 
         const data = source
@@ -33,11 +37,11 @@ const getTc = (function () {
         const [[ tc ]] = model.predict([[th, q, current]])
         return tc
     }
-})()
+}
 
-const getQc = (function () {
+const getQc = function (fname) {
     // Get data from the Peltier's Qc=f(dT) chart
-    const source = load("./qcdt.json").data.map(convert)
+    const source = load(fname).data.map(convert)
 
     return function (tc, th, current) { 
         const data = source
@@ -47,11 +51,11 @@ const getQc = (function () {
         const [[ q ]] = model.predict([[tc, th, current]])
         return q 
     }
-})()
+}
 
-const getQh = (function () {
+const getQh = function (fname) {
     // Get data from the Peltier's Qh=f(dT) chart
-    const source = load("./qhdt.json").data.map(convert)
+    const source = load(fname).data.map(convert)
 
     return function (tc, th, current) {
         const data = source
@@ -61,7 +65,15 @@ const getQh = (function () {
         const [[ q ]] = model.predict([[tc, th, current]])
         return q 
     }
-})()
+}
 
-export { getQc, getQh, getTc, getTh }
+const peltier = [{
+    getQc: getQc(join(dir, "ET-190-1010-1212/qcdt.json")),
+    getQh: getQh(join(dir, "ET-190-1010-1212/qhdt.json")),
+    getTc: getTc(join(dir, "ET-190-1010-1212/qcdt.json")),
+    getTh: getTh(join(dir, "ET-190-1010-1212/qcdt.json")),
+    qcdt: load(join(dir, "ET-190-1010-1212/qcdt.json")).data.map(convert),
+    qhdt: load(join(dir, "ET-190-1010-1212/qhdt.json")).data.map(convert)
+}]
 
+export default peltier

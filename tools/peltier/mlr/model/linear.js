@@ -6,7 +6,7 @@ const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
 
 const getTh = (function () {
     // Get data from the Peltier's Qc=f(dT) chart
-    const source = load("./qcdt.json").data.map(convert)
+    const source = load("./model/qcdt.json").data.map(convert)
    
     return function (q, tc, current) {
         const data = source.filter(([tc, q, th, i]) => i == current)
@@ -23,7 +23,7 @@ const getTh = (function () {
 
 const getTc = (function () {
     // Get data from the Peltier's Qc=f(dT) chart
-    const source = load("./qcdt.json").data.map(convert)
+    const source = load("./model/qcdt.json").data.map(convert)
 
     return function (q, th, current) { 
         const data = source.filter(([tc, q, th, i]) => i == current)
@@ -39,7 +39,7 @@ const getTc = (function () {
 
 const getQc = (function () {
     // Get data from the Peltier's Qc=f(dT) chart
-    const source = load("./qcdt.json").data.map(convert)
+    const source = load("./model/qcdt.json").data.map(convert)
 
     return function (tc, th, current) { 
         const data = source.filter(([tc, q, th, i]) => i == current)
@@ -55,7 +55,7 @@ const getQc = (function () {
 
 const getQh = (function () {
     // Get data from the Peltier's Qh=f(dT) chart
-    const source = load("./qhdt.json").data.map(convert)
+    const source = load("./model/qhdt.json").data.map(convert)
 
     return function (tc, th, current) {
         const data = source.filter(([tc, q, th, i]) => i == current)

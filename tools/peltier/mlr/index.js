@@ -1,4 +1,5 @@
-import { getQc, getQh, getTc, getTh } from "./model.poly.js"
+import model from "./model/polynomial.js"
+const [{ getQc, getQh, getTc, getTh }] = model
 
 // Config
 const config = {
@@ -7,9 +8,9 @@ const config = {
 }
 
 // The currents from the charts
-//const currents = [0.7, 1.4, 2.1]
-const currents = []
-for (let i=0.7; i<=2.1; i+=0.1) { currents.push(i) }
+const currents = [0.7, 1.4, 2.1]
+//const currents = []
+//for (let i=0.7; i<=2.1; i+=0.5) { currents.push(i) }
 const stages = [] 
 
 const initStages = () => {

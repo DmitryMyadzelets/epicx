@@ -1,16 +1,16 @@
-import { getQc, getQh, getTc, getTh } from "../model.js"
+import { getQc, getQh, getTc, getTh } from "../model/linear.js"
 // getQc uses QcdT chart
 // getQh uses QhdT chart
 // getTc uses QcdT chart
 // getTh uses QcdT chart
-import load from "../load.js"
+import load from "../model/load.js"
 
-console.log("\nTest for the Linear Regression Model \"model.js\"\n")
+console.log("\nTest for the Linear Regression Model \"model/linear.js\"\n")
 
  // Convert dT to T cold
 const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
-const qcdt = load("./qcdt.json").data.map(convert)
-const qhdt = load("./qhdt.json").data.map(convert)
+const qcdt = load("./model/qcdt.json").data.map(convert)
+const qhdt = load("./model/qhdt.json").data.map(convert)
 
 console.log("Mean Square Error (MSE):")
 const mse = arr => arr

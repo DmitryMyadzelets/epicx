@@ -1,16 +1,8 @@
-import { getQc, getQh, getTc, getTh } from "../model.poly.js"
-// getQc uses QcdT chart
-// getQh uses QhdT chart
-// getTc uses QcdT chart
-// getTh uses QcdT chart
-import load from "../load.js"
+import model from "../model/polynomial.js"
 
-console.log("\nTest for the Polynomial Regression Model \"model.poly.js\"\n")
+const [{ getQc, getQh, getTc, getTh, qcdt, qhdt }] = model 
 
- // Convert dT to T cold
-const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
-const qcdt = load("./qcdt.json").data.map(convert)
-const qhdt = load("./qhdt.json").data.map(convert)
+console.log("\nTest for the Polynomial Regression Model \"model/polynomial.js\"\n")
 
 console.log("Mean Square Error (MSE):")
 const mse = arr => arr

@@ -69,5 +69,20 @@ const getQh = (function () {
     }
 })()
 
-export { getQc, getQh, getTc, getTh }
+const getTcfromQh = (function () {
+    // Get data from the Peltier's Qh=f(dT) chart
+    const source = load("./model/qhdt.json").data.map(convert)
+
+    return function (qh, th, current) {
+        const data = source.filter(([tc, q, th, i]) => i == current)
+        const x = data.map(([tc, q, th, i]) => [q, th]) // Inputs
+        const y = data.map(([tc, q, th, i]) => [tc]) // Outputs
+        const mlr = new MLR(x, y) // Learn
+        const [ tc ] = mlr.predict([qh, th, current])
+        return tc 
+    }
+})()
+
+
+export { getQc, getQh, getTc, getTh, getTcfromQh }
 

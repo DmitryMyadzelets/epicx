@@ -1,4 +1,4 @@
-import { getQc, getQh, getTc, getTh } from "../model/linear.js"
+import { getQc, getQh, getTc, getTh, getTcfromQh } from "../model/linear.js"
 // getQc uses QcdT chart
 // getQh uses QhdT chart
 // getTc uses QcdT chart
@@ -32,6 +32,9 @@ console.log("getQc, W:",
 
 console.log("getQh, W:",
     mse(qhdt.map(([tc, qh, th, i]) => [getQh(tc, th, i), qh]))
+)
+console.log("getTc, C:",
+    mse(qhdt.map(([tc, qh, th, i]) => [getTcfromQh(qh, th, i), tc]))
 )
 
 console.log("Mean Absolute Error (MAE):")

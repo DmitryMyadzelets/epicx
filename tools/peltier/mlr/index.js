@@ -1,6 +1,6 @@
 import model from "./model/polynomial.js"
 
-const [{ getQc, getQh, getTc, getTh }] = model
+const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
@@ -9,9 +9,9 @@ const config = {
 }
 
 // The currents from the charts
-const currents = [0.7, 1.4, 2.1]
-//const currents = []
-//for (let i=0.7; i<=2.1; i+=0.5) { currents.push(i) }
+//const currents = [0.7, 1.4, 2.1]
+const currents = []
+for (let i=0.7; i<=2.1; i+=0.5) { currents.push(i) }
 const stages = [] 
 
 const initStages = () => {
@@ -19,13 +19,17 @@ const initStages = () => {
     stages.push({
         qc: 0,
         tc: -60,
-        current: 1.4,
-        modules: 4
+        current: 0.7,
+        modules: 1
     })
     stages.push({
-        th: 33,
+        current: 1.4,
+        modules: 3
+    })
+    stages.push({
+        th: 4.9,
         current: 2.1,
-        modules: 8
+        modules: 9
     })
 }
 
@@ -48,21 +52,36 @@ const getP = stages => stages.reduce(power, 0)
 // Solves thermal balance for the stages
 function balance () {
     // Use .sort to access two stages at once
+    const first = stages[0]
+    const last = stages[stages.length -1]
     // Going from cold stage (a) to hot stage (b)
     stages.sort((b, a) => {
-        a.th = getTh(a.qc / a.modules, a.tc, a.current)
-        a.qh = getQh(a.tc, a.th, a.current) * a.modules
+        // Interstage parameters
+        a.th = qcdt.getTh(a.qc / a.modules, a.tc, a.current)
+        a.qh = qhdt.getQh(a.tc, a.th, a.current) * a.modules
         b.qc = a.qh
-        b.tc = a.th -= config.dt
+        b.tc = a.th - config.dt
+        if (b == last) {
+            // b.th is an enviroment temperature set by you
+            // otherwise
+            b.th = qcdt.getTh(b.qc / b.modules, b.tc, b.current)
+            b.qh = qhdt.getQh(b.tc, b.th, b.current) * b.modules
+        }
     })
+    console.log("forward", stages)
+    stages
     .sort(ignore => -1) // flip the array
-    // Going backward from hot stage (b) go cold stage (a)
+    // Going backward from hot stage (b) to cold stage (a)
     .sort((a, b) => {
-        b.tc = getTc(b.qc / b.modules, b.th, b.current)
-        b.qh = getQh(b.tc, b.th, b.current) * b.modules
+        // Interstage parameters
+        b.tc = qhdt.getTc(b.qh / b.modules, b.th, b.current)
+        b.qc = qcdt.getQc(b.tc, b.th, b.current)
+        a.qh = b.qc
         a.th = b.tc + config.dt
-        a.qc = getQc(a.tc, a.th, a.current) * a.modules
-        a.qh = getQh(a.tc, a.th, a.current) * a.modules
+        if (a == first) {
+            a.tc = qhdt.getTc(a.qh / a.modules, a.th, a.current)
+            a.qc = qcdt.getQc(a.tc, a.th, a.current) * a.modules
+        }
       })
     .sort(ignore => -1) // flip the array
 }
@@ -72,30 +91,36 @@ balance()
 console.log(stages)
 console.log("Qc/module, W:", getQcpm(stages))
 console.log("P total, W:", getP(stages))
+throw ":)"
 
 const results = []
 
 ;(() => {
     currents.forEach(i => {
         currents.forEach(j => {
-            for (let n = 1; n <= config.maxModules; n++) {
-                for (let m = 1; m <= config.maxModules - n; m++) {
-                    initStages()
-                    stages[0].modules = n
-                    stages[1].modules = m
-                    stages[0].current = i
-                    stages[1].current = j
-                    balance()
-                    if (stages.some(broken)) { continue }
-                    results.push(stages.map(o => Object.assign({}, o)))
+            currents.forEach(k => {
+                for (let n = 1; n <= config.maxModules; n++) {
+                    for (let m = 1; m <= config.maxModules - n; m++) {
+                        for (let p = 1; p <= config.maxModules - m; p++) {
+                            initStages()
+                            stages[0].modules = n
+                            stages[1].modules = m
+                            stages[2].modules = p
+                            stages[0].current = i
+                            stages[1].current = j
+                            stages[2].current = k
+                            balance()
+                            if (stages.some(broken)) { continue }
+                            results.push(stages.map(o => Object.assign({}, o)))
+                        }
+                    }
                 }
-            }
+            })
         })
     })
 })()
 
 ;(() => {
-   
     const report = results
         //.filter(arr => arr[0].modules == 4)
         //.filter(arr => arr[1].modules == 8)

@@ -5,17 +5,14 @@ import load from "./load.js"
 
 const dir = dirname(fileURLToPath(import.meta.url))
 
-const degree = 2
-const model = new PolynomialRegressor(degree)
-
 // Convert dT to T cold
 const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
 
 // Get models from the Peltier's Qc=f(dT) chart 
-const qcdt = function (fname) {
+const qcdt = function (fname ) {
     const data = load(fname).data.map(convert)
     
-    const getQc = function () {
+    const getQc = function (degree) {
         const x = data.map(([tc, q, th, i]) => [tc, th, i]) // Inputs
         const y = data.map(([tc, q, th, i]) => [q]) // Outputs
         const model = new PolynomialRegressor(degree)
@@ -27,7 +24,7 @@ const qcdt = function (fname) {
         }
     }
 
-    const getTc = function () {
+    const getTc = function (degree) {
         const x = data.map(([tc, q, th, i]) => [th, q, i]) // Inputs
         const y = data.map(([tc, q, th, i]) => [tc]) // Outputs
         const model = new PolynomialRegressor(degree)
@@ -39,7 +36,7 @@ const qcdt = function (fname) {
         }
     }
 
-    const getTh = function () {
+    const getTh = function (degree) {
         const x = data.map(([tc, q, th, i]) => [tc, q, i]) // Inputs
         const y = data.map(([tc, q, th, i]) => [th])  // Output
         const model = new PolynomialRegressor(degree)
@@ -52,9 +49,9 @@ const qcdt = function (fname) {
     }
 
     return {
-        getQc: getQc(),
-        getTc: getTc(),
-        getTh: getTh(),
+        getQc: getQc(2),
+        getTc: getTc(2),
+        getTh: getTh(2),
         data
     }
 }
@@ -66,7 +63,7 @@ const qhdt = function (fname) {
     data = data.map(convert)
     //console.log(data)
 
-    const getTc = function () {
+    const getTc = function (degree) {
         const x = data.map(([tc, q, th, i]) => [q, th, i]) // Inputs
         const y = data.map(([tc, q, th, i]) => [tc]) // Outputs
         const model = new PolynomialRegressor(degree)
@@ -78,7 +75,7 @@ const qhdt = function (fname) {
         }
     }
 
-    const getQh = function () {
+    const getQh = function (degree) {
         const x = data.map(([tc, q, th, i]) => [tc, th, i])
         const y = data.map(([tc, q, th, i]) => [q])
         const model = new PolynomialRegressor(degree)
@@ -91,8 +88,8 @@ const qhdt = function (fname) {
     }
 
     return {
-        getTc: getTc(),
-        getQh: getQh(),
+        getTc: getTc(3),
+        getQh: getQh(3),
         data
     }
 }

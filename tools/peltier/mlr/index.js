@@ -11,7 +11,7 @@ const config = {
 // The currents from the charts
 //const currents = [0.7, 1.4, 2.1]
 const currents = []
-for (let i=0.7; i<=2.1; i+=0.5) { currents.push(i) }
+for (let i=0.5; i<=2.1; i+=0.1) { currents.push(i) }
 const stages = [] 
 
 const initStages = () => {
@@ -20,16 +20,16 @@ const initStages = () => {
         qc: 0,
         tc: -60,
         current: 0.7,
-        modules: 1
+        modules: 2
     })
     stages.push({
         current: 1.4,
-        modules: 3
+        modules: 2
     })
     stages.push({
         th: 4.9,
-        current: 2.1,
-        modules: 9
+        current: 2.8,
+        modules: 2
     })
 }
 
@@ -68,14 +68,14 @@ function balance () {
             b.qh = qhdt.getQh(b.tc, b.th, b.current) * b.modules
         }
     })
-    console.log("forward", stages)
+    console.log(stages)
     stages
     .sort(ignore => -1) // flip the array
     // Going backward from hot stage (b) to cold stage (a)
     .sort((a, b) => {
         // Interstage parameters
         b.tc = qhdt.getTc(b.qh / b.modules, b.th, b.current)
-        b.qc = qcdt.getQc(b.tc, b.th, b.current)
+        b.qc = qcdt.getQc(b.tc, b.th, b.current) * b.modules
         a.qh = b.qc
         a.th = b.tc + config.dt
         if (a == first) {
@@ -91,7 +91,8 @@ balance()
 console.log(stages)
 console.log("Qc/module, W:", getQcpm(stages))
 console.log("P total, W:", getP(stages))
-throw ":)"
+
+throw "stop"
 
 const results = []
 
@@ -99,17 +100,20 @@ const results = []
     currents.forEach(i => {
         currents.forEach(j => {
             currents.forEach(k => {
-                for (let n = 1; n <= config.maxModules; n++) {
-                    for (let m = 1; m <= config.maxModules - n; m++) {
-                        for (let p = 1; p <= config.maxModules - m; p++) {
+                for (let n = 2; n <= config.maxModules; n+=2) {
+                    for (let m = 2; m <= config.maxModules - n; m+=2) {
+                        for (let p = 2; p <= config.maxModules - n - m; p+=2) {
                             initStages()
+
                             stages[0].modules = n
                             stages[1].modules = m
                             stages[2].modules = p
                             stages[0].current = i
                             stages[1].current = j
                             stages[2].current = k
+
                             balance()
+
                             if (stages.some(broken)) { continue }
                             results.push(stages.map(o => Object.assign({}, o)))
                         }

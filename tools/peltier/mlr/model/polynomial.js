@@ -11,69 +11,95 @@ const model = new PolynomialRegressor(degree)
 // Convert dT to T cold
 const convert = ([dt, q, th, i]) => [th-dt, q, th, i]
 
-const getTh = function (fname) {
-    // Get data from the Peltier's Qc=f(dT) chart
-    const source = load(fname).data.map(convert)
-
-    return function (q, tc, current) {
-        const data = source
-        const x = data.map(([tc, q, th, i]) => [tc, q, i]) // Inputs
-        const y = data.map(([tc, q, th, i]) => [th])  // Output
+// Get models from the Peltier's Qc=f(dT) chart 
+const qcdt = function (fname) {
+    const data = load(fname).data.map(convert)
+    
+    const getQc = function () {
+        const x = data.map(([tc, q, th, i]) => [tc, th, i]) // Inputs
+        const y = data.map(([tc, q, th, i]) => [q]) // Outputs
+        const model = new PolynomialRegressor(degree)
         model.fit(x, y) // Learn
-        const [[ th ]] = model.predict([[tc, q, current]])
-        return th
+
+        return function (tc, th, current) { 
+            const [[ q ]] = model.predict([[tc, th, current]])
+            return q 
+        }
     }
-}
 
-const getTc = function (fname) {
-    // Get data from the Peltier's Qc=f(dT) chart
-    const source = load(fname).data.map(convert)
-
-    return function (q, th, current) { 
-        const data = source
+    const getTc = function () {
         const x = data.map(([tc, q, th, i]) => [th, q, i]) // Inputs
         const y = data.map(([tc, q, th, i]) => [tc]) // Outputs
+        const model = new PolynomialRegressor(degree)
         model.fit(x, y) // Learn
-        const [[ tc ]] = model.predict([[th, q, current]])
-        return tc
+
+        return function (q, th, current) { 
+            const [[ tc ]] = model.predict([[th, q, current]])
+            return tc
+        }
+    }
+
+    const getTh = function () {
+        const x = data.map(([tc, q, th, i]) => [tc, q, i]) // Inputs
+        const y = data.map(([tc, q, th, i]) => [th])  // Output
+        const model = new PolynomialRegressor(degree)
+        model.fit(x, y) // Learn
+
+        return function (q, tc, current) {
+            const [[ th ]] = model.predict([[tc, q, current]])
+            return th
+        }
+    }
+
+    return {
+        getQc: getQc(),
+        getTc: getTc(),
+        getTh: getTh(),
+        data
     }
 }
 
-const getQc = function (fname) {
-    // Get data from the Peltier's Qc=f(dT) chart
-    const source = load(fname).data.map(convert)
+// Get models from the Peltier's Qh=f(dT) chart 
+const qhdt = function (fname) {
+    let data = load(fname).data
+    //console.log(JSON.stringify(data))
+    data = data.map(convert)
+    //console.log(data)
 
-    return function (tc, th, current) { 
-        const data = source
-        const x = data.map(([tc, q, th, i]) => [tc, th, i]) // Inputs
-        const y = data.map(([tc, q, th, i]) => [q]) // Outputs
+    const getTc = function () {
+        const x = data.map(([tc, q, th, i]) => [q, th, i]) // Inputs
+        const y = data.map(([tc, q, th, i]) => [tc]) // Outputs
+        const model = new PolynomialRegressor(degree)
         model.fit(x, y) // Learn
-        const [[ q ]] = model.predict([[tc, th, current]])
-        return q 
+
+        return function (qh, th, current) {
+            const [[ tc ]] = model.predict([[qh, th, current]])
+            return tc 
+        }
     }
-}
 
-const getQh = function (fname) {
-    // Get data from the Peltier's Qh=f(dT) chart
-    const source = load(fname).data.map(convert)
+    const getQh = function () {
+        const x = data.map(([tc, q, th, i]) => [tc, th, i])
+        const y = data.map(([tc, q, th, i]) => [q])
+        const model = new PolynomialRegressor(degree)
+        model.fit(x, y)
 
-    return function (tc, th, current) {
-        const data = source
-        const x = data.map(([tc, q, th, i]) => [tc, th, i]) // Inputs
-        const y = data.map(([tc, q, th, i]) => [q]) // Outputs
-        model.fit(x, y) // Learn
-        const [[ q ]] = model.predict([[tc, th, current]])
-        return q 
+        return function (tc, th, current) {
+            const [[ q ]] = model.predict([[tc, th, current]])
+            return q 
+        }
+    }
+
+    return {
+        getTc: getTc(),
+        getQh: getQh(),
+        data
     }
 }
 
 const peltier = [{
-    getQc: getQc(join(dir, "ET-190-1010-1212/qcdt.json")),
-    getQh: getQh(join(dir, "ET-190-1010-1212/qhdt.json")),
-    getTc: getTc(join(dir, "ET-190-1010-1212/qcdt.json")),
-    getTh: getTh(join(dir, "ET-190-1010-1212/qcdt.json")),
-    qcdt: load(join(dir, "ET-190-1010-1212/qcdt.json")).data.map(convert),
-    qhdt: load(join(dir, "ET-190-1010-1212/qhdt.json")).data.map(convert)
+    qcdt: qcdt(join(dir, "ET-190-1010-1212/qcdt.json")),
+    qhdt: qhdt(join(dir, "ET-190-1010-1212/qhdt.json"))
 }]
 
 export default peltier

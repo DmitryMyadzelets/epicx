@@ -88,8 +88,8 @@ const qhdt = function (fname) {
     }
 
     return {
-        getTc: getTc(3),
-        getQh: getQh(3),
+        getTc: getTc(2),
+        getQh: getQh(2),
         data
     }
 }

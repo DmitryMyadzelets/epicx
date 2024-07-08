@@ -29,5 +29,14 @@ Linear regression models:
 | Th=f(Qc, Tc) | 2.21 &deg;C | 1.11 &deg;C | 0.99 |
 | Qc=f(Tc, Th) | 0.02 W | 0.11 W | 0.99 |
 | Qh=f(Tc, Th) | 1.75 W | 0.67 W | 0.99 |
-| Tc=f(Qh, Th) | 59 &deg;C | - | - |
+| Tc=f(Qh, Th) | 59.333 &deg;C | - | - |
+
+Polynomial (quadratic) regression models:
+| Model | MSE | MAE | R^2 |
+| :-- | :-- | :-- | :-- |
+| Tc=f(Qc, Th) | 1.55 &deg;C | 0.99 &deg;C | 0.99 |
+| Th=f(Qc, Tc) | 1.32 &deg;C | 0.94 &deg;C | 0.99 |
+| Qc=f(Tc, Th) | 0.02 W | 0.11 W | 0.99 |
+| Qh=f(Tc, Th) | 0.05 W | 0.18 W | 0.99 |
+| Tc=f(Qh, Th) | 2.66 &deg;C | 1.30 &deg;C | 0.99 |
 

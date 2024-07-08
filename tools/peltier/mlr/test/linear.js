@@ -33,7 +33,7 @@ console.log("getQc, W:",
 console.log("getQh, W:",
     mse(qhdt.map(([tc, qh, th, i]) => [getQh(tc, th, i), qh]))
 )
-console.log("getTc, C:",
+console.log("Tc=f(Qh, Tc), C:",
     mse(qhdt.map(([tc, qh, th, i]) => [getTcfromQh(qh, th, i), tc]))
 )
 
@@ -56,6 +56,10 @@ console.log("getQc, W:",
 
 console.log("getQh, W:",
     mae(qhdt.map(([tc, qh, th, i]) => [getQh(tc, th, i), qh]))
+)
+
+console.log("Tc=f(Qh, Tc), C:",
+    mae(qhdt.map(([tc, qh, th, i]) => [getTcfromQh(qh, th, i), tc]))
 )
 
 console.log("R squared:")
@@ -88,6 +92,10 @@ console.log("getQc, W:",
 
 console.log("getQh, W:",
     rsq(qhdt.map(([tc, qh, th, i]) => [getQh(tc, th, i), qh]))
+)
+
+console.log("Tc=f(Qh, Tc), C:",
+    rsq(qhdt.map(([tc, qh, th, i]) => [getTcfromQh(qh, th, i), tc]))
 )
 
 console.log("Experimental data:")

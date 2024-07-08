@@ -34,9 +34,32 @@ Linear regression models:
 Polynomial (quadratic) regression models:
 | Model | MSE | MAE | R^2 |
 | :-- | :-- | :-- | :-- |
-| Tc=f(Qc, Th) | 1.55 &deg;C | 0.99 &deg;C | 0.99 |
-| Th=f(Qc, Tc) | 1.32 &deg;C | 0.94 &deg;C | 0.99 |
-| Qc=f(Tc, Th) | 0.02 W | 0.11 W | 0.99 |
-| Qh=f(Tc, Th) | 0.05 W | 0.18 W | 0.99 |
-| Tc=f(Qh, Th) | 2.66 &deg;C | 1.30 &deg;C | 0.99 |
+| Tc=f(Qc, Th, I) | 1.55 &deg;C | 0.99 &deg;C | 0.99 |
+| Th=f(Qc, Tc, I) | 1.32 &deg;C | 0.94 &deg;C | 0.99 |
+| Qc=f(Tc, Th, I) | 0.02 W | 0.11 W | 0.99 |
+| Qh=f(Tc, Th, I) | 0.05 W | 0.18 W | 0.99 |
+| Tc=f(Qh, Th, I) | 2.66 &deg;C | 1.30 &deg;C | 0.99 |
+
+The R^2 metric (1 is considerd the best) - coefficient of determination, is very high, but it just confirms that the depended variables can be predicted from the independed ones. In our case it's logical cince our data are from the chart which describe phisical properties of the Peltier module. 
+
+The MSE metric is sensible for the spikes in the data. It helped us find typos done during the extrations numerical values from the charts. It also shows that Tc=f(Qh, Th) linear regression model has **low quality and cant't be used**.
+
+The MAE metric show average errors we would get during computation.
+
+Note, that the linear regression models are built for the **fixed current** only. If the current put as an input parameter the models would have low quality metrics (not shown here, just trust us). If we need to use the current at the input the **polynomial models have acceptable quality** metrics. However, the models should be used as little as possible in itarative computation in order to reduce **error propagation**, as shown below.
+
+Assume we have 3 stages of PE-16 modules. We fix the (Qc, Tc) values at the coldest stage (number 1), calcuate all the parameters for the stages forward, and, and than backward. If the models are perfect we should get the same parameters on the input. But we wouldn't, see the the table:
+
+| Stage | I | Qc | Tc | Th | Qh |
+| --: | --: | --: |  --: |  --: | --: |
+| 1 | 0.7 | 0 | -60 | -43 | 8.3 |
+| 2 | 1.4 | 8.3 | -43 | -18 | 25 |
+| 3 | 2.8 | 25 | -18 | -22 | 88 |
+| 3 | 2.8 | 29 | -10 | -22 | 88 |
+| 2 | 1.4 | 12 | -30 | -10 | 29 |
+| 1 | 0.7 | 3.8 | -45 | -30 | 12 |
+
+So, we've got (3.8W, -45&deg;C) at the first stage instead of (0W, -60&deg;C) after 16 computations (4 interstage parameters for 2 interstages forward, and the 4x2 backward). We predicted the parameters from the predictions, so the error propagated and accumulated quite significantly.
+
+One of the reasons the errors are high even if the models have the good metrics is that we use temperatures (Tc and Th) which are far away from the numbers the models are trained from. The Th ranges from 27 to 75 &deg;C in the training data while we use e.g -43&deg;C . From this point of view a **physical model of PE-16 my be more predictable**.
 

@@ -27,9 +27,9 @@ Linear regression models:
 | :-- | :-- | :-- | :-- |
 | Tc=f(Qc, Th) | 0.85 &deg;C | 0.72 &deg;C | 0.99 |
 | Th=f(Qc, Tc) | 2.21 &deg;C | 1.11 &deg;C | 0.99 |
-| Qc=f(Tc, Th) | 0.02 W | 0.11 W | 0.99 |
-| Qh=f(Tc, Th) | 1.75 W | 0.67 W | 0.99 |
-| Tc=f(Qh, Th) | 59.3 &deg;C | 4.30 &deg;C | 0.97 |
+| Qc=f(Tc, Th) | 0.02 W | 0.12 W | 0.99 |
+| Qh=f(Tc, Th) | 0.06 W | 0.19 W | 0.99 |
+| Tc=f(Qh, Th) | 3.53 &deg;C | 1.46 &deg;C | 0.99 |
 
 Polynomial (quadratic) regression models:
 | Model | MSE | MAE | R^2 |
@@ -42,7 +42,7 @@ Polynomial (quadratic) regression models:
 
 The R^2 metric (1 is considerd the best) - coefficient of determination, is very high, but it just confirms that the depended variables can be predicted from the independed ones. In our case it's logical cince our data are from the chart which describe phisical properties of the Peltier module. 
 
-The MSE metric is sensible for the spikes in the data. It helped us find typos done during the extrations numerical values from the charts. It also shows that Tc=f(Qh, Th) linear regression model has **low quality and cant't be used**.
+The MSE metric is sensible for the spikes in the data. It helped us find typos done during the extrations numerical values from the charts.
 
 The MAE metric show average errors we would get during computation.
 

@@ -23,9 +23,8 @@ A general view of the cell cooler may look as follows:
 Despite the fact the numerical models we developed for the PE-16 module are in line with the experimintal results, we need to evaluate them using common apprache. The best evaluation metrics for regression models are Mean Squre Error (MSE), Mean Absolute Error (MAE) and R squared. These metrics applied for our models are following:
 
 Linear regression models:
-
 | Model | MSE | MAE | R^2 |
-| :-- | :-- | :-- | --: |
+| :-- | :-- | :-- | :-- |
 | Tc=f(Qc, Th) | 0.85 &deg;C | 0.72 &deg;C | 0.99 |
 | Th=f(Qc, Tc) | 2.21 &deg;C | 1.11 &deg;C | 0.99 |
 | Qc=f(Tc, Th) | 0.02 W | 0.11 W | 0.99 |

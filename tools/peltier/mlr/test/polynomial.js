@@ -94,4 +94,4 @@ console.log("qhdt.getTc, C:",
 
 
 console.log("Experimental data:")
-console.log("Th -15.9, Tc -62.2, I 2.1A, Qc", qcdt.getQc(-62.2, -15.9, 2.1))
+console.log("Th -15.9, Tc -62.2, I 2.1A, Qc (expected 3.39W)" , qcdt.getQc(-62.2, -15.9, 2.1))

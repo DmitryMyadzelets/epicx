@@ -8,17 +8,17 @@ Parameters of CO2:
 * Liquefaction heat: 16.4 kJ/mol - [source](https://www.researchgate.net/publication/349366110_Kerogen_nanoscale_structure_and_CO2_adsorption_in_shale_micropores) - Confirmation required!
 * Specific heat capacity (isobaric): 37.35 J/mol K - [source](https://www.engineeringtoolbox.com/CO2-carbon-dioxide-properties-d_2017.html)
 
-Power, required to change temperature of 1 ml of CO2 from 25 &deg;C to -40 &deg;C:
+Energy, required to change temperature of 1 ml of CO2 from 25 &deg;C to -40 &deg;C:
 ```
 25017 * 37.35 * (25 + 40) / 1e6 = 0.735 kJ/ml = 0.204 Wh/ml
 ```
 
-Power, required to liquefy 1 ml of CO2:
+Energy, required to liquefy 1 ml of CO2:
 ```
 25017 * 16.4 / 1e6 = 0.410279 kJ/ml = 0.114 Wh/ml
 ```
 
-Total power, required to cool down and liqufiy 1 ml of CO2:
+Total energy, required to cool down and liqufiy 1 ml of CO2:
 ```
 0.204 + 0.114 = 0.318 Wh/ml
 ```

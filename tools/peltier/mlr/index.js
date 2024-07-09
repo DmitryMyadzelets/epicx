@@ -1,6 +1,5 @@
 //gitimport model from "./model/polynomial.js"
 import model from "./model/linear.js"
-import permute from "./model/permute.js"
 
 const [{ qcdt, qhdt }] = model
 

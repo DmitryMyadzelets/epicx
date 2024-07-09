@@ -24,7 +24,7 @@ Total power, required to cool down and liqufiy 1 ml of CO2:
 ```
 
 ### What Peltier cell cooler provides 
-Parameters of the cell cooler based on 2-stage Peltiers and usage of tap water:
+Parameters of the cell cooler based on 2-stage configuration with PE-16 modules, and usage of tap water:
 | Stage | Qc, W | Tc, &deg;C | Th, &deg;C | Modules | I, A | P, W |
 | --: | --: | --: | --: | --: | --: | --: |
 | 1 | 8 | -50 | -30.17 | 4 | 0.7 | 7.94 |

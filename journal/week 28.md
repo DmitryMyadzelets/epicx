@@ -32,3 +32,5 @@ Parameters of the cell cooler based on 2-stage configuration with PE-16 modules,
 
 Assuming the cell has no heat loss, it would require ~3 minutes to liqufy 1 ml of CO2.
 
+
+<img alt="Some cell cooler variants" src="/img/2024-07-09 - Cells.png">

@@ -8,9 +8,12 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
+    ambientT: 9.4, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
     maxModules: 4 // At one stage
 }
+
+console.log("Config:", config)
 
 // The currents from the charts
 const currents = [0.7, 1.4, 2.1]
@@ -22,7 +25,7 @@ const initStages = () => {
     stages.length = 0
     stages.push({
         qc: 0,
-        tc: -60,
+        tc: -50,
         current: 0.7,
         modules: 4
     })
@@ -55,14 +58,15 @@ const getQcpm = stages => stages[0].qc / stages.reduce(modules, 0)
 const power = (sum, { qc, qh }) => sum + qh - qc
 const getP = stages => stages.reduce(power, 0)
   
-function balance2 () {
-    const first = stages[0]
+// Calcuates values of the stages in forward direction
+function forward (stages) {
     const last = stages[stages.length -1]
     // Going from cold stage (a) to hot stage (b)
     stages.sort((b, a) => {
         // Interstage parameters
         a.th = qcdt.getTh(a.qc / a.modules, a.tc, a.current)
         a.qh = qhdt.getQh(a.tc, a.th, a.current) * a.modules
+        a.p = a.qh - a.qc
         b.qc = a.qh
         b.tc = a.th - config.dt
         if (b == last) {
@@ -70,39 +74,18 @@ function balance2 () {
             // otherwise
             b.th = qcdt.getTh(b.qc / b.modules, b.tc, b.current)
             b.qh = qhdt.getQh(b.tc, b.th, b.current) * b.modules
+            b.p = b.qh - b.qc
         }
     })
 }
 
-// Solves thermal balance for the stages
-function balance () {
-    // Use .sort to access two stages at once
+// Calcuates values of the stages in backward direction
+function backward (stages) {
     const first = stages[0]
-    const last = stages[stages.length -1]
-    // Going from cold stage (a) to hot stage (b)
-    stages.sort((b, a) => {
-        // Interstage parameters
-        a.th = qcdt.getTh(a.qc / a.modules, a.tc, a.current)
-        a.qh = qhdt.getQh(a.tc, a.th, a.current) * a.modules
-        b.qc = a.qh
-        b.tc = a.th - config.dt
-        if (b == last) {
-            // b.th is an enviroment temperature set by you
-            // otherwise
-            //b.th = qcdt.getTh(b.qc / b.modules, b.tc, b.current)
-            b.qh = qhdt.getQh(b.tc, b.th, b.current) * b.modules
-        }
-    })
-
-    console.log(stages)
-
-    stages
-    .sort(ignore => -1) // flip the array
-    // Going backward from hot stage (b) to cold stage (a)
-    .sort((a, b) => {
-        // Interstage parameters
+    stages.sort(ignore => -1) // flip the array
+    // Going from hot stage (b) to cold stage (a)
+    stages.sort((a, b) => {
         b.tc = qhdt.getTc(b.qh / b.modules, b.th, b.current)
-        // btc [ 56.15412104865468, 4.9, 2.8, 46.694297067197624 
         b.qc = qcdt.getQc(b.tc, b.th, b.current) * b.modules
         a.qh = b.qc
         a.th = b.tc + config.dt
@@ -110,60 +93,62 @@ function balance () {
             a.tc = qhdt.getTc(a.qh / a.modules, a.th, a.current)
             a.qc = qcdt.getQc(a.tc, a.th, a.current) * a.modules
         }
-      })
-    .sort(ignore => -1) // flip the array
+    })
+    stages.sort(ignore => -1) // flip the array
 }
 
 ;(() => {
     const first = stages[0]
     const last = stages[stages.length -1]
-    const targetTh = 33 
 
-    for (balance2(); targetTh < last.th; ) {
+    for (forward(stages); config.ambientT < last.th; ) {
         first.qc += 0.1
-        balance2()
+        forward(stages)
     }
-
-    console.log(stages)
 })()
+
+// Show the stages as a table for Markdown
+function markdown (stages) {
+    const sep = ' | '
+    const title = {
+        qc: "Qc, W",
+        tc: "Tc, &deg;C",
+        th: "Th, &deg;C",
+        modules: "Modules",
+        current: "I, A",
+        p: "P, W"
+    }
+    function print(arr) {
+        const str = sep + arr.join(sep) + sep
+        console.log(str.trim())
+    }
+    const keys = Object.keys(title)
+    print(keys.map(key => title[key]))
+    print(keys.map(ignore => "--:"))
+    stages.forEach(stage => {
+        const vals = keys
+            .map(key => stage[key])
+            .map(v => Math.round(v * 100) / 100)
+        print(vals)
+    })
+}
+
+//console.log(stages)
+markdown(stages)
+console.log("Qc/module, W:", getQcpm(stages))
+console.log("P total, W:", getP(stages))
 
 throw ""
 
-balance()
+forward(stages)
+backward(stages)
 console.log(stages)
 console.log("Qc/module, W:", getQcpm(stages))
 console.log("P total, W:", getP(stages))
 
-
 throw ""
 
 const results = []
-;(() => {
-    // Init
-    stages.forEach(stage => stage.modules = 1)
-
-    const last = stages[stages.length]
-
-    for (let that = stages[0]; that !== last;) {
-        stages.sort((b, a) => {
-            if (a == that) {
-                if (a.modules < config.maxModules) {
-                    a.modules += 1
-                } else {
-                    a.modules = 1
-                    that = b
-                }
-            } else {
-                if (b.modules < config.maxModules) {
-                    b.modules += 1
-                } else {
-                    throw ":("
-                }
-            }
-        })
-        console.log(stages.map(stage => stage.modules))
-    }
-})
 
 ;(() => {
     currents.forEach(arr => {
@@ -179,7 +164,8 @@ const results = []
                     //stages[2].modules = p
 //                            stages[2].current = k
 
-                    balance()
+                    forward(stages)
+                    backward(stages)
 
                     //console.log(stages.map(stage => stage.modules))
 

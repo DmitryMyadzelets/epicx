@@ -8,7 +8,7 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
-    ambientT: 9.4, // Temperature at the hottest side
+    ambientT: 33, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
     maxModules: 4 // At one stage
 }
@@ -43,6 +43,8 @@ const initStages = () => {
 }
 
 initStages()
+// Add stage names for reports
+stages.forEach((stage, i) => stage.name = i+1)
 
 // Helper to check if the object is "broken" wrt its numerical values
 function broken (o) {
@@ -111,6 +113,7 @@ function backward (stages) {
 function markdown (stages) {
     const sep = ' | '
     const title = {
+        name: "Stage",
         qc: "Qc, W",
         tc: "Tc, &deg;C",
         th: "Th, &deg;C",

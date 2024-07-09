@@ -1,4 +1,4 @@
-## Week 28 - CO2 needs Power 
+## Week 28 - Energy for CO2
 ### What's required
 Let's calculate the amount of energy we need to operate with CO2.
 
@@ -23,7 +23,7 @@ Total energy, required to cool down and liqufiy 1 ml of CO2:
 0.204 + 0.114 = 0.318 Wh/ml
 ```
 
-### What Peltier cell cooler provides 
+### What the Peltier cooler provides 
 Parameters of the cell cooler based on 2-stage configuration with PE-16 modules, and usage of tap water:
 | Stage | Qc, W | Tc, &deg;C | Th, &deg;C | Modules | I, A | P, W |
 | --: | --: | --: | --: | --: | --: | --: |

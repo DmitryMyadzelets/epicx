@@ -1,4 +1,4 @@
-## Week 27 - Cell Cooler
+## Week 27 - 2-stage Cooler, Model's Quality
 We've build numerical models for the PE-16 modules, and have found an optimal Qc per module performance for the two stages:
 
 Cooling with the chiller. Qc/module = 1.31 W. P total = 197 W.

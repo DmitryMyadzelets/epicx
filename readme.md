@@ -1,7 +1,7 @@
 # EPICX journal
 
-- [Week 28 - CO2 needs Power](<journal/week 28.md>)
-- [Week 27 - Cell cooler](<journal/week 27.md>)
+- [Week 28 - Energy for CO2](<journal/week 28.md>)
+- [Week 27 - 2-stage Cooler, Model's Quality](<journal/week 27.md>)
 - [Week 26 - Thermal design](<journal/week 26.md>)
 - [Week 25 - Freezing Peltier](<journal/week 25.md>)
 - [Week 24 - Charts, heat loss](<journal/week 24.md>)

@@ -20,7 +20,7 @@ A general view of the cell cooler may look as follows:
 <img alt="Cell cooling design" src="/img/2024-07-02 - Cell.png" width=400px>
 
 ### Quality of the modelels for the Peltier
-Despite the fact the numerical models we developed for the PE-16 module are in line with the experimintal results, we need to evaluate them using common apprache. The best evaluation metrics for regression models are Mean Squre Error (MSE), Mean Absolute Error (MAE) and R squared. These metrics applied for our models are following:
+Despite the fact the numerical models we developed for the PE-16 module are in line with the experimintal results, we need to evaluate them using common apprache. The best evaluation metrics for regression models are Mean Square Error (MSE), Mean Absolute Error (MAE) and R squared. These metrics applied for our models are following:
 
 Linear regression models:
 | Model | MSE | MAE | R^2 |

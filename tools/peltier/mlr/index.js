@@ -8,9 +8,9 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
-    ambientT: 33, // Temperature at the hottest side
+    ambientT: 16, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
-    maxModules: 4 // At one stage
+    maxModules: 1 // At one stage
 }
 
 console.log("Config:", config)
@@ -25,9 +25,9 @@ const initStages = () => {
     stages.length = 0
     stages.push({
         qc: 0,
-        tc: -50,
+        tc: -40,
         current: 0.7,
-        modules: 4
+        modules: 1
     })
     /*
     stages.push({
@@ -38,7 +38,7 @@ const initStages = () => {
     stages.push({
         th: 4.9,
         current: 2.1,
-        modules: 4
+        modules: 1
     })
 }
 
@@ -104,7 +104,7 @@ function backward (stages) {
     const last = stages[stages.length -1]
 
     for (forward(stages); config.ambientT < last.th; ) {
-        first.qc += 0.1
+        first.qc += 0.001
         forward(stages)
     }
 })()

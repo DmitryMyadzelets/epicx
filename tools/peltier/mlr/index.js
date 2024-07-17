@@ -69,12 +69,15 @@ function forward (stages) {
         a.th = qcdt.getTh(a.qc / a.modules, a.tc, a.current)
         a.qh = qhdt.getQh(a.tc, a.th, a.current) * a.modules
         a.p = a.qh - a.qc
+        a.dt = a.th - a.tc
         b.qc = a.qh
         b.tc = a.th - config.dt
+
         if (b == last) {
             // b.th is an enviroment temperature set by you
             // otherwise
             b.th = qcdt.getTh(b.qc / b.modules, b.tc, b.current)
+            b.dt = b.th - b.tc
             b.qh = qhdt.getQh(b.tc, b.th, b.current) * b.modules
             b.p = b.qh - b.qc
         }
@@ -117,6 +120,7 @@ function markdown (stages) {
         qc: "Qc, W",
         tc: "Tc, &deg;C",
         th: "Th, &deg;C",
+        dt: "&#916;T, &deg;C",
         modules: "Modules",
         current: "I, A",
         p: "P, W"

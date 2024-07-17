@@ -11,12 +11,14 @@ Limitations:
 
 The results of the experiment are in the table below. Measured values are in bold, other values are calculated. 
 
-| Stage | Qc, W | Tc, &deg;C | Th, &deg;C | Modules | I, A | P, W |
-| --: | --: | --: | --: | --: | --: | --: |
-| 1 | 2.02 | **-58.5** | -41.36 | 1 | **0.7** | 1.74 |
-| 2 | 3.76 | -41.36 | **16** | 1 | 2.1 | 23.24 |
+| Stage | Qc, W | Tc, &deg;C | Th, &deg;C | &#916;T, &deg;C | Modules | I, A | P, W |
+| --: | --: | --: | --: | --: | --: | --: | --: |
+| 1 | 1.93 | **-59.5** | -41.86 | 17.64 | 1 | **0.7** | 1.74 |
+| 2 | 3.67 | -41.86 | **16** | 57.85 | 1 | 2.1 | 23.25 |
 
-Let's assume the Qc=2.02 W is a heat loss we can't avoid. Than with &minus;40 &deg;C...
+The Qc=1.93 W consists from the both a model's error and a heat loss due to heat radiaton and heat transfer via the thermocouple and the plastic screws. 
+
+Let's assume Qc=1.93 W be constant. Than, if we need Tc=&minus;40 &deg;C the Qc=3.58 W according to the model, as shown in the table below. The power gains is 3.58 &minus; 1.93 = 1.65 W.
 
 | Stage | Qc, W | Tc, &deg;C | Th, &deg;C | Modules | I, A | P, W |
 | --: | --: | --: | --: | --: | --: | --: |

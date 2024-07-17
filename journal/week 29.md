@@ -7,7 +7,7 @@ Limitations:
 * The temperature of the chiller is set to 4 &deg;C. It manages to cool the water only down to 10 &deg;C.
 * We use the numerical models with fixed currents. The actual current from the PC supply was 2.3A, not 2.1 as shows the model for the 2nd stage.
 
-<img alt="Two Peltier modules in stack" src="/img/20240716_143453.jpg">
+<img alt="Two Peltier modules in stack" src="/img/20240716_143453.jpg" width=400px>
 
 The results of the experiment are in the table below. Measured values are in bold, other values are calculated. 
 

@@ -18,7 +18,7 @@ The results of the experiment are in the table below. Measured values are in bol
 
 The Qc=1.93 W consists from the both a model's error and a heat loss due to heat radiaton and heat transfer via the thermocouple and the plastic screws. 
 
-Let's assume Qc=1.93 W be constant. Than, if we need Tc=&minus;40 &deg;C the Qc would be 3.58 W according to the model, as shown in the table below. 
+Let's assume Qc=1.93 W be the constant heat loss. Than, if we need Tc=&minus;40 &deg;C the Qc would be 3.58 W according to the model, as shown in the table below. 
 | Stage | Qc, W | Tc, &deg;C | Th, &deg;C | &#916;T, &deg;C | Modules | I, A | P, W |
 | --: | --: | --: | --: | --: | --: | --: | --: |
 | 1 | 3.58 | -40 | -32.07 | 7.93 | 1 | 0.7 | 1.78 |

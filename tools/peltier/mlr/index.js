@@ -25,7 +25,7 @@ const initStages = () => {
     stages.length = 0
     stages.push({
         qc: 0,
-        tc: -40,
+        tc: -59.5,
         current: 0.7,
         modules: 1
     })
@@ -36,8 +36,7 @@ const initStages = () => {
     })
     */
     stages.push({
-        th: 4.9,
-        current: 2.1,
+        current: 2.8,
         modules: 1
     })
 }
@@ -61,6 +60,7 @@ const power = (sum, { qc, qh }) => sum + qh - qc
 const getP = stages => stages.reduce(power, 0)
   
 // Calcuates values of the stages in forward direction
+// You must set the Qc and Tc of the first stage
 function forward (stages) {
     const last = stages[stages.length -1]
     // Going from cold stage (a) to hot stage (b)
@@ -107,6 +107,7 @@ function backward (stages) {
     const last = stages[stages.length -1]
 
     for (forward(stages); config.ambientT < last.th; ) {
+        //first.tc -= 0.001
         first.qc += 0.001
         forward(stages)
     }

@@ -1,5 +1,5 @@
-## Week 29 - 2-step cooling
-This is the **first experiment** with 2-step Peltier cooling. 
+## Week 29 - Testing 2-stage cooling
+This is the **first experiment** with 2-stage Peltier cooling. 
 
 Limitations:
 * In the wacuum camera we have only 4 electrical contacts apart from the integrated thermocouple. The contacts are used to power two Peltier modules. We can monitor only one temperature T cold.

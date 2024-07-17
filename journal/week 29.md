@@ -26,4 +26,4 @@ Let's assume Qc=1.93 W be constant. Than, if we need Tc=&minus;40 &deg;C the Qc 
 
 Thus the usefull Qc = 3.58 &minus; 1.93 = 1.65 W (6.6 W for a PEC with 4 two-stage stacks). 
 
-Note, that the **two stages** in the later case provide the cooling parameters (Tc=&minus;40 &deg;C, Qc=3.58 W) **similar as one stage only** in the former case (Tc=&minus;41.86 &deg;C, Qc=3.67 W).
+Note, that the **two stages** in the later case provide the cooling values (Tc=&minus;40 &deg;C, Qc=3.58 W) **similar as one stage only** in the former case (Tc=&minus;41.86 &deg;C, Qc=3.67 W).

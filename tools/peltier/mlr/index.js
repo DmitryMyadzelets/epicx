@@ -8,7 +8,7 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
-    ambientT: 33, // Temperature at the hottest side
+    ambientT: 16, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
     maxModules: 1 // At one stage
 }
@@ -53,11 +53,13 @@ function broken (o) {
  
 // Reductor, returns number of modules on all stages
 const modules = (sum, { modules }) => sum + modules // reductor
+// Rounds to 2 decimals
+const hundreds = x => Math.round(x * 100) / 100
 // Retuns Qc per module for all the stages
-const getQcpm = stages => stages[0].qc / stages.reduce(modules, 0) 
+const getQcpm = stages => hundreds(stages[0].qc / stages.reduce(modules, 0))
 // Returns total electrical power
 const power = (sum, { qc, qh }) => sum + qh - qc
-const getP = stages => stages.reduce(power, 0)
+const getP = stages => hundreds(stages.reduce(power, 0))
   
 // Calcuates values of the stages in forward direction
 // You must set the Qc and Tc of the first stage
@@ -142,7 +144,7 @@ function markdown (stages) {
     stages.forEach(stage => {
         const vals = keys
             .map(key => stage[key])
-            .map(v => Math.round(v * 100) / 100)
+            .map(hundreds)
         print(vals)
     })
 }

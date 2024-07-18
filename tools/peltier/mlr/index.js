@@ -8,7 +8,7 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
-    ambientT: 16, // Temperature at the hottest side
+    ambientT: 33, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
     maxModules: 1 // At one stage
 }
@@ -25,7 +25,7 @@ const initStages = () => {
     stages.length = 0
     stages.push({
         qc: 0,
-        tc: -59.5,
+        tc: -40,
         current: 0.7,
         modules: 1
     })
@@ -36,7 +36,7 @@ const initStages = () => {
     })
     */
     stages.push({
-        current: 2.8,
+        current: 2.1,
         modules: 1
     })
 }
@@ -106,12 +106,18 @@ function backward (stages) {
     const first = stages[0]
     const last = stages[stages.length -1]
 
-    for (forward(stages); config.ambientT < last.th; ) {
-        //first.tc -= 0.001
-        first.qc += 0.001
+    // Gradient Descent algorithm
+    const J = () => config.ambientT - last.th
+    const rate = 0.05
+    let cost
+
+    for (forward(stages); Math.abs(cost = J()) > 0.01;) {
+        //first.qc -= rate * cost
+        first.qc -= rate * cost
         forward(stages)
     }
 })()
+
 
 // Show the stages as a table for Markdown
 function markdown (stages) {

@@ -8,7 +8,7 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
-    ambientT: 16, // Temperature at the hottest side
+    ambientT: 33, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
     maxModules: 1 // At one stage
 }

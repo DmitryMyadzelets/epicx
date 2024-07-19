@@ -3,7 +3,13 @@ This file is to model a Peltier element as in
 https://thermal.ferrotec.com/technology/thermoelectric-reference-guide/thermalref11/
 */
 
-// Returns Seebeck coefficient given temperatues, per couple
+/*
+    The basic equations with coefficitients from Ferrotec.
+    These are polynoms of 4-th order.
+    Material of the couples is unknown.
+*/
+
+// Returns Seebeck coefficient given temperatures, per couple
 // Tc - Temperature of the cold side, Kelvins
 // Th - Temperature of the hot side, Kelvins 
 function seebeck(Tc, Th) {
@@ -93,6 +99,7 @@ console.log("Seebeck coefficient, V/K:")
 console.log(0, seebeck(273, 273))
 console.log(25, seebeck(273, 273 + 25))
 console.log(25, seebeck(273 + 25, 273 + 50))
+console.log("uV/K", seebeck(273+25, 274+25) * 1e6)
 console.log("Resistance, Ohm:")
 console.log(resistance(273, 273))
 console.log(resistance(273, 273.0001))

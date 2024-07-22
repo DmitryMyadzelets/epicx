@@ -35,7 +35,7 @@ Example: a cylinder ⌀ 50mm must be at least 1 mm thick.
 
 ## Lid
 Symbols:
-- $K$ - coefficent, 0.4 for a flat lid
+- $K$ - coefficient, 0.4 for a flat lid
 - $K_0$ - coefficient, 1 if the lid has no holes
 
 Thikness of a lid:

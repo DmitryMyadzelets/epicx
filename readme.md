@@ -1,5 +1,6 @@
 # EPICX journal
 
+- [Week 30 - Strength calculation](<journal/week 30.md>)
 - [Week 29 - Testing 2-stage cooling](<journal/week 29.md>)
 - [Week 28 - Energy for CO2](<journal/week 28.md>)
 - [Week 27 - 2-stage Cooler, Model's Quality](<journal/week 27.md>)

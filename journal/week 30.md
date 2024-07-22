@@ -40,7 +40,7 @@ Symbols:
 
 Thikness of a lid:
 
-$s = K \times K_0 \times D \sqrt{ 1 / (\psi \times \sigma)}$
+$s = K \times K_0 \times D \sqrt{ p / (\psi \times \sigma)}$
 
 ### Pure aluminium
 

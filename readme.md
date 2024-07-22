@@ -26,6 +26,7 @@
 ## Order list
 RS code x Items - Description - Note
 - [ ] 490-1430 x 8 - [Peltier Adaptive, 15.7V, 2.8A, 16.2W, 30x30x6.5mm](https://it.rs-online.com/web/p/moduli-peltier/4901430) - We have 2 as a reserve 
+- [ ] 693-5075 x ? [Peltier, 16.1V, 8.5A, 51.6W, 40x40x7mm](https://it.rs-online.com/web/p/moduli-peltier/6935075)
 - [ ] 180-5299 x 1 - [Grasso termico 7W/mK -50...+200&deg;C](https://it.rs-online.com/web/p/grasso-termico/1805299)
 - [ ] 169-4404 x 4 - [Scambiatore di calore x Peltier](https://it.rs-online.com/web/p/scambiatori-di-calore-a-piastre/1694404) - 10 euro at Aliexpress, see [here](https://it.aliexpress.com/item/1005005489417933.html) and [there](https://it.aliexpress.com/item/32839597996.html)
 - [ ] 122-2219 x 3 - [Alimenentatore DIN 12V 5A, current control](https://it.rs-online.com/web/p/alimentatori-per-guida-din/1222219) - for 4 Peltiers of the 1-st "cold" stage, and the pump.

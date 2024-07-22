@@ -19,7 +19,7 @@ Allowable stress:
 
 $\sigma = R_{m/20} / n_x$
 
-Thikness of the wall:
+Thickness of the wall:
 
 $s = p \times D / \left( 2 \times \sigma \times \psi - p \right)$
 
@@ -31,7 +31,7 @@ $\sigma = 90/3.5 = 25.71 MPa$
 
 $s = 1 \times D / \left( 2 \times 25.71 \times 1 - 1 \right) = D / 50.42$
 
-Example: for an cylinder ⌀ 50mm the wall's thikness must be at least 1 mm.
+Example: a cylinder ⌀ 50mm must be at least 1 mm thick.
 
 ## Lid
 Symbols:
@@ -46,7 +46,7 @@ $s = K \times K_0 \times D \sqrt{ 1 / (\psi \times \sigma)}$
 
 $s = 0.4 \times 1 \times D \sqrt{ 1 / (1 \times 90 / 3.5)} = 0.079 \times D$
 
-Example: for a lid ⌀ 50mm the thikness must be at least 3.95 mm.
+Example: a lid ⌀ 50mm must be at least 3.95 mm thick.
 
 ## Other materials
 - PEEK [design guide](https://drakeplastics.com/wp-content/uploads/2020/01/Ketaspire-Design-Guide.pdf)

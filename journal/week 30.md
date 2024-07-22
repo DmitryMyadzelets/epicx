@@ -38,6 +38,10 @@ Symbols (additional to the defined above):
 - $K$ - coefficient, 0.4 for a flat lid
 - $K_0$ - coefficient, 1 if the lid has no holes
 
+If the lid has holes ⌀ $d$ on a chord of the circle:
+
+$K_0 = \sqrt{(1 - (\sum d / D)^3)/(1 - (\sum d / D))}$
+
 Thikness of a lid:
 
 $s = K \times K_0 \times D \sqrt{ p / (\psi \times \sigma)}$

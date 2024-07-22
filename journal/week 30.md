@@ -4,7 +4,7 @@ The calculations are made according to the GOST 34233.2-2017 standard: "Vessels 
 ## Cylindrical shell
 Symbols:
 - $D$ - diameter of the cylinder, mm
-- $s$ - thikness of the cylinder's wall, mm
+- $s$ - thickness of the cylinder's wall, mm
 - $p$ - overpressure, MPa
 - $\sigma$ - allowable stress in the material, MPa
 - $\psi$ - welding factor (1 if no welding)
@@ -34,7 +34,7 @@ $s = 1 \times D / \left( 2 \times 25.71 \times 1 - 1 \right) = D / 50.42$
 Example: a cylinder ⌀ 50mm must be at least 1 mm thick.
 
 ## Lid
-Symbols:
+Symbols (additonal to the defined above):
 - $K$ - coefficient, 0.4 for a flat lid
 - $K_0$ - coefficient, 1 if the lid has no holes
 

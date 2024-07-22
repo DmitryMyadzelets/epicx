@@ -34,7 +34,7 @@ $s = 1 \times D / \left( 2 \times 25.71 \times 1 - 1 \right) = D / 50.42$
 Example: a cylinder ⌀ 50mm must be at least 1 mm thick.
 
 ## Lid
-Symbols (additonal to the defined above):
+Symbols (additional to the defined above):
 - $K$ - coefficient, 0.4 for a flat lid
 - $K_0$ - coefficient, 1 if the lid has no holes
 

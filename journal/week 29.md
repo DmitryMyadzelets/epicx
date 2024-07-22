@@ -31,7 +31,7 @@ Note, that the **two stages** in the later case provide the cooling values (Tc=&
 
 
 ### The (Qc, Qh)=f(Tc) chart
-This chart depicts the both Qc and Qh power of the Peltier module at the same current.
+This chart derives from the numerical model of the PE-16 and depicts the both Qc and Qh power of the module at the constant current.
 
 <img alt="Curves of Qc and Qh" src="/img/2024-07-17 - (Qc, Qh)=f(Tc).png" width=400px>
 

@@ -52,5 +52,23 @@ $s = 0.4 \times 1 \times D \sqrt{ 1 / (1 \times 90 / 3.5)} = 0.079 \times D$
 
 Example: a lid ⌀ 50mm must be at least 3.95 mm thick.
 
+## Lid screws
+Assumptions:
+- Pressure is applied to a lid's surface ⌀ 50mm
+- Screw/bolt M5 made of steel
+
+The force applied to the lid, N:
+
+$F = p \times S = 1e6 \times 3.14 \times (0.05/2)^2 = 1963.5$
+
+According to the [design properties](https://eurocodeapplied.com/design/en1993/bolt-design-properties) for metric hexagonal bols:
+- Tensile resistance = 1700 N for the lowest meterial class 4.3, and safety factor 3
+
+Number of the screws: $round(1963.5 / 1700) = 2$
+
+Same results provides [the onlie calculator (in Russian)](https://stresscalc.ru/pin/pin.php).
+
+Minimal thread engagment length, according to [the online calculator](https://www.bossard.com/global-en/assembly-technology-expert/technical-information-and-tools/online-calculators-and-converters/thread-engagement-length-calculator/) = 3.11 mm.
+
 ## Other materials
 - PEEK [design guide](https://drakeplastics.com/wp-content/uploads/2020/01/Ketaspire-Design-Guide.pdf)

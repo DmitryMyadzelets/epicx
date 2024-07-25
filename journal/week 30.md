@@ -68,7 +68,8 @@ $s = 0.4 \times 1 \times D \sqrt{ 1 / (1 \times (95/1.5))} = 0.05 \times D$
 
 Example: for a lid ⌀ 50mm (at DIFA/UNIBO) the thickness must be at least 2.51 mm.
 
-## Lid screws
+## Screws
+### Lid screws
 Assumptions:
 - Pressure is applied to a lid's surface ⌀ 50mm
 - Screw/bolt M5 made of steel
@@ -85,6 +86,27 @@ Number of the screws: $round(1963.5 / 1700) = 2$
 The same results provides [the online calculator (in Russian)](https://stresscalc.ru/pin/pin.php).
 
 Minimal thread engagment length, according to [the online calculator](https://www.bossard.com/global-en/assembly-technology-expert/technical-information-and-tools/online-calculators-and-converters/thread-engagement-length-calculator/) = 3.11 mm.
+
+### G1/4 push-in pneumatic fitting, S6510 from Camozzi
+Parameters of the fitting' S6510 G1/4 thread:
+- $D$ - major diameter, 13.156 mm
+- $D2$ - pitch diameter, 11.445 mm
+- $H1$ - depth, 0.856 mm
+- $z$ - number of lines, 2
+
+The surface of the fitting:
+
+$A = \pi \times (13.156 / 2)^2 = 136$ mm2
+
+The compressing forse from the gas at pressure $p$ = 1 MPa:
+
+$F = p \times A = 1 \times 136 = 136$ N
+
+The tension of the threads:
+
+$\tau = F / (\pi \times D_2 \times H_1 \times z) = 136 / (\pi \times 11.445 \times 0.856 \times 2) = 2$ MPa
+
+Example: the PEEK has tension strength 95 MPa. The actual safety factor is $95 / 2 = 42.5$.
 
 ## Links
 ### Polyether ether ketone (PEEK)

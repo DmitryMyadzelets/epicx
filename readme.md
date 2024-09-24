@@ -1,5 +1,6 @@
 # EPICX journal
 
+- [Week 38 - Liquid CO2 in the climate chamber](<journal/week 38.md>)
 - [Week 30 - Strength calculation](<journal/week 30.md>)
 - [Week 29 - Testing 2-stage cooling](<journal/week 29.md>)
 - [Week 28 - Energy for CO2](<journal/week 28.md>)

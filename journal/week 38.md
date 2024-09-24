@@ -49,5 +49,5 @@ The goal of this experiment was to validate that the existing cell and probes co
 
 <img alt="The cell in the chamber" src="/img/2024-09-24 - Cell with probes.jpg" width=400px>
 
-To avoid high temperature difference between the intermal and external areas of the cell the proccess of heating up was modified. The pressure in the cell was lowered from 10 Bar down to 0 Bar with the regulator of the security valve, while the temperature in the chamber remained low. At certain point the liquified CO2 evaporated, and then the system was heated up quickly with no risk of damage due to different CTE.
+To avoid high temperature difference between the intermal and external areas of the cell the proccess of heating up was modified. The pressure in the cell was lowered from 10 Bar down to 0 Bar by mean of the regulator of the security valve, while the temperature in the chamber remained low. At certain point the liquified CO2 evaporated, and then the system was heated up quickly with no risk of damage due to different CTE.
 

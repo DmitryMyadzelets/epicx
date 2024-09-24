@@ -1,7 +1,7 @@
 # Liquid CO2 in the climate chamber
 
 ## Experiment - Liquification of CO2
-This is the first our attempt to liquify CO2. The schematic of the experimental setup is depicted below.
+This is our first attempt to liquify CO2. The schematic of the experimental setup is depicted below.
 
 <img alt="Drawing of the experiment setup" src="/img/2024-09-18 - Experiment setup.jpg" width=400px>
 

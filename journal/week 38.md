@@ -2,12 +2,13 @@
 
 ## Experiment - Liquification of CO2
 
-[](</img/2024-09-18 - Experiment setup.jpg>)
+<img alt="Drawing of the experiment setup" src="/img/2024-09-18 - Experiment setup.jpg" width=400px>
 
-[](</img/20240919_113345.jpg>)
+<img alt="Equimpent in the room" src="/img/20240919_113345.jpg" width=400px>
 
-[](</img/20240919_125246.jpg>)
+<img alt="The cell in the chamber" src="/img/20240919_125246.jpg" width=400px>
 
 ## Experiment - Liquification with probes
 
-[](</img/2024-09-24 - Cell with probes.jpg>)
+<img alt="The cell in the chamber" src="/img/2024-09-24 - Cell with probes.jpg" width=400px>
+

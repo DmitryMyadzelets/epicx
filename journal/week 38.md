@@ -17,6 +17,33 @@ The photo below shows the amount of the liquified CO2 (~3 ml) condenced in the c
 
 <img alt="The cell in the chamber" src="/img/20240919_125246.jpg" width=400px>
 
+The following image depicts the temperatures dynamics. See the log list below for details (time is in form hours:minutes from the beginning of the experiment).
+
+<img alt="Temperature curves in the chamber" src="/img/2024-09-19 - Temperatures in the chamber during the liquification of CO2.png" width=400px>
+
+* 00:00 - The initial temperature is 33&deg;C, the target temperature of the climate chamber is set to 0&deg;. The cell is vacuumed and has no CO2.
+* 00:05 - The cell is filled with CO2 till the pressure reached 10 Bar. New setpoint is -20&deg;. 
+* 00:23 - The temperature of the camera is stabilized. The pressure of gas observed at the manometer an the security valve decreased from 10 to 9.2 Bar.
+* 00:30 - The cell is refilled up to 10 Bar. New setpoint is -30&deg; (we set it wrongly to +30&deg; for short time).
+* 00:53 - The pressure gradually but fast went down to 0 Bar.
+* 00:58 - We observe some liquid CO2 in the cell.
+* 01:30 - The cell seems to be in equilibrium conditions at 7.6 Bar and 38&deg;C.
+* 01:25 - We start to heat up the chamber. New setpoint is -30&deg;c.
+* 01:33 - The pressure slowly goes up, and reached 9.8 Bar.
+* 01:50 - The liquid CO2 is evaporated. The pressure is 10 Bar.
+
+At the end of the experiment we found that the glass window of the cell has a crack while the remaing pressure in the cell was ~4 Bar. 
+
+A possible reason for the damage could be high strain in the glass due to different thermal expantion of the materials, i.e. of the glass window tighly put into the frame made of PEEK.
+
+The coefficients of thermal expansion (CTE):
+* Quartz: 0.5
+* PEEK: 26...43
+
+The PEEK frame changed its size for about 0.2 mm in the temperature range going from 33&deg; to -45&deg;C, while the quarz glass - for about 0.002 mm.
+
+Another reason for the damage could be high difference of the temperatures in the cell and in the air during heating it up, to which the glass window was exposed. The evaporating CO2 maintained low temperature inside the cell for long time untill is fully evaporated, while the air in the chamber went from -45&deg; up to positive values.
+
 ## Experiment - Liquification with probes
 
 <img alt="The cell in the chamber" src="/img/2024-09-24 - Cell with probes.jpg" width=400px>

@@ -44,8 +44,10 @@ The PEEK frame changed its size for about 0.2 mm in the temperature range going 
 
 Another reason for the damage could be high difference of the temperatures in the cell and in the air during heating it up, to which the glass window was exposed. The evaporating CO2 maintained low temperature inside the cell for long time untill is fully evaporated, while the air in the chamber went from -45&deg; up to positive values.
 
-## Experiment - Liquification with probes
-The goal of this experiment was to validate that the existing cell and probes could withstand the pressure of 10 Bar during the liquification. The experiment was conducted as the previous one, though without measurement of the temperatures.
+## Experiment - Liquification with electrodes
+The goal of this experiment was to validate that the existing cell and electrodes could withstand the pressure of 10 Bar during the liquification. The experiment was conducted as the previous one, though without measurement of the temperatures.
+
+One of the electrodes was pusshed out of the cell at the first try. The electrodes were then secured with plastic ties.
 
 <img alt="The cell in the chamber" src="/img/2024-09-24 - Cell with probes.jpg" width=400px>
 

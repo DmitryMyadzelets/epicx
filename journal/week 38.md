@@ -17,7 +17,7 @@ The photo below shows the amount of the liquified CO2 (~3 ml) condenced in the c
 
 <img alt="The cell in the chamber" src="/img/20240919_125246.jpg" width=400px>
 
-The following image depicts the temperatures dynamics. See the log list below for details (time is in form hours:minutes from the beginning of the experiment).
+The following image depicts the [temperature dynamics](</logs/2024-09-19 113036.tsv>). See the log list below for details (time is in form hours:minutes from the beginning of the experiment).
 
 <img alt="Temperature curves in the chamber" src="/img/2024-09-19 - Temperatures in the chamber during the liquification of CO2.png" width=400px>
 

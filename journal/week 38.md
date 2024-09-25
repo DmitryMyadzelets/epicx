@@ -44,6 +44,13 @@ The PEEK frame changed its size for about 0.2 mm in the temperature range going 
 
 Another reason for the damage could be high difference of the temperatures in the cell and in the air during heating it up, to which the glass window was exposed. The evaporating CO2 maintained low temperature inside the cell for long time untill is fully evaporated, while the air in the chamber went from -45&deg; up to positive values.
 
+### Observations
+The amount of heat exchange between internal and external areas of the cell is through, according to calculations:
+* 76.2% - gas fitting, made of brass
+* 23.3% - window, made of quartz glass
+* 0.5% - cell body, made of PEEK
+It could be seen that drops of the condenced CO2 were coming from the gas inlet.
+
 ## Experiment - Liquification with electrodes
 The goal of this experiment was to validate that the existing cell and electrodes could withstand the pressure of 10 Bar during the liquification. The experiment was conducted as the previous one, though without measurement of the temperatures.
 
@@ -52,4 +59,3 @@ One of the electrodes was pusshed out of the cell at the first try. The electrod
 <img alt="The cell in the chamber" src="/img/2024-09-24 - Cell with probes.jpg" width=400px>
 
 To avoid high temperature difference between the intermal and external areas of the cell the proccess of heating up was modified. The pressure in the cell was lowered from 10 Bar down to 0 Bar by mean of the regulator of the security valve, while the temperature in the chamber remained low. At certain point the liquified CO2 evaporated, and then the system was heated up quickly with no risk of damage due to different CTE.
-

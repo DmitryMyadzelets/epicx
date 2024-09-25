@@ -15,8 +15,8 @@ Equipment in the lab:
     * ET-190-1010-1212, [see docs at RS](https://it.rs-online.com/web/p/moduli-peltier/4901430), 4 modules. Reffered as **PE-16** in the following.
 
 Heat exchange due to thermal radiation:
-$Q = \sigma e A (T_1^4 - T_2^4)$, where:
-* $\sigma = 5.67 * 10^{-8} W/(m^2 K^4)$, Stefan-Boltzmann constant
+$Q = \sigma \times e \times A (T_1^4 - T_2^4)$, where:
+* $\sigma = 5.67\times10^{-8} W/(m^2 K^4)$, Stefan-Boltzmann constant
 * $e = 1$ for black body, $e = 0.03$ for Al foil, emissivity of the surface
 * $A = 0.01 m^2$ assumed heat exchange surface
 * $T_1 = 273 + 25$ room temperature

@@ -41,7 +41,7 @@ const parts = [
 // Rounds to 2 decimals
 const hundreds = x => Math.round(x * 100) / 100
 
-// Returns parts' total area, cm2
+// Returns parts' total area, m2
 const totalArea = arr => arr
     .reduce((sum, { a }) => sum + a, 0)
 

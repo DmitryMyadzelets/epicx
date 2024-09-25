@@ -24,4 +24,4 @@ $Q = \sigma \times e \times A (T_1^4 - T_2^4)$, where:
 
 The maximum heat exchange, given the black bodies, is 4.47 W. Wrapping with Al foil reduces the heat exchage down to 0.045 W.
 
-**Note:** The specification for the PE-16 module states that the heat removed from the cold side is about 5 Watts at temperature difference 65&deg;C and the current 2.1A (75% of Imax). It's the same heat amount the cold side can get due to the thermal radiation in vacuum.
+**Note:** The specification for the PE-16 module states that the heat removed from the cold side is about 5 Watt at the temperature difference 65&deg;C and the current 2.1A (75% of Imax). It's the same heat amount the cold side can get due to the thermal radiation.

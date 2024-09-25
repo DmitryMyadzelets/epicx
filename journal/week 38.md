@@ -49,6 +49,7 @@ The amount of heat exchange between internal and external areas of the cell is t
 * 76.2% - gas fitting, made of brass
 * 23.3% - window, made of quartz glass
 * 0.5% - cell body, made of PEEK
+
 It could be seen that drops of the condenced CO2 were coming from the gas inlet.
 
 ## Experiment - Liquification with electrodes

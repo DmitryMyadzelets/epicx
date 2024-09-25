@@ -18,6 +18,7 @@ const parts = [
         a: Math.PI * Math.pow(25e-3/2, 2), // Pi * R^2
         l: 4e-3
     }, {
+        exclude: true,
         name: "K-type thermocouple",
         k: 25,
         a: Math.PI * Math.pow(1e-3/2, 2),
@@ -26,16 +27,17 @@ const parts = [
         name: "Gas fitting, brass",
         k: 100,
         a: Math.PI * Math.pow(13.157e-3/2, 2),
-        // l: 25e-3 // if passes through the sheel
-        l: Infinity // if isolated
+        l: 25e-3 // if passes through the sheel
+        // l: Infinity // if isolated
     }, {
+        exclude: true,
         name: "Needle, Cu",
         k: 386,
         a: Math.PI * Math.pow(1e-3/2, 2),
         l: 25e-3 // if passes through the shell
     }
-]
-
+].filter(part => !part.exclude)
+ 
 // Rounds to 2 decimals
 const hundreds = x => Math.round(x * 100) / 100
 
@@ -53,7 +55,7 @@ const totalConductance = arr => arr
 console.log("Parts", parts)
 console.log("Total area, cm2:", hundreds(totalArea(parts) * 1e4))
 console.log("Total conductance, W/K:", hundreds(totalConductance(parts)))
-const dT = 25 - -40
+const dT = 33 - -45
 console.log("dT, C:", dT)
 console.log("Heat transfer, W:")
 console.log(parts

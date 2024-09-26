@@ -1,0 +1,32 @@
+{
+"units": {
+    "thermalConductivity": "W \times m{-1} \times C{-1}",
+    "heatCapacity": "J \times kg{−1} \times K{−1}",
+    "emissivity": ""
+},
+"materials": [{
+    "name": "PEEK",
+    "thermalConductivity": 0.24,
+    "heatCapacity": 1600,
+    "emissivity": 0.95
+}, {
+    "name": "Glass quartz",
+    "thermalConductivity": 1.35,
+    "heatCapacity": 670,
+    "emissivity": 0.93
+}, {
+    "name": "Aluminium",
+    "thermalConductivity": 204,
+    "heatCapacity": 0.91e-3,
+    "emissivity": 0.07
+}, {
+    "name": "Brass",
+    "thermalConductivity": 100
+}, {
+    "name": "Polyurethane foam",
+    "thermalConductivity": 0.04,
+    "heatCapacity": 2000
+}, {
+    "name": "Alumina ceramic",
+    "thermalConductivity": 35.3
+}]}

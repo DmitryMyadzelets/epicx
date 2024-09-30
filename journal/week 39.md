@@ -16,7 +16,7 @@ Parameters of the cell:
 The thermal conductivity of Polyetheretherketone (PEEK) is about $`k = 0.3 \, W/mK`$ (see [here](https://thermtest.com/application/thermal-conductivity-of-peek), [here](https://www.hpp-performance.com/fileadmin/user_upload/user_upload/fluteck_K_300-FLS_v15.03_datenblatt_PEEK.pdf) and [here](https://www.directplastics.co.uk/pdf/datasheets/PEEK%20Data%20Sheet.pdf)). Thus, the thermal conductance of the cell (assume the internal volume is covered with a lid made of PEEK with the same thikness as the cell's body, i.e. 1 cm): 
 * At the interal surface: $`k\times A/L = 0.3 \times 20.8 \times 10^{-4}/1 \times 10^{-2} = 0.0924 \, W/K`$;
 * At the external surface: $`k\times A/L = 0.3 \times 77 \times 10^{-4}/1 \times 10^{-2} = 0.231 \, W/K`$;
-* Total : $`1/(1/0.0924 + 1/0.231) = 0.1848\, W/K`$.
+* Total (simplified): $`1/(1/0.0924 + 1/0.231) = 0.1848\, W/K`$.
 
 With the liquid CO2 at the temperature -45&deg;C in the cell, and the external room temperature -25&deg;C (&#916;T = 70&deg;C) the heat flow through the cell's body:
 
@@ -34,4 +34,10 @@ $`Q = \sigma \times e \times A \times (T_1^4 - T_2^4)`$, where:
 * $`T_2 = (273 - 45) \, K`$ - cell temperature.
 
 $`Q = 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - 228^4) = 2.15 \, W`$.
+
+If the cell would be wraped with an aluminium foil (k = 0.04, see the [source](https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html)), then the amount radiated heat would be:
+
+$`Q = 5.67 \times 10^{-8} \times 0.04 \times 77 \times 10^{-4} \times (298^4 - 228^4) = 0.0905 \, W`$.
+
+Note, that rough aluminium has emmisivity 0.07, which is close to the value of aluminium foil. That's why hadn't observed any improvement of thermal performance in the experiment in the [week 24](/journal/week 24.md).
 

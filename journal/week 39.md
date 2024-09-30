@@ -11,17 +11,20 @@ Parameters of the cell:
 * $`20.8 \times 10^{-4} \, m^2`$ - internal surface
 * $`6.87 \, ml`$ - internal volume
 
+## Heat transfer by conduction
+
 The thermal conductivity of Polyetheretherketone (PEEK) is about $`k = 0.3 \, W/mK`$ (see [here](https://thermtest.com/application/thermal-conductivity-of-peek), [here](https://www.hpp-performance.com/fileadmin/user_upload/user_upload/fluteck_K_300-FLS_v15.03_datenblatt_PEEK.pdf) and [here](https://www.directplastics.co.uk/pdf/datasheets/PEEK%20Data%20Sheet.pdf)). Thus, the thermal conductance of the cell (assume the internal volume is covered with a lid made of PEEK with the same thikness as the cell's body, i.e. 1 cm): 
 * At the interal surface: $`kA/L = 0.3 \times 20.8 \times 10^{-4}/1 \times 10^{-2} = 0.0924 \, W/K`$;
 * At the external surface: $`kA/L = 0.3 \times 77 \times 10^{-4}/1 \times 10^{-2} = 0.231 \, W/K`$;
 * Average: $`0.1617 \, W/K`$.
 
-
 With the liquid CO2 at the temperature -45&deg;C in the cell, and external room temperature -25&deg;C (&#916;T = 70&deg;C) the heat flow through the cell's body:
 
 $`Q = 0.1617 \times 70 = 11.319 \, W`$.
 
-If the cell put in vacuum the heat would radiate from its surface. The amount of heat:
+## Heat transfer by radiation
+
+If the cell put in vacuum the heat would radiate from its surface. For the sake of simplicity assume the surface temperature equal to the internal, i.e. -45&deg;C. The amount of the radiated heat:
 
 $`Q = \sigma \times e \times A \times (T_1^4 - T_2^4)`$, where:
 * $`\sigma = 5.67 \times 10^{-8} W/(m^2 K^4)`$, Stefan-Boltzmann constant;

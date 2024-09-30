@@ -8,5 +8,5 @@ Having succefully liqufied CO2 in the climate chamber last week we now valuate h
 
 Parameters of the cell:
 * $`77e^{-4} \, m^2`$ - external surface
-* $20.8e^{-4} \, m^2$ - internal surface
-* $6.87 ml$ - internal volume
+* $`20.8e^{-4} \, m^2`$ - internal surface
+* $`6.87 \, ml`$ - internal volume

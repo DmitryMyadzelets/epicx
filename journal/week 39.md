@@ -39,4 +39,4 @@ If the cell would be wraped with an aluminium foil (k = 0.04, see the [source](h
 
 $`Q = 5.67 \times 10^{-8} \times 0.04 \times 77 \times 10^{-4} \times (298^4 - 228^4) = 0.0905 \, W`$.
 
-Note, that a rough aluminium has emmisivity 0.07, which is close to the value 0.04 of an aluminium foil. That's why observed no improvement of thermal performance in the experiment in the [week 24](</journal/week 24.md>).
+Note, that rough aluminium has emmisivity 0.07, which is close to the value 0.04 of the aluminium foil. That's why observed no improvement of thermal performance in the experiment in the [week 24](</journal/week 24.md>).

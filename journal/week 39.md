@@ -18,13 +18,13 @@ The thermal conductivity of Polyetheretherketone (PEEK) is about $`k = 0.3 \, W/
 * At the external surface: $`kA/L = 0.3 \times 77 \times 10^{-4}/1 \times 10^{-2} = 0.231 \, W/K`$;
 * Average: $`0.1617 \, W/K`$.
 
-With the liquid CO2 at the temperature -45&deg;C in the cell, and external room temperature -25&deg;C (&#916;T = 70&deg;C) the heat flow through the cell's body:
+With the liquid CO2 at the temperature -45&deg;C in the cell, and the external room temperature -25&deg;C (&#916;T = 70&deg;C) the heat flow through the cell's body:
 
 $`Q = 0.1617 \times 70 = 11.319 \, W`$.
 
 ## Heat transfer by radiation
 
-If the cell put in vacuum the heat would radiate from its surface. For the sake of simplicity assume the surface temperature equal to the internal, i.e. -45&deg;C. The amount of the radiated heat:
+If the cell put in a vacuum the heat would radiate from cell's surface. For the sake of simplicity assume the surface temperature equal to the internal, i.e. -45&deg;C. The amount of the radiated heat:
 
 $`Q = \sigma \times e \times A \times (T_1^4 - T_2^4)`$, where:
 * $`\sigma = 5.67 \times 10^{-8} W/(m^2 K^4)`$, Stefan-Boltzmann constant;

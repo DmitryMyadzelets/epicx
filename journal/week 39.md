@@ -10,3 +10,6 @@ Parameters of the cell:
 * $`77 \times 10^{-4} \, m^2`$ - external surface
 * $`20.8 \times 10^{-4} \, m^2`$ - internal surface
 * $`6.87 \, ml`$ - internal volume
+
+The thermal conductivity of Polyetheretherketone (PEEK) is about $`k = 0.3 \, W/mK`$ (see [here](https://thermtest.com/application/thermal-conductivity-of-peek), [here](https://www.hpp-performance.com/fileadmin/user_upload/user_upload/fluteck_K_300-FLS_v15.03_datenblatt_PEEK.pdf) and [here](https://www.directplastics.co.uk/pdf/datasheets/PEEK%20Data%20Sheet.pdf)). Thus, the thermal conductance of the cell (assume the internal volume is covered with a lid made of PEEK with the same thikness as the cell's body, i.e. 1 cm): $`kA/L = 0.3 * 20.8e{-4}/1e{-2} = 0.0924 \, W/K`$
+

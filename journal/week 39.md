@@ -27,7 +27,7 @@ $`Q = (k \times A / L) \times \Delta T = 0.1848 \times 70 = 12.936\, W`$.
 If the cell put in a vacuum the heat would radiate from cell's surface. For the sake of simplicity assume the surface temperature equal to the internal, i.e. -45&deg;C. The amount of the radiated heat:
 
 $`Q = \sigma \times e \times A \times (T_1^4 - T_2^4)`$, where:
-* $`\sigma = 5.67 \times 10^{-8} W/(m^2 K^4)`$ - Stefan-Boltzmann constant;
+* $`\sigma = 5.67 \times 10^{-8} \, W/(m^2 K^4)`$ - Stefan-Boltzmann constant;
 * $`e = 0.95`$ - emissivity of PEEK ([the source](https://repositories.lib.utexas.edu/server/api/core/bitstreams/4e1e9d12-d3e4-4226-afe1-46baf0e80249/content));
 * $`A = 77 \times 10^{-4} \, m^2`$ - radiating surface;
 * $`T_1 = (273 + 25) \, K`$ - ambient temperature;
@@ -39,4 +39,7 @@ If the cell would be wraped with an aluminium foil (k = 0.04, see the [source](h
 
 $`Q = 5.67 \times 10^{-8} \times 0.04 \times 77 \times 10^{-4} \times (298^4 - 228^4) = 0.0905 \, W`$.
 
-Note, that rough aluminium has emmisivity 0.07, which is close to the value 0.04 of the aluminium foil. That's why observed no improvement of thermal performance in the experiment in the [week 24](</journal/week 24.md>).
+Observations:
+* The rough aluminium has emmisivity 0.07, which is close to the value 0.04 of the aluminium foil. That's why observed no improvement of thermal performance in the experiment in the [week 24](</journal/week 24.md>).
+* The surface area is linearly proportional to amount of conducted and radiated heat. We need to keep the cell's size as small as possible.
+

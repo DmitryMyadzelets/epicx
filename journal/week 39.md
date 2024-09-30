@@ -31,6 +31,5 @@ $`Q = \sigma \times e \times A \times (T_1^4 - T_2^4)`$, where:
 * $`T_1 = 273 + 25`$ ambient temperature
 * $`T_2 = 273 - 45`$ cell temperature
 
-$`Q = 5.67 \times 0.95 \times 77 \times (298^4 - 228^4) = `$
+$`Q = 5.67 \times 10^{-4} \times 0.95 \times 77 \times (298^4 - 228^4) = `$
 
-For the sake of simplicity assume the external temerature of cell equal to the internal one, i.e. -45&deg;C.

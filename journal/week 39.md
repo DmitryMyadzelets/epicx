@@ -46,9 +46,11 @@ Observations:
 ## Heat transfer by conduction and radiation
 If the cell is put in vacuum we may need to calculate the amount of resulting heat transfer and the temperature of the cell's external surface. The same amount of heat is transfered by the both condaction and radiation:
 
-$`Q_{conduction} = Q_{radiation}`$, where:  
-$`Q_{radiation} = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$,  
-$`Q_{conduction} = (k \times A / L) \times (T_{surface} - T_{internal})`$.
+$`Q_{conduction} = Q_{radiation}`$, where:
+
+$`Q_{conduction} = (k \times A / L) \times (T_{surface} - T_{internal})`$,
+
+$`Q_{radiation} = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$. 
 
 i.e.:  
 $`(k \times A / L) \times (T_{surface} - T_{internal}) = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$. 
@@ -58,7 +60,7 @@ The $`T_{surface}`$ is unknown. Let's find it for the above example of the cells
 $`(0.3 \times 77 \times 10^{-4} / 1 \times 10^{-2}) \times (T_{surface} - 228) - 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - T_{surface}^4) = 0`$;  
 $`-4.1476 \times 10^{-10} \times T_{surface}^4 - 0.231 \times T_{surface} + 52.668 = 0`$;
 
-The above equation of fourth order, [when soved](https://planetcalc.ru/7715/), gives as the results:
+The above equation, [when soved](https://planetcalc.ru/7715/), gives as the results:
 
 $`T_{surface} = 236.54\degree K = -36.46 \degree C`$;  
 $`Q_{conduction} = Q_{radiation} = 1.973 \, W`$.

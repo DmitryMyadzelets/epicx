@@ -43,3 +43,9 @@ Observations:
 * The rough aluminium has emmisivity 0.07, which is close to the value 0.04 of the aluminium foil. That's why observed no improvement of thermal performance in the experiment in the [week 24](</journal/week 24.md>).
 * The surface area is linearly proportional to amount of conducted and radiated heat. We need to keep the cell's size as small as possible.
 
+## Heat transfer by conduction and radiation
+If the cell is put in vacuum we may need to calculate the amount of resulting heat transfer and the temperature of the cell's external surface. The same amount of heat is transfered by the both condaction and radiation:
+
+$`Q_{conduction} = Q_{radiation}`$, where:
+$`Q_{radiation} = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$,
+$`Q = (k \times A / L) \times (T_{surface} - T_{internal})`$.

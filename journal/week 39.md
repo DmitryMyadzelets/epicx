@@ -46,10 +46,8 @@ Observations:
 ## Heat transfer by conduction and radiation
 If the cell is put in vacuum we may need to calculate the amount of resulting heat transfer and the temperature of the cell's external surface. The same amount of heat is transfered by the both condaction and radiation:
 
-$`Q_{conduction} = Q_{radiation}`$, where:
-
-$`Q_{conduction} = (k \times A / L) \times (T_{surface} - T_{internal})`$,
-
+$`Q_{conduction} = Q_{radiation}`$, where:  
+$`Q_{conduction} = (k \times A / L) \times (T_{surface} - T_{internal})`$,  
 $`Q_{radiation} = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$. 
 
 i.e.:  

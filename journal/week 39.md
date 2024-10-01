@@ -56,5 +56,5 @@ $`(k \times A / L) \times (T_{surface} - T_{internal}) - \sigma \times e \times 
 
 The $`T_{surface}`$ is unknown. To find it we need to solve this polynomial equation. For the above example of the cells made of PEEK put in vacuum:
 
-$`0.1848 \times (T_{surface} - (273-45)) - 5.67 \times 10^{-8} \times 0.04 \times 77 \times 10^{-4} \times (298^4 - T_{surfface}^4)`$;  
+$`0.1848 \times (T_{surface} - (273-45)) - 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - T_{surface}^4) = 0`$;  
 

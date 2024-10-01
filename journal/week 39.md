@@ -30,8 +30,8 @@ $`Q = \sigma \times e \times A \times (T_1^4 - T_2^4)`$, where:
 * $`\sigma = 5.67 \times 10^{-8} \, W/(m^2 K^4)`$ - Stefan-Boltzmann constant;
 * $`e = 0.95`$ - emissivity of PEEK ([the source](https://repositories.lib.utexas.edu/server/api/core/bitstreams/4e1e9d12-d3e4-4226-afe1-46baf0e80249/content));
 * $`A = 77 \times 10^{-4} \, m^2`$ - radiating surface;
-* $`T_1 = (273 + 25) \, K`$ - ambient temperature;
-* $`T_2 = (273 - 45) \, K`$ - cell temperature.
+* $`T_1 = (273 + 25) = 298 \, K`$ - ambient temperature;
+* $`T_2 = (273 - 45) = 228\, K`$ - cell temperature.
 
 $`Q = 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - 228^4) = 2.15 \, W`$.
 
@@ -56,5 +56,5 @@ $`(k \times A / L) \times (T_{surface} - T_{internal}) - \sigma \times e \times 
 
 The $`T_{surface}`$ is unknown. To find it we need to solve this polynomial equation. For the above example of the cells made of PEEK put in vacuum:
 
-$`0.1848 \times (T_{surface} - (273-45)) - 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - T_{surface}^4) = 0`$;  
+$`0.1848 \times (T_{surface} - 228) - 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - T_{surface}^4) = 0`$;  
 

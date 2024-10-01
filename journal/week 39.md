@@ -58,7 +58,7 @@ The $`T_{surface}`$ is unknown. Let's find it for the above example of the cells
 $`(0.3 \times 77 \times 10^{-4} / 1 \times 10^{-2}) \times (T_{surface} - 228) - 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - T_{surface}^4) = 0`$;  
 $`4.1476 \times 10^{-10} \times T_{surface}^4 + 0.231 \times T_{surface} + 55.939 = 0`$;
 
-The above equation, [when soved](https://planetcalc.ru/7715/), gives as the results:
+The above equation, [when solved](https://planetcalc.ru/7715/), gives as the results:
 
 $`T_{surface} = 236.54\degree K = -36.46 \degree C`$;  
 $`Q_{conduction} = Q_{radiation} = 1.973 \, W`$.

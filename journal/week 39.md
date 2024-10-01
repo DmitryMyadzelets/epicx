@@ -51,14 +51,14 @@ $`Q_{radiation} = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4
 $`Q_{conduction} = (k \times A / L) \times (T_{surface} - T_{internal})`$.
 
 i.e.:  
-$`(k \times A / L) \times (T_{surface} - T_{internal}) = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$;  
-$`(k \times A / L) \times (T_{surface} - T_{internal}) - \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4) = 0`$. 
+$`(k \times A / L) \times (T_{surface} - T_{internal}) = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$. 
 
-The $`T_{surface}`$ is unknown. To find it we need to solve this polynomial equation. For the above example of the cells made of PEEK put in vacuum:
+The $`T_{surface}`$ is unknown. Let's find it for the above example of the cells made of PEEK put in vacuum:
 
-$`0.1848 \times (T_{surface} - 228) - 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - T_{surface}^4) = 0`$;  
+$`(0.3 \times 77 \times 10^{-4} / 1 /times 10^{-2}) \times (T_{surface} - 228) - 5.67 \times 10^{-8} \times 0.95 \times 77 \times 10^{-4} \times (298^4 - T_{surface}^4) = 0`$;  
 $`-4.1476 \times 10^{-10} \times T_{surface}^4 - 0.1845 \times T_{surface} + 45.4054 = 0`$;
 
 The above equation of fourth order, [when soved](https://planetcalc.ru/7715/), gives as the results:
 
-$`T_{surface} = 235.45\degree K = -34.55\degree C`$;
+$`T_{surface} = 235.45\degree K = -34.55\degree C`$;  
+$`Q_{conduction} = Q_{radiation} = 1.377 /, W`$.

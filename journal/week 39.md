@@ -50,4 +50,6 @@ $`Q_{conduction} = Q_{radiation}`$, where:
 $`Q_{radiation} = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$,  
 $`Q_{conduction} = (k \times A / L) \times (T_{surface} - T_{internal})`$.
 
+i.e.:  
+$`(k \times A / L) \times (T_{surface} - T_{internal}) = \sigma \times e \times A \times (T_{ambient}^4 - T_{surface}^4)`$;  
 

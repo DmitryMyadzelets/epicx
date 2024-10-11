@@ -15,3 +15,5 @@ We've designed a new plastic holder, with a 6mm hole, for 3-D printing.
 <img alt="The sketch of the condenser" src="/img/2024-10-11 - Electrode Holder.png" width=400px>
 
 Note: Google SketchUp software is used as a CAD tool. Watch [the tutorial](https://www.youtube.com/watch?v=k8AC5LNMo-g) for a screw thread design, with [ISO metric parameters](https://en.wikipedia.org/wiki/ISO_metric_screw_thread) for a M10x1.5 screw. This software, however, have some limitations, e.g. we have to design the part scaled up 10 times, and then scale it down, to overcome some of them. 
+
+The version of the electrode made of a glass tube and a copper rode glued into it may be problematic due to different coefficients of thermal expansion of the materials. Particularly, the [LOCTITE EA 9497 adhesive](https://datasheets.tdx.henkel.com/LOCTITE-EA-9497-en_GL.pdf) has 50×10-6 as such, while a quatz glass has it 0.55x10-6.

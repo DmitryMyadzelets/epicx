@@ -29,8 +29,8 @@
     - [ ] Conduct an electrolysis process
 - [ ] Sketch the cell
     - [x] Possible two-step variants
-    - [ ] A separate CO2 liquifier with the Peltiers
-    - [ ] Mounting for the Peltiers 
+    - [x] A separate CO2 condenser with the Peltiers
+    - [x] Mounting for the Peltiers 
     - [ ] Connections
 
 ## Order list

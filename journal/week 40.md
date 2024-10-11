@@ -14,6 +14,7 @@ Polyetherether Ketone (PEEK) is compatible with almost any of the solvents, but 
 To solve the above contradiction we can separate the processes of condensation and electrolisys, and conduct them in dedicated volumes. This way we can use the same cell made of PEEK as earlier, for electrolysis. Then we need a condenser for liquification of CO2. 
 
 ## Design
+The condenser is shown at the right of the image below. At the left - the condenser in the plastic 3D-printed holder, connected to the electrolytic cell.
 <img alt="The sketch of the condenser" src="/img/2024-10-04 - Condenser.png" width=400px>
 
 The gaseous CO2 is condensed in the camera made of aluminium. The gas pipes are connected to the camera via [Camozzi C6510-4-1/4 male connectors](https://media.camozzi.com/pdf/6000-ENG.pdf). The camera is cooled down by a stack of two two-staged Peltier modules (four stages in total). The heat from the modules is then transfered away by a water-cooling system.

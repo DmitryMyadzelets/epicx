@@ -4,7 +4,7 @@ Having succefully liqufied CO2 in the climate chamber last week we now valuate h
 
 <img alt="The photo of the cell made of PEEK at UNIBO" src="/img/20240919_143224.jpg" width=400px>
 
-<img alt="The dwawing of the cell made of PEEK at UNIBO" src="/img/2024-09-30 - Drawing of the cell.png" width=400px>
+<img alt="The drawing of the cell made of PEEK at UNIBO" src="/img/2024-09-30 - Drawing of the cell.png" width=400px>
 
 Parameters of the cell:
 * $`77 \times 10^{-4} \, m^2`$ - external surface

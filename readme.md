@@ -1,5 +1,6 @@
 # EPICX journal
 
+- [Week 40 - The CO2 condenser](<journal/week 40.md>)
 - [Week 39 - Heat transfer through the cell](<journal/week 39.md>)
 - [Week 38 - Liquid CO2 in the climate chamber](<journal/week 38.md>)
 - [Week 30 - Strength calculation](<journal/week 30.md>)

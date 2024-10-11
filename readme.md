@@ -1,5 +1,6 @@
 # EPICX journal
 
+- [Week 41 - The electrode holder](<journal/week 41.md>)
 - [Week 40 - The CO2 condenser](<journal/week 40.md>)
 - [Week 39 - Heat transfer through the cell](<journal/week 39.md>)
 - [Week 38 - Liquid CO2 in the climate chamber](<journal/week 38.md>)

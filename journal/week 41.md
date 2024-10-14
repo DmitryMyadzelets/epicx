@@ -17,7 +17,7 @@ Examples of hand made electrodes:
 <img alt="Two examples of hand made electrodes" src="/img/20241014_114330.jpg" width=400px>
 
 
-## 3D electrode holder
+## The electrode holder
 
 The plastic holder currently used at DIFA/UNIBO is shown below. It's designed to hold 6mm electrodes, with help of an o-ring and an additional threaded part (not shown).
 

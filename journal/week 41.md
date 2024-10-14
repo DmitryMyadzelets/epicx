@@ -2,8 +2,8 @@
 In order to conduct new experiments in the electrolytic cell it's requred to have a copper electrode, as proposed by Raffello. There is currently no any "off-the-shelf" electrode available, so we would make an our own.
 
 A few approaches are considered:
-* A plain 6mm copper rod, with no outer
-* A 1-3mm copper rod glued into a 6mm glass tube
+* A plain 6 mm copper rod, with no outer
+* A 1-3mm copper rod glued into a 6 mm glass tube
 * A 1-3mm copper rod glued into a plastic holder
 
 The version of the electrode made of a glass tube and a copper rode glued into it may be problematic due to different coefficients of thermal expansion of the materials. Particularly, the [LOCTITE EA 9497 adhesive](https://datasheets.tdx.henkel.com/LOCTITE-EA-9497-en_GL.pdf) has 50×10-6 as such, while a quatz glass has it 0.55x10-6. The borosilicate glass (e.g. used for [some glass tubes](https://it.aliexpress.com/item/32899234262.htm)) has 3×10-6 as such.

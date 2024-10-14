@@ -12,7 +12,7 @@ An example of an "off-the-shelf" electrod with the holder in the cell is depicte
 
 <img alt="An elecrode in the cell" src="/img/20241014_110920.jpg" width=400px>
 
-Examples of handmade electrodes:
+Example of handmade electrodes:
 
 <img alt="Two examples of handmade electrodes" src="/img/20241014_114330.jpg" width=400px>
 

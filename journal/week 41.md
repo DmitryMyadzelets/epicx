@@ -8,9 +8,12 @@ A few approaches are considered:
 
 The version of the electrode made of a glass tube and a copper rode glued into it may be problematic due to different coefficients of thermal expansion of the materials. Particularly, the [LOCTITE EA 9497 adhesive](https://datasheets.tdx.henkel.com/LOCTITE-EA-9497-en_GL.pdf) has 50×10-6 as such, while a quatz glass has it 0.55x10-6. The borosilicate glass (e.g. used for [some glass tubes](https://it.aliexpress.com/item/32899234262.htm)) has 3×10-6 as such.
 
-An example of an electrod with the holder in the cell is depicted below:
-
+An example of an "off-the-shelf" electrod with the holder in the cell is depicted below:
 <img alt="An elecrode in the cell" src="/img/20241014_110920.jpg" width=400px>
+
+Examples of hand made electrodes:
+<img alt="Two examples of hand-made electrodes" src="/img/20241014_11433.jpg" width=400px>
+
 
 ## 3D electrode holder
 

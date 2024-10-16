@@ -34,6 +34,7 @@ The tools and materials used for 3D printing (with the aid of Federico Zardi):
 * The 3D printer "Form 3" from Formlabs
 * The [standard resin from Formlabs](https://formlabs-media.formlabs.com/datasheets/Standard-DataSheet.pdf), with tensile strength at least 38 MPa.
 
-The final result of one of the our approaches for handmade electrodes, i.e. the copper rod glued into a plastic holder, is shown below:
+The final result of one of the our approaches for handmade electrodes, i.e. a copper rod glued into the 3D-printed plastic holder, is shown below:
+
 <img alt="The handmade copper electrode" src="/img/2024-10-16 - Copper electrode.jpg" width=400px>
 

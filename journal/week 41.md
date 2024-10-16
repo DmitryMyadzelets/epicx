@@ -23,7 +23,7 @@ The plastic holder currently used at DIFA/UNIBO is shown below. It's designed to
 
 <img alt="The sketch of the condenser" src="/img/2024-10-09 - Electrode Holder from DIFA.png" width=400px>
 
-We've designed a new plastic holder, with a 6mm hole, for 3-D printing.
+We've designed a new plastic holder, with a 6mm hole, for 3D printing.
 
 <img alt="The sketch of the condenser" src="/img/2024-10-11 - Electrode Holder.png" width=400px>
 

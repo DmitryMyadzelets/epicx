@@ -8,7 +8,7 @@ A few approaches are considered:
 
 The version of the electrode made of a glass tube and a copper rode glued into it may be problematic due to different coefficients of thermal expansion of the materials. Particularly, the [LOCTITE EA 9497 adhesive](https://datasheets.tdx.henkel.com/LOCTITE-EA-9497-en_GL.pdf) has 50×10-6 as such, while a quatz glass has it 0.55x10-6. The borosilicate glass (e.g. used for [some glass tubes](https://it.aliexpress.com/item/32899234262.htm)) has 3×10-6 as such.
 
-An example of an "off-the-shelf" electrod with the holder in the cell is depicted below:
+An example of an "off-the-shelf" electrode with the holder in the cell is depicted below:
 
 <img alt="An elecrode in the cell" src="/img/20241014_110920.jpg" width=400px>
 
@@ -32,5 +32,5 @@ Note: Google SketchUp software is used as a CAD tool. Watch [the tutorial](https
 The tools and materials used for 3D printing:
 * [PreForm print preparation software](https://formlabs.com/uk/software/preform/)
 * The 3D printer "Form 3" from Formlabs
-* The r[standard resin from Formlabs](https://formlabs-media.formlabs.com/datasheets/Standard-DataSheet.pdf), with tensile strength at least 38 MPa.
+* The [standard resin from Formlabs](https://formlabs-media.formlabs.com/datasheets/Standard-DataSheet.pdf), with tensile strength at least 38 MPa.
 

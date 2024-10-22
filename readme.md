@@ -33,6 +33,10 @@
     - [x] A separate CO2 condenser with the Peltiers
     - [x] Mounting for the Peltiers 
     - [ ] Connections
+- [ ] Equipment
+    - [ ] The gas pressure measurement
+        - [ ] Check the sensor works with a Seneca module (which?)
+        - [ ] Calibrate the sensor (how?)
 
 ## Order list
 ### RS Components

@@ -5,6 +5,42 @@ The past experiments have shown that the electrochemical cell made at DIFA/UNIBO
 
 The rationaly and initial design of the CO2 condenser is described [earlier](</journal/week 40.md>). For convenience, it's shown below.
 
-<img alt="An elecrode in the cell" src="/img/2023-10-28 - iso 1.png" width=400px>
+<img alt="The cell with the condenser" src="/img/2023-10-28 - iso 1.png" width=400px>
 
+It's [advised](https://www.uweelectronic.de/en/temperaturmanagement-2/peltierelemente.html) to provide the contact pressure on the Peltier modules of 0.3-0.8 MPa. The pressure should be even. In the current design we use a clamp, with screws for the pressure adjustment, as shown below.
 
+<img alt="The clamp" src="/img/2023-10-28 - iso 2.png" width=400px>
+
+To the given pressue we have to apply force:
+
+$`F = P \times A`$, where:
+* $`P = 0.5 MPa = 0.5 \times 10^6 N/m^2`$;
+* $` A = 4 \times 4 = 16 cm^2 = 0.0016 m^2`$ - the surface of the Peiltier modules.
+
+$`F = 0.5 \times 10^6 \ times 0.0016 = 800 N`$.
+
+For the given force we need to aplly a torque of the screw:
+
+$`\tau = (F \times L) / (2 \times \Pi \times \eta)`$, where:
+* $`\L`$ - screw lead;
+* $`\eta = 0.2`$ - efficiency of the screw (depends on lubrification, etc).
+
+The calculated torque for some examples of screws:
+
+| Screw | Lead, mm | $`\tau`$, Nm | 
+| --: | --: | --: |
+| M4 | 0.4 | 0.45 |
+| M6 | 1.0 | 0.64 |
+| M8 | 1.25 | 0.8 |
+
+The thermal paste used to increase the heat exchange between the parts of the assemply favors to lower its mechanical rigidity. To prevent it the 3D-printed holders are used, as shown below:
+
+<img alt="The holders" src="/img/2023-10-28 - iso 3.png" width=400px>
+
+The assembled condenser is then mounted to the (new) aluminium cap of the vacuum camera:
+
+<img alt="The holders" src="/img/2023-10-28 - iso 4.png" width=400px>
+
+The cap has inlets and outlets for the CO2, water and electrical connections.
+
+Note: the thermal expansion of the assembly may loosen the contact pressure on the Peltier modules. We may need to compensated it with e.g. a spring.

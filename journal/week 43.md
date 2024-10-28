@@ -17,12 +17,12 @@ $`F = P \times A`$, where:
 * $`P = 0.5 MPa = 0.5 \times 10^6 N/m^2`$;
 * $` A = 4 \times 4 = 16 cm^2 = 0.0016 m^2`$ - the surface of the Peiltier modules.
 
-$`F = 0.5 \times 10^6 \ times 0.0016 = 800 N`$.
+$`F = 0.5 \times 10^6 \times 0.0016 = 800 N`$.
 
 For the given force we need to aplly a torque of the screw:
 
-$`\tau = (F \times L) / (2 \times \Pi \times \eta)`$, where:
-* $`\L`$ - screw lead;
+$`\tau = (F \times L) / (2 \times \pi \times \eta)`$, where:
+* $`L`$ - screw lead;
 * $`\eta = 0.2`$ - efficiency of the screw (depends on lubrification, etc).
 
 The calculated torque for some examples of screws:

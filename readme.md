@@ -1,5 +1,6 @@
 # EPICX journal
 
+- [Week 43 - The CO2 condenser (continued)](<journal/week 43.md>)
 - [Week 41 - The copper electrode](<journal/week 41.md>)
 - [Week 40 - The CO2 condenser](<journal/week 40.md>)
 - [Week 39 - Heat transfer through the cell](<journal/week 39.md>)

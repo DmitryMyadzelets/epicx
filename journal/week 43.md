@@ -11,7 +11,7 @@ It's [advised](https://www.uweelectronic.de/en/temperaturmanagement-2/peltierele
 
 <img alt="The clamp" src="/img/2023-10-28 - iso 2.png" width=400px>
 
-To the given pressue we have to apply force:
+To provide the given pressue we have to apply a force:
 
 $`F = P \times A`$, where:
 * $`P = 0.5 MPa = 0.5 \times 10^6 N/m^2`$;
@@ -19,13 +19,13 @@ $`F = P \times A`$, where:
 
 $`F = 0.5 \times 10^6 \times 0.0016 = 800 N`$.
 
-For the given force we need to aplly a torque of the screw:
+For the given force we need to apply a torque on the screw:
 
 $`\tau = (F \times L) / (2 \times \pi \times \eta)`$, where:
 * $`L`$ - screw lead;
 * $`\eta = 0.2`$ - efficiency of the screw (depends on lubrification, etc).
 
-The calculated torque for some examples of screws:
+The calculated torque for some screws:
 
 | Screw | Lead, mm | $`\tau`$, Nm | 
 | --: | --: | --: |
@@ -43,4 +43,4 @@ The assembled condenser is then mounted to the (new) aluminium cap of the vacuum
 
 The cap has inlets and outlets for the CO2, water and electrical connections.
 
-Note: the thermal expansion of the assembly may loosen the contact pressure on the Peltier modules. We may need to compensated it with e.g. a spring.
+Note: the thermal expansion of the assembly may loosen the contact pressure on the Peltier modules. We may need to compensate it with e.g. a spring.

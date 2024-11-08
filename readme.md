@@ -59,4 +59,4 @@ Replace and order from Aliexpress/Amazon:
 ### Other suppliers
 - [x] x2 - Water cooler copper block 40x40 mm @ [AliExpress](https://it.aliexpress.com/item/1005005489417933.html)
 - [x] x1 - Water pipe OD 6mm, 2m @ [AliExpress](https://www.aliexpress.com/item/1005005489417933.html)
-- [ ] x15 - PC2-M6 Tube connector @ [AliExpress](https://www.aliexpress.com/item/1005003339030118.html)
+- [x] x15 - PC2-M6 Tube connector @ [AliExpress](https://www.aliexpress.com/item/1005003339030118.html)

@@ -6,7 +6,7 @@ PORT=/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A10M2AGQ-if00-port0
 # Queries a modbus device register and returns its value
 # Sintax: query addr reg [type]
 # Examples:
-#   query 1 3 float
+#   query 1 3 :float
 #   query 2 5 
 function query () {
     ADR=$1
@@ -81,15 +81,17 @@ fi
 
 # Ready to go...
 
-echo -e time'\t'T hot'\t'T cold
+echo -e time'\t'T hot'\t'T cold'\t'mV
 
 while true; do
     Thot=$(query 1 11 :float) 
     Tcold=$(query 1 13 :float)
+    Voltage=$(query 2, 4)
+
 
     Thot=$(truncate $Thot)
     Tcold=$(truncate $Tcold)
 
-    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold 
+    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Voltage 
     sleep 1
 done

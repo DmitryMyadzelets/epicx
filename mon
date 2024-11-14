@@ -1,13 +1,20 @@
 #!/bin/bash
 
 PORT=/dev/ttyUSB0
+PORT=/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A10M2AGQ-if00-port0
 
+# Queries a modbus device register and returns its value
+# Sintax: query addr reg [type]
+# Examples:
+#   query 1 3 float
+#   query 2 5 
 function query () {
     ADR=$1
     REG=$2
+    TYP=$3
     sudo stdbuf -oL mbpoll -1 \
-        $PORT -b2400 -Pnone \
-        -a$ADR -r$REG -t4:float -B \
+        $PORT -b9600 -Pnone \
+        -a$ADR -r$REG -t4$TYP -B \
         | 
         # Process std output line by line
         while IFS= read -r line
@@ -19,22 +26,66 @@ function query () {
             fi
 
             # Get the value of the register
-            VAL=$(echo "$line" | grep -Eo '\-*[0-9]+\.*[0-9]*$')
 
+            # Returns a number from the end of the string.
+            # Doesn't always work as it may be "(123)"
+            # VAL=$(echo "$line" | grep -Eo '\-*[0-9]+\.*[0-9]*$') 
+
+            # This returns all numbers in the string
+            # The first [0] is the register number
+            # The second [1] (and sometimes the third) is the register value
+            # Doesnt' work for hex
+            VAL=$(echo "$line" | grep -Eo '\-*[0-9]+\.*[0-9]*') # retr
+            VAL=($VAL) # convert to array
+            VAL=${VAL[1]}
             echo "$VAL"
         done
 }
 
 # Given a float number 1.567 truncate it to 1.5 
 function truncate () {
-     echo $1 | grep -Eo '^\-*[0-9]+\.*[0-9]'
+    echo $1 | grep -Eo '^\-*[0-9]+\.*[0-9]'
 }
+
+# Returns a Seneca's module ID given the module's modbus address
+# 14 = Z-8AI
+# 24 = Z-8TC
+function module_id () {
+    adr=$1
+    reg=$(query $adr 1)
+    id=$(( $reg >> 8))
+    echo "$id"
+}
+
+# Check configuration of the Z-8TC, channels 1 and 2
+config=$(query 1 54)
+# echo Z-8TC config:$config
+# 53777 = 1010 010 0001 0001
+# The last 2 bytes: 0001 = type K thermocouple
+if [ $config -ne $((0xd211)) ]; then
+    echo Expected the 53777 config value for Z-8TC module, but got $config. 
+    exit
+fi
+
+# Check we address correct modules
+id=$(module_id 1) 
+if [ $id -ne 24 ]; then
+    echo Expected type 24 of the module with the modbuss address 1, but got $id
+    exit
+fi
+id=$(module_id 2) 
+if [ $id -ne 14 ]; then
+    echo Expected type 14 of the module with the modbuss address 2, but got $id
+    exit
+fi
+
+# Ready to go...
 
 echo -e time'\t'T hot'\t'T cold
 
 while true; do
-    Thot=$(query 1 11) 
-    Tcold=$(query 1 13)
+    Thot=$(query 1 11 :float) 
+    Tcold=$(query 1 13 :float)
 
     Thot=$(truncate $Thot)
     Tcold=$(truncate $Tcold)

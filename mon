@@ -47,37 +47,22 @@ function truncate () {
     echo $1 | grep -Eo '^\-*[0-9]+\.*[0-9]'
 }
 
-# Returns a Seneca's module ID given the module's modbus address
-# 14 = Z-8AI
-# 24 = Z-8TC
-function module_id () {
-    adr=$1
-    reg=$(query $adr 1)
-    id=$(( $reg >> 8))
-    echo "$id"
+# Check if a module's register value is what we want. Crash otherwise.
+function expect () {
+    val=$1; adr=$2; reg=$3; typ=$4
+    ret=$(query $adr $reg $typ)
+    if [ $val -ne $ret ]; then
+        echo Expected the $val value for the device $val register $reg, but got $ret
+        exit -1
+    fi
 }
 
-# Check configuration of the Z-8TC, channels 1 and 2
-config=$(query 1 54)
-# echo Z-8TC config:$config
-# 53777 = 1010 010 0001 0001
-# The last 2 bytes: 0001 = type K thermocouple
-if [ $config -ne $((0xd211)) ]; then
-    echo Expected the 53777 config value for Z-8TC module, but got $config. 
-    exit
-fi
+expect $((0x1800)) 1 1 # Module 1 is Z-8TC
+expect $((0x0e02)) 2 1 # Module 2 is Z-8AI, ver 2
+expect 53777 1 54 # Config of Z-8TC, inputs 1 and 2 (53777 = 1010 010 0001 0001)
+expect   140 2 19 # Config of Z-8AI, input 1 (140 = 1000 1100)
+expect   140 2 61 # Config of Z-8AI, input 8 (140 = 1000 1100)
 
-# Check we address correct modules
-id=$(module_id 1) 
-if [ $id -ne 24 ]; then
-    echo Expected type 24 of the module with the modbuss address 1, but got $id
-    exit
-fi
-id=$(module_id 2) 
-if [ $id -ne 14 ]; then
-    echo Expected type 14 of the module with the modbuss address 2, but got $id
-    exit
-fi
 
 # Ready to go...
 
@@ -86,7 +71,7 @@ echo -e time'\t'T hot'\t'T cold'\t'mV
 while true; do
     Thot=$(query 1 11 :float) 
     Tcold=$(query 1 13 :float)
-    Voltage=$(query 2, 4)
+    Voltage=$(query 2, 10)
 
 
     Thot=$(truncate $Thot)

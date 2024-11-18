@@ -35,9 +35,9 @@
     - [x] Mounting for the Peltiers 
     - [ ] Connections
 - [ ] Equipment
-    - [ ] The gas pressure measurement
-        - [ ] Check the sensor works with a Seneca module (which?)
-        - [ ] Calibrate the sensor (how?)
+    - [x] The gas pressure measurement
+        - [x] Check the sensor works with a Seneca module Z-8AI
+        - [x] Calibrate the sensor 
 
 ## Order list
 ### RS Components

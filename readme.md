@@ -60,3 +60,10 @@ Replace and order from Aliexpress/Amazon:
 - [x] x2 - Water cooler copper block 40x40 mm @ [AliExpress](https://it.aliexpress.com/item/1005005489417933.html)
 - [x] x1 - Water pipe OD 6mm, 2m @ [AliExpress](https://www.aliexpress.com/item/1005005489417933.html)
 - [x] x15 - PC2-M6 Tube connector @ [AliExpress](https://www.aliexpress.com/item/1005003339030118.html)
+
+### Whish list
+Euro / Quantity / Description
+- 20 / 5 / Fast pneumatic connector
+- 160 / 1 / Water pump
+- 1566 / 1 / [Campana vuoto](https://www.castrocompositesshop.com/it/materiali-di-vuoto/1546-campana-a-vuoto-17-litri.html)
+- 700 / 1 / [Chiller aqua](https://www.lasermake.it/product/26238829/chiller-cw-5200-per-ricircolo-raffreddamento-acqua)

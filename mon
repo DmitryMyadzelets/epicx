@@ -78,7 +78,7 @@ echo -e time'\t'T hot'\t'T cold'\t'mBar
 while true; do
     Thot=$(query 1 11 :float) 
     Tcold=$(query 1 13 :float)
-    Pressue=$(query 2, 10)
+    Pressue=$(query 2 10)
 
 
     Thot=$(truncate $Thot)

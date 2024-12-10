@@ -78,12 +78,18 @@ echo -e time'\t'T hot'\t'T cold'\t'mBar
 while true; do
     Thot=$(query 1 11 :float) 
     Tcold=$(query 1 13 :float)
-    Pressue=$(query 2 10)
+    Pressure=$(query 2 10)
 
+    # The range of the WORD register here is [-32000..32000]
+    # Convert the WORD value to a negative, if it's > 32000
+    # Note: 65535 == -1
+    if [ "$Pressure" -gt "32000" ]; then
+        Pressure=$(($Pressure - 65536))
+    fi
 
     Thot=$(truncate $Thot)
     Tcold=$(truncate $Tcold)
 
-    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Pressue
+    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Pressure
     sleep 1
 done

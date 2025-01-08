@@ -43,7 +43,7 @@
         - [x] Gaseous CO2 inlet: 1 x Camozzi S6510 4-1/4
         - [x] Liquid CO2 outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4
     - [ ] Make the condencer camera (aluminium)
-        - [ ] Prepare a drawing for mashining
+        - [x] Prepare a drawing for mashining
         - [ ] Mashining
         - [ ] Assemble with connectors
         - [ ] Check the tighness

@@ -48,18 +48,18 @@
         - [ ] Assemble with connectors
         - [ ] Check the tighness
     - [ ] Make the Peltier cooler/holder
-        - Check the Peltier modules work
-        - Make the holder
-            - Decide on the tension control    
+        - [ ] Check the Peltier modules work
+        - [ ] Make the holder
+            - [ ] Decide on the tension control    
 - [ ] Make the vacuum chamber
     - [ ] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
-        - [x] CO2 gas inlet: 1 x [SMC KQ2H04-M5A] for OD 4mm pipe, max 1 MPa, min -5&deg;C
+        - [x] CO2 gas inlet: 1 x [SMC KQ2H04-M5A](https://it.rs-online.com/web/p/raccordi-per-pneumatica/7715068)
         - [ ] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
         - [ ] Vacuum pump: 1 x ?
     - [ ] Make the base plate (aluminium 12 mm thick)
         - [ ] Prepare the drawing for mashining
-        - [ ] Mashining for O-rings and a vacuum inlet
+        - [ ] Mashining for O-rings and the vacuum inlet
         - [ ] Check the tigtness
         - [ ] Mashining for the gas/liguid/electric connectors
         - [ ] Assemble connectors

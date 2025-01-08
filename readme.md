@@ -29,15 +29,42 @@
     - [x] Check if CO2 can be liquified in the chamber
     - [x] Check if the cell's interfaces withstand 1MPa in the chamber
     - [ ] Conduct an electrolysis process
-- [ ] Sketch the cell
+- [x] Sketch the cell
     - [x] Possible two-step variants
     - [x] A separate CO2 condenser with the Peltiers
     - [x] Mounting for the Peltiers 
-    - [ ] Connections
-- [ ] Equipment
+    - [x] Connections
+- [x] Prepare additional equipment
     - [x] The gas pressure measurement
         - [x] Check the sensor works with a Seneca module Z-8AI
         - [x] Calibrate the sensor 
+- [ ] Make the CO2 condencer
+    - [x] Choose and get the connectors
+        - [x] Gaseous CO2 inlet: 1 x Camozzi S6510 4-1/4
+        - [x] Liquid CO2 outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4
+    - [ ] Make the condencer camera (aluminium)
+        - [ ] Prepare a drawing for mashining
+        - [ ] Mashining
+        - [ ] Assemble with connectors
+        - [ ] Check the tighness
+    - [ ] Make the Peltier cooler/holder
+        - Check the Peltier modules work
+        - Make the holder
+            - Decide on the tension control    
+- [ ] Make the vacuum chamber
+    - [ ] Choose and get the connectors
+        - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
+        - [x] CO2 gas inlet: 1 x [SMC KQ2H04-M5A] for OD 4mm pipe, max 1 MPa, min -5&deg;C
+        - [ ] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
+        - [ ] Vacuum pump: 1 x ?
+    - [ ] Make the base plate (aluminium 12 mm thick)
+        - [ ] Prepare the drawing for mashining
+        - [ ] Mashining for O-rings and a vacuum inlet
+        - [ ] Check the tigtness
+        - [ ] Mashining for the gas/liguid/electric connectors
+        - [ ] Assemble connectors
+- [ ] Make electric box
+
 
 ## Order list
 ### RS Components

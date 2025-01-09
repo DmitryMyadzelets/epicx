@@ -38,7 +38,7 @@
     - [x] The gas pressure measurement
         - [x] Check the sensor works with a Seneca module Z-8AI
         - [x] Calibrate the sensor 
-- [ ] Make the CO2 condencer
+- [ ] Make the CO2 condenser
     - [x] Choose and get the connectors
         - [x] Gaseous CO2 inlet: 1 x Camozzi S6510 4-1/4
         - [x] Liquid CO2 outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4

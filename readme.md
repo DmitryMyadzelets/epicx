@@ -55,7 +55,7 @@
     - [ ] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
         - [x] CO2 gas inlet: 1 x [SMC KQ2H04-M5A](https://it.rs-online.com/web/p/raccordi-per-pneumatica/7715068)
-        - [x] Vacuum pump: 1 x Leybond G1/2 DN16 flange
+        - [x] Vacuum pump: 1 x [Leybond G1/2 DN16 flange](https://www.leyboldproducts.com/products/flanges-and-fittings/iso-kf/flanges-adapters/483/screw-in-flanges-iso-kf?number=88631)
         - [ ] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
     - [ ] Make the base plate (aluminium 12 mm thick)
         - [x] Prepare the drawing for mashining

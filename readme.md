@@ -44,7 +44,7 @@
         - [x] Liquid CO2 outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4
     - [ ] Make the condencer camera (aluminium)
         - [x] Prepare a drawing for mashining
-        - [ ] Mashining
+        - [x] Mashining
         - [ ] Assemble with connectors
         - [ ] Check the tightness
     - [ ] Make the Peltier cooler/holder

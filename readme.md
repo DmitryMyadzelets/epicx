@@ -46,7 +46,7 @@
         - [x] Prepare a drawing for mashining
         - [ ] Mashining
         - [ ] Assemble with connectors
-        - [ ] Check the tighness
+        - [ ] Check the tightness
     - [ ] Make the Peltier cooler/holder
         - [ ] Check the Peltier modules work
         - [ ] Make the holder
@@ -60,7 +60,7 @@
     - [ ] Make the base plate (aluminium 12 mm thick)
         - [ ] Prepare the drawing for mashining
         - [ ] Mashining for O-rings and the vacuum inlet
-        - [ ] Check the tigtness
+        - [ ] Check the tightness
         - [ ] Mashining for the gas/liguid/electric connectors
         - [ ] Assemble connectors
 - [ ] Make electric box

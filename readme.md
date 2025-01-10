@@ -48,10 +48,12 @@
         - [x] Assemble with connectors
         - [ ] Check the tightness
     - [ ] Make the Peltier cooler/holder
-        - [ ] Check the Peltier modules work
+        - [x] Check the Peltier modules work (one is second hand?)
         - [ ] Make the holder
             - [x] Decide on the force control (pressure sensor 30...70 kg = 50 kg)
             - [x] Decide on the force source (springs)
+            - [ ] Test we can measure a force
+            - [ ] Test the springs provide the required 500 N force
 - [ ] Make the vacuum chamber
     - [ ] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)

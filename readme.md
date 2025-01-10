@@ -45,12 +45,13 @@
     - [ ] Make the condencer camera (aluminium)
         - [x] Prepare a drawing for mashining
         - [x] Mashining
-        - [ ] Assemble with connectors
+        - [x] Assemble with connectors
         - [ ] Check the tightness
     - [ ] Make the Peltier cooler/holder
         - [ ] Check the Peltier modules work
         - [ ] Make the holder
-            - [ ] Decide on the tension control    
+            - [x] Decide on the force control (pressure sensor 30...70 kg = 50 kg)
+            - [x] Decide on the force source (springs)
 - [ ] Make the vacuum chamber
     - [ ] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
@@ -84,9 +85,11 @@ Replace and order from Aliexpress/Amazon:
 - [x] 169-4404 x 2 - [Scambiatore di calore x Peltier](https://it.rs-online.com/web/p/scambiatori-di-calore-a-piastre/1694404) - 10 euro at Aliexpress, see [here](https://it.aliexpress.com/item/1005005489417933.html) and [there](https://it.aliexpress.com/item/32839597996.html)
 
 ### Other suppliers
-- [x] x2 - Water cooler copper block 40x40 mm @ [AliExpress](https://it.aliexpress.com/item/1005005489417933.html)
-- [x] x1 - Water pipe OD 6mm, 2m @ [AliExpress](https://www.aliexpress.com/item/1005005489417933.html)
-- [x] x15 - PC2-M6 Tube connector @ [AliExpress](https://www.aliexpress.com/item/1005003339030118.html)
+- [x] x 2 - Water cooler copper block 40x40 mm @ [AliExpress](https://it.aliexpress.com/item/1005005489417933.html)
+- [x] x 1 - Water pipe OD 6mm, 2m @ [AliExpress](https://www.aliexpress.com/item/1005005489417933.html)
+- [x] x 15 - PC2-M6 Tube connector @ [AliExpress](https://www.aliexpress.com/item/1005003339030118.html)
+- [ ] x 1 - Pressure sensor 50 kg @ [Amazon](https://www.amazon.it/gp/product/B09VD4JPVZ)
+- [ ] x 4 - Compression spring 134 N (13.7 kg) @ [Amazon](https://www.amazon.it/dp/B0CJ33P2JM)
 
 ### Whish list
 Euro / Quantity / Description

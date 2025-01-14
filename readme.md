@@ -43,7 +43,7 @@
         - [x] Gaseous CO2 inlet: 1 x Camozzi S6510 4-1/4
         - [x] Liquid CO2 outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4
     - [x] Make the condencer camera (aluminium)
-        - [x] Prepare a drawing for mashining
+        - [x] Prepare a drawing for machining
         - [x] Mashining
         - [x] Assemble with connectors
         - [x] Check the tightness
@@ -61,7 +61,7 @@
         - [x] Vacuum pump: 1 x [Leybond G1/2 DN16 flange](https://www.leyboldproducts.com/products/flanges-and-fittings/iso-kf/flanges-adapters/483/screw-in-flanges-iso-kf?number=88631)
         - [ ] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
     - [ ] Make the base plate (aluminium 12 mm thick)
-        - [x] Prepare the drawing for mashining
+        - [x] Prepare the drawing for machining
         - [ ] Mashining for the O-ring and the vacuum inlet
         - [ ] Check the tightness
         - [ ] Mashining for the gas/liguid/electric connectors

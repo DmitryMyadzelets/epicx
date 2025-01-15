@@ -90,8 +90,9 @@ Replace and order from Aliexpress/Amazon:
 - [x] x 2 - Water cooler copper block 40x40 mm @ [AliExpress](https://it.aliexpress.com/item/1005005489417933.html)
 - [x] x 1 - Water pipe OD 6mm, 2m @ [AliExpress](https://www.aliexpress.com/item/1005005489417933.html)
 - [x] x 15 - PC2-M6 Tube connector @ [AliExpress](https://www.aliexpress.com/item/1005003339030118.html)
-- [ ] x 1 - Pressure sensor 50 kg @ [Amazon](https://www.amazon.it/gp/product/B09VD4JPVZ)
-- [ ] x 4 - Compression spring 134 N (13.7 kg) @ [Amazon](https://www.amazon.it/dp/B0CJ33P2JM)
+- [x] x 1 - Pressure sensor 50 kg @ [Amazon](https://www.amazon.it/gp/product/B09VD4JPVZ)
+- [x] x 4 - Compression spring 134 N (13.7 kg) @ [Amazon](https://www.amazon.it/dp/B0CJ33P2JM)
+- [ ] x 1 - Compression spring 568 N (60 kg) @ [AliExpress](https://www.aliexpress.com/item/1005006179898963.htm)
 
 ### Whish list
 Euro / Quantity / Description

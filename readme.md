@@ -53,7 +53,7 @@
         - [ ] Make the holder
             - [x] Decide on the force control (pressure sensor 30...70 kg = 50 kg)
             - [x] Decide on the force source (springs)
-            - [ ] Test we can measure a force
+            - [x] Test we can measure a force
             - [ ] Test the springs provide the required 500 N force
 - [ ] Make the vacuum chamber
     - [ ] Choose and get the connectors

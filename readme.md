@@ -54,7 +54,9 @@
             - [x] Decide on the force control (pressure sensor 30...70 kg = 50 kg)
             - [x] Decide on the force source (springs)
             - [x] Test we can measure a force
-            - [ ] Test the springs provide the required 500 N force
+            - [x] Test the springs provide the required 500 N force
+            - [ ] Decide on the clamp
+            - [ ] Make the clamp
 - [ ] Make the vacuum chamber
     - [ ] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
@@ -63,8 +65,8 @@
         - [ ] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
     - [ ] Make the base plate (aluminium 12 mm thick)
         - [x] Prepare the drawing for machining
-        - [ ] Mashining for the O-ring and the vacuum inlet
-        - [ ] Check the tightness
+        - [x] Mashining for the O-ring and the vacuum inlet
+        - [x] Check the tightness
         - [ ] Mashining for the gas/liguid/electric connectors
         - [ ] Assemble connectors
 - [ ] Make electric box

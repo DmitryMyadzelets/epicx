@@ -1,6 +1,8 @@
 # EPICX journal
-
-- [Week 02 - Machining the condenser camera and a flange](<journal/2025 week 02.md>)
+Year 2025
+- [Week 3 - Testing the condenser camera and the flange](<journal/2025 week 03.md>)
+- [Week 2 - Machining the condenser camera and a flange](<journal/2025 week 02.md>)
+Year 2024
 - [Week 43 - The CO2 condenser (continued)](<journal/2024 week 43.md>)
 - [Week 41 - The copper electrode](<journal/2024 week 41.md>)
 - [Week 40 - The CO2 condenser](<journal/2024 week 40.md>)

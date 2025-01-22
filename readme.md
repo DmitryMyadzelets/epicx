@@ -88,7 +88,7 @@ RS code x Items - Description - Note
 - [x] 455-9758 x 10 - [Connettore termocoppia femmina](https://it.rs-online.com/web/p/accessori-per-sensori/4559758)
 - [x] 455-9764 x 10 - [Connettore termocoppia maschio](https://it.rs-online.com/web/p/accessori-per-sensori/4559764)
 
-Replace and order from Aliexpress/Amazon:
+Replace and order from AliExpress/Amazon:
 - [ ] 702-6885 x 1 - [Pompa 12V 2.8L/min](https://it.rs-online.com/web/p/pompe-per-acqua/7026885)
 - [x] 169-4404 x 2 - [Scambiatore di calore x Peltier](https://it.rs-online.com/web/p/scambiatori-di-calore-a-piastre/1694404) - 10 euro at Aliexpress, see [here](https://it.aliexpress.com/item/1005005489417933.html) and [there](https://it.aliexpress.com/item/32839597996.html)
 
@@ -99,6 +99,7 @@ Replace and order from Aliexpress/Amazon:
 - [x] x 1 - Pressure sensor 50 kg @ [Amazon](https://www.amazon.it/gp/product/B09VD4JPVZ)
 - [x] x 4 - Compression spring 134 N (13.7 kg) @ [Amazon](https://www.amazon.it/dp/B0CJ33P2JM)
 - [ ] x 1 - Compression spring 568 N (60 kg) @ [AliExpress](https://www.aliexpress.com/item/1005006179898963.html)
+- [ ] x ? - Electrical connector NMEA2000 @ [AliExpress](https://www.aliexpress.com/item/1005004985187840.html)
 
 ### Whish list
 Euro / Quantity / Description

@@ -33,7 +33,7 @@ Year 2024
     - [x] Check if the existing cell made from PEEK withstand 1MPa
     - [x] Check if CO2 can be liquified in the chamber
     - [x] Check if the cell's interfaces withstand 1MPa in the chamber
-    - [ ] Conduct an electrolysis process
+    - [ ] Conduct the electrolysis process
 - [x] Sketch the cell
     - [x] Possible two-step variants
     - [x] A separate CO2 condenser with the Peltiers
@@ -59,8 +59,9 @@ Year 2024
             - [x] Decide on the force source (springs)
             - [x] Test we can measure a force
             - [x] Test the springs provide the required 500 N force
-            - [ ] Decide on the clamp
+            - [x] Decide on the clamp
             - [ ] Make the clamp
+            - [ ] Make a support for the clamp
 - [ ] Make the vacuum chamber
     - [ ] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
@@ -71,9 +72,10 @@ Year 2024
         - [x] Prepare the drawing for machining
         - [x] Mashining for the O-ring and the vacuum inlet
         - [x] Check the tightness
-        - [ ] Mashining for the gas/liguid/electric connectors
+        - [ ] Machining for the gas/liguid/electric connectors
         - [ ] Assemble connectors
-- [ ] Make electric box
+        - [ ] Check the tightness
+ - [ ] Make electric box
 
 
 ## Order list
@@ -99,7 +101,7 @@ Replace and order from AliExpress/Amazon:
 - [x] x 15 - PC2-M6 Tube connector @ [AliExpress](https://www.aliexpress.com/item/1005003339030118.html)
 - [x] x 1 - Pressure sensor 50 kg @ [Amazon](https://www.amazon.it/gp/product/B09VD4JPVZ)
 - [x] x 4 - Compression spring 134 N (13.7 kg) @ [Amazon](https://www.amazon.it/dp/B0CJ33P2JM)
-- [ ] x 1 - Compression spring 568 N (60 kg) @ [AliExpress](https://www.aliexpress.com/item/1005006179898963.html)
+- [x] x 1 - Compression spring 568 N (60 kg) @ [AliExpress](https://www.aliexpress.com/item/1005006179898963.html)
 - [ ] x ? - Electrical connector NMEA2000 @ [AliExpress](https://www.aliexpress.com/item/1005004985187840.html)
 
 ### Whish list

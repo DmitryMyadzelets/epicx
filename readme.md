@@ -73,7 +73,7 @@ Year 2024
         - [x] Prepare the drawing for machining
         - [x] Mashining for the O-ring and the vacuum inlet
         - [x] Check the tightness
-        - [ ] Machining for the gas/liguid/electric connectors
+        - [x] Machining for the gas/liguid/electric connectors
         - [ ] Assemble connectors
         - [ ] Check the tightness
  - [ ] Make electric box

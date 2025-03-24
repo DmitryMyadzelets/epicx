@@ -67,18 +67,20 @@ function expect () {
 expect $((0x1800)) 1 1 # Module 1 is Z-8TC
 expect $((0x0e02)) 2 1 # Module 2 is Z-8AI, ver 2
 expect 53777 1 54 # Config of Z-8TC, inputs 1 and 2 (53777 = 1010 010 0001 0001)
+expect 53777 1 56 # Config of Z-8TC, inputs 5 and 6 (53777 = 1010 010 0001 0001)
 expect   140 2 19 # Config of Z-8AI, input 1 (140 = 1000 1100)
 expect   140 2 61 # Config of Z-8AI, input 8 (140 = 1000 1100)
 
 
 # Ready to go...
 
-echo -e time'\t'T hot'\t'T cold'\t'mBar
+echo -e time'\t'T hot'\t'T cold'\t'mBar'\t'T test
 
 while true; do
     Thot=$(query 1 11 :float) 
     Tcold=$(query 1 13 :float)
     Pressure=$(query 2 10)
+    Ttest=$(query 1 21 :float)
 
     # The range of the WORD register here is [-32000..32000]
     # Convert the WORD value to a negative, if it's > 32000
@@ -89,7 +91,8 @@ while true; do
 
     Thot=$(truncate $Thot)
     Tcold=$(truncate $Tcold)
+    Ttest=$(truncate $Ttest)
 
-    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Pressure
+    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Pressure'\t'$Ttest
     sleep 1
 done

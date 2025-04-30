@@ -34,7 +34,7 @@ Year 2024
     - [x] Check if the existing cell made from PEEK withstand 1MPa
     - [x] Check if CO2 can be liquified in the chamber
     - [x] Check if the cell's interfaces withstand 1MPa in the chamber
-    - [ ] Conduct the electrolysis process
+    - [x] Conduct the electrolysis process
 - [x] Sketch the cell
     - [x] Possible two-step variants
     - [x] A separate CO2 condenser with the Peltiers
@@ -76,7 +76,7 @@ Year 2024
         - [x] Machining for the gas/liguid/electric connectors
         - [x] Assemble connectors
         - [x] Check the tightness
- - [ ] Make electric box
+ - [ ] Make the electric box
 
 
 ## Order list

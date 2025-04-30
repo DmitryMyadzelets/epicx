@@ -30,7 +30,7 @@ Year 2024
     - [x] Calculate parameters for the 2-step water cooling
     - [x] Calculate parameters for the 2-step direct cooling
     - [x] Test two-step modules
-- [ ] Valuate the process with only the climate chamber at DIFA/UNIBO
+- [x] Valuate the process with only the climate chamber at DIFA/UNIBO
     - [x] Check if the existing cell made from PEEK withstand 1MPa
     - [x] Check if CO2 can be liquified in the chamber
     - [x] Check if the cell's interfaces withstand 1MPa in the chamber

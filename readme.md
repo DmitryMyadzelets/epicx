@@ -44,7 +44,7 @@ Year 2024
     - [x] The gas pressure measurement
         - [x] Check the sensor works with a Seneca module Z-8AI
         - [x] Calibrate the sensor 
-- [ ] Make the CO2 condenser
+- [x] Make the CO2 condenser
     - [x] Choose and get the connectors
         - [x] Gaseous CO2 inlet: 1 x Camozzi S6510 4-1/4
         - [x] Liquid CO2 outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4
@@ -53,29 +53,29 @@ Year 2024
         - [x] Mashining
         - [x] Assemble with connectors
         - [x] Check the tightness
-    - [ ] Make the Peltier cooler/holder
+    - [x] Make the Peltier cooler/holder
         - [x] Check the Peltier modules work (one is second hand?)
-        - [ ] Make the holder
+        - [x] Make the holder
             - [x] Decide on the force control (pressure sensor 30...70 kg = 50 kg)
             - [x] Decide on the force source (springs)
             - [x] Test we can measure a force
             - [x] Test the springs provide the required 500 N force
             - [x] Decide on the clamp
-            - [ ] Make the clamp
-            - [ ] Make a support for the clamp
-- [ ] Make the vacuum chamber
-    - [ ] Choose and get the connectors
+            - [x] Make the clamp
+            - [x] Make a support for the clamp
+- [x] Make the vacuum chamber
+    - [x] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
         - [x] CO2 gas inlet: 1 x [SMC KQ2H04-M5A](https://it.rs-online.com/web/p/raccordi-per-pneumatica/7715068)
         - [x] Vacuum pump: 1 x [Leybond G1/2 DN16 flange](https://www.leyboldproducts.com/products/flanges-and-fittings/iso-kf/flanges-adapters/483/screw-in-flanges-iso-kf?number=88631)
-        - [ ] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
-    - [ ] Make the base plate (aluminium 12 mm thick)
+        - [x] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
+    - [x] Make the base plate (aluminium 12 mm thick)
         - [x] Prepare the drawing for machining
         - [x] Mashining for the O-ring and the vacuum inlet
         - [x] Check the tightness
         - [x] Machining for the gas/liguid/electric connectors
-        - [ ] Assemble connectors
-        - [ ] Check the tightness
+        - [x] Assemble connectors
+        - [x] Check the tightness
  - [ ] Make electric box
 
 
@@ -103,7 +103,7 @@ Replace and order from AliExpress/Amazon:
 - [x] x 1 - Pressure sensor 50 kg @ [Amazon](https://www.amazon.it/gp/product/B09VD4JPVZ)
 - [x] x 4 - Compression spring 134 N (13.7 kg) @ [Amazon](https://www.amazon.it/dp/B0CJ33P2JM)
 - [x] x 1 - Compression spring 568 N (60 kg) @ [AliExpress](https://www.aliexpress.com/item/1005006179898963.html)
-- [ ] x 4 - Electrical connector NMEA2000 @ [AliExpress](https://www.aliexpress.com/item/1005004985187840.html)
+- [x] x 4 - Electrical connector NMEA2000 @ [AliExpress](https://www.aliexpress.com/item/1005004985187840.html)
 - [x] x 1 - Water pump 12 V, 12 LPM, 0.6 Bar @ [Amazon](https://www.amazon.it/gp/product/B01NA6CBZ0)
 
 ### Whish list

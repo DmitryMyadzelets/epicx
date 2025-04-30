@@ -76,7 +76,8 @@ Year 2024
         - [x] Machining for the gas/liguid/electric connectors
         - [x] Assemble connectors
         - [x] Check the tightness
- - [ ] Make the electric box
+- [ ] Make the electric box
+- [ ] Make a water chiller with Peltier modules
 
 
 ## Order list
@@ -110,5 +111,3 @@ Replace and order from AliExpress/Amazon:
 Euro / Quantity / Description
 - 20 / 5 / Fast pneumatic connector
 - 160 / 1 / Water pump
-- 1566 / 1 / [Campana vuoto](https://www.castrocompositesshop.com/it/materiali-di-vuoto/1546-campana-a-vuoto-17-litri.html)
-- 700 / 1 / [Chiller aqua](https://www.lasermake.it/product/26238829/chiller-cw-5200-per-ricircolo-raffreddamento-acqua)

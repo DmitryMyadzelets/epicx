@@ -74,7 +74,7 @@ expect   140 2 61 # Config of Z-8AI, input 8 (140 = 1000 1100)
 
 # Ready to go...
 
-echo -e time'\t'T hot'\t'T cold'\t'mBar'\t'T test
+echo -e time'\t'T hot'\t'T cold'\t'mBar
 
 while true; do
     Thot=$(query 1 11 :float) 
@@ -93,6 +93,6 @@ while true; do
     Tcold=$(truncate $Tcold)
     Ttest=$(truncate $Ttest)
 
-    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Pressure'\t'$Ttest
+    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Pressure
     sleep 1
 done

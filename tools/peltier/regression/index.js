@@ -25,19 +25,13 @@ const initStages = () => {
     stages.length = 0
     stages.push({
         qc: 0,
-        tc: -40,
-        current: 0.7,
-        modules: 1
-    })
-    /*
-    stages.push({
-        current: 1.4,
-        modules: 2
-    })
-    */
-    stages.push({
+        tc: -43,
         current: 2.1,
         modules: 1
+    })
+    stages.push({
+        current: 2.1,
+        modules: 2
     })
 }
 
@@ -64,14 +58,22 @@ const getP = stages => hundreds(stages.reduce(power, 0))
 // Calcuates values of the stages in forward direction
 // You must set the Qc and Tc of the first stage
 function forward (stages) {
-    const last = stages[stages.length -1]
-    // Going from cold stage (a) to hot stage (b)
-    stages.sort((b, a) => {
-        // Interstage parameters
+	// Calculate what the module pumps to its output
+	function pump (a) {
         a.th = qcdt.getTh(a.qc / a.modules, a.tc, a.current)
         a.qh = qhdt.getQh(a.tc, a.th, a.current) * a.modules
         a.p = a.qh - a.qc
         a.dt = a.th - a.tc
+ 	}
+    const last = stages[stages.length -1]
+	// If we have one stage the sorting wouldn't work
+	if (stages.length == 1) {
+		pump(last)
+	}
+    // Going from cold stage (a) to hot stage (b)
+    stages.sort((b, a) => {
+        // Interstage parameters
+		pump(a)
         b.qc = a.qh
         b.tc = a.th - config.dt
 

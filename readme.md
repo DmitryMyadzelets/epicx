@@ -2,7 +2,7 @@
 Year 2025
 - [Week 5 - Condenser clamp](<journal/2025 week 05.md>)
 - [Week 4 - Condenser holder prototype @ NEMA 2000 connectors](<journal/2025 week 04.md>)
-- [Week 3 - Testing the condenser camera and the flange](<journal/2025 week 03.md>)
+- [Week 3 - Testing the condenser camera, the flange, and the force](<journal/2025 week 03.md>)
 - [Week 2 - Machining the condenser camera and a flange](<journal/2025 week 02.md>)
 
 Year 2024

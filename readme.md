@@ -6,14 +6,14 @@ Year 2025
 - [Week 2 - Machining the condenser camera and a flange](<journal/2025 week 02.md>)
 
 Year 2024
-- [Week 43 - The CO2 condenser (continued)](<journal/2024 week 43.md>)
+- [Week 43 - The CO<sub>2</sub> condenser (continued)](<journal/2024 week 43.md>)
 - [Week 41 - The copper electrode](<journal/2024 week 41.md>)
-- [Week 40 - The CO2 condenser](<journal/2024 week 40.md>)
+- [Week 40 - The CO<sub>2</sub> condenser](<journal/2024 week 40.md>)
 - [Week 39 - Heat transfer through the cell](<journal/2024 week 39.md>)
-- [Week 38 - Liquid CO2 in the climate chamber](<journal/2024 week 38.md>)
+- [Week 38 - Liquid CO<sub>2</sub> in the climate chamber](<journal/2024 week 38.md>)
 - [Week 30 - Strength calculation](<journal/2024 week 30.md>)
 - [Week 29 - Testing 2-stage cooling](<journal/2024 week 29.md>)
-- [Week 28 - Energy for CO2](<journal/2024 week 28.md>)
+- [Week 28 - Energy for CO<sub>2</sub>](<journal/2024 week 28.md>)
 - [Week 27 - 2-stage Cooler, Model's Quality](<journal/2024 week 27.md>)
 - [Week 26 - Thermal design](<journal/2024 week 26.md>)
 - [Week 25 - Freezing Peltier](<journal/2024 week 25.md>)
@@ -32,22 +32,22 @@ Year 2024
     - [x] Test two-step modules
 - [x] Valuate the process with only the climate chamber at DIFA/UNIBO
     - [x] Check if the existing cell made from PEEK withstand 1MPa
-    - [x] Check if CO2 can be liquified in the chamber
+    - [x] Check if CO<sub>2</sub> can be liquified in the chamber
     - [x] Check if the cell's interfaces withstand 1MPa in the chamber
     - [x] Conduct the electrolysis process
 - [x] Sketch the cell
     - [x] Possible two-step variants
-    - [x] A separate CO2 condenser with the Peltiers
+    - [x] A separate CO<sub>2</sub> condenser with the Peltiers
     - [x] Mounting for the Peltiers 
     - [x] Connections
 - [x] Prepare additional equipment
     - [x] The gas pressure measurement
         - [x] Check the sensor works with a Seneca module Z-8AI
         - [x] Calibrate the sensor 
-- [x] Make the CO2 condenser
+- [x] Make the CO<sub>2</sub> condenser
     - [x] Choose and get the connectors
-        - [x] Gaseous CO2 inlet: 1 x Camozzi S6510 4-1/4
-        - [x] Liquid CO2 outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4
+        - [x] Gaseous CO<sub>2</sub> inlet: 1 x Camozzi S6510 4-1/4
+        - [x] Liquid CO<sub>2</sub> outlet: 1 x Camozzi S6510 4-1/4 or Camozzi S6510 6-1/4
     - [x] Make the condencer camera (aluminium)
         - [x] Prepare a drawing for machining
         - [x] Mashining
@@ -66,7 +66,7 @@ Year 2024
 - [x] Make the vacuum chamber
     - [x] Choose and get the connectors
         - [x] Water cooling inlets/outlets: 4 x [WX-KPC-6-M6](https://www.aliexpress.com/item/1005003339030118.htm)
-        - [x] CO2 gas inlet: 1 x [SMC KQ2H04-M5A](https://it.rs-online.com/web/p/raccordi-per-pneumatica/7715068)
+        - [x] CO<sub>2</sub> gas inlet: 1 x [SMC KQ2H04-M5A](https://it.rs-online.com/web/p/raccordi-per-pneumatica/7715068)
         - [x] Vacuum pump: 1 x [Leybond G1/2 DN16 flange](https://www.leyboldproducts.com/products/flanges-and-fittings/iso-kf/flanges-adapters/483/screw-in-flanges-iso-kf?number=88631)
         - [x] Electric: 4 x [GX16 4 pole male](https://www.amazon.it/dp/B0CKVWC2CB)
     - [x] Make the base plate (aluminium 12 mm thick)

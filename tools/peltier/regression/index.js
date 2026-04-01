@@ -8,7 +8,7 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
-    ambientT: 43, // Temperature at the hottest side
+    ambientT: 30, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
     maxModules: 1 // At one stage
 }
@@ -25,7 +25,7 @@ const initStages = () => {
     stages.length = 0
     stages.push({
         qc: 0,
-        tc: -43,
+        tc: -60,
         current: 2.1,
         modules: 1
     })
@@ -78,7 +78,7 @@ function forward (stages) {
         b.tc = a.th - config.dt
 
         if (b == last) {
-            // b.th is an enviroment temperature set by you
+            // b.th is an ambient temperature set by you
             // otherwise
             b.th = qcdt.getTh(b.qc / b.modules, b.tc, b.current)
             b.dt = b.th - b.tc
@@ -106,7 +106,7 @@ function backward (stages) {
     stages.sort(ignore => -1) // flip the array
 }
 
-;(() => {
+function useGD() {
     const first = stages[0]
     const last = stages[stages.length -1]
 
@@ -120,8 +120,7 @@ function backward (stages) {
         first.qc -= rate * cost
         forward(stages)
     }
-})()
-
+}
 
 // Show the stages as a table for Markdown
 function markdown (stages) {
@@ -134,7 +133,8 @@ function markdown (stages) {
         dt: "&#916;T, &deg;C",
         modules: "Modules",
         current: "I, A",
-        p: "P, W"
+        p: "P, W",
+	qh: "Qh, W"
     }
     function print(arr) {
         const str = sep + arr.join(sep) + sep
@@ -151,10 +151,15 @@ function markdown (stages) {
     })
 }
 
-//console.log(stages)
-markdown(stages)
-console.log("Qc/module, W:", getQcpm(stages))
-console.log("P total, W:", getP(stages))
+// Show how the current of the 'cold' stage affects Qc
+for (let i = 0; i< currents.length; i++) {
+    stages[0].current = currents[i];
+    useGD()
+    console.log("\n")
+    markdown(stages)
+    console.log("Qc/module, W:", getQcpm(stages))
+    console.log("P total, W:", getP(stages))
+}
 
 throw ""
 

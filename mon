@@ -59,7 +59,7 @@ function expect () {
     val=$1; adr=$2; reg=$3; typ=$4
     ret=$(query $adr $reg $typ)
     if [ $val -ne $ret ]; then
-        echo Expected the $val value for the device $val register $reg, but got $ret
+        echo Expected the $val value for the device $adr register $reg, but got $ret
         exit -1
     fi
 }
@@ -71,16 +71,25 @@ expect 53777 1 56 # Config of Z-8TC, inputs 5 and 6 (53777 = 1010 010 0001 0001)
 expect   140 2 19 # Config of Z-8AI, input 1 (140 = 1000 1100)
 expect   140 2 61 # Config of Z-8AI, input 8 (140 = 1000 1100)
 
+# Z-8TC inputs to registers map:
+# 1 11
+# 2 13
+# 3 15
+# 4 17
+# 5 19
+# 6 21
+# 7 23
+# * 25
 
 # Ready to go...
 
-echo -e time'\t'T cold'\t'T cell'\t'mBar
+echo -e time'\t'T hot'\t'T mid'\t'T cold'\t'mBar
 
 while true; do
     Thot=$(query 1 11 :float) 
+    Tmid=$(query 2 19 :float)
     Tcold=$(query 1 13 :float)
     Pressure=$(query 2 10)
-    Ttest=$(query 1 21 :float)
 
     # The range of the WORD register here is [-32000..32000]
     # Convert the WORD value to a negative, if it's > 32000
@@ -90,9 +99,9 @@ while true; do
     fi
 
     Thot=$(truncate $Thot)
+    Tmid=$(truncate $Tmid)
     Tcold=$(truncate $Tcold)
-    Ttest=$(truncate $Ttest)
 
-    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tcold'\t'$Pressure
+    echo -e `date +%H:%M:%S`'\t'$Thot'\t'$Tmid'\t'$Tcold'\t'$Pressure
     sleep 1
 done

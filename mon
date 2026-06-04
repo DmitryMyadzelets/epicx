@@ -66,8 +66,8 @@ function expect () {
 
 expect $((0x1800)) 1 1 # Module 1 is Z-8TC
 expect $((0x0e02)) 2 1 # Module 2 is Z-8AI, ver 2
-expect 53777 1 54 # Config of Z-8TC, inputs 1 and 2 (53777 = 1010 010 0001 0001)
-expect 53777 1 56 # Config of Z-8TC, inputs 5 and 6 (53777 = 1010 010 0001 0001)
+expect 53777 1 54 # Config of Z-8TC, inputs 1 and 2 (53777 = 1101 0010 0001 0001)
+expect 53777 1 56 # Config of Z-8TC, inputs 5 and 6 (53777 = 1101 0010 0001 0001)
 expect   140 2 19 # Config of Z-8AI, input 1 (140 = 1000 1100)
 expect   140 2 61 # Config of Z-8AI, input 8 (140 = 1000 1100)
 

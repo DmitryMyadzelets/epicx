@@ -27,7 +27,7 @@ const initStages = () => {
         qc: 0,
         tc: -60,
         current: 2.1,
-        modules: 4
+        modules: 2
     })
     stages.push({
         current: 2.1,

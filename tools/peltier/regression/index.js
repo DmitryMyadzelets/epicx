@@ -8,7 +8,7 @@ const [{ qcdt, qhdt }] = model
 
 // Config
 const config = {
-    ambientT: 30, // Temperature at the hottest side
+    ambientT: 35, // Temperature at the hottest side
     dt: 0, // Temperature rise in the interstage heat exchange
     maxModules: 1 // At one stage
 }
@@ -27,11 +27,11 @@ const initStages = () => {
         qc: 0,
         tc: -60,
         current: 2.1,
-        modules: 1
+        modules: 4
     })
     stages.push({
         current: 2.1,
-        modules: 4
+        modules: 8
     })
 }
 

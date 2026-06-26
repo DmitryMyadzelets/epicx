@@ -83,12 +83,12 @@ expect   140 2 61 # Config of Z-8AI, input 8 (140 = 1000 1100)
 
 # Ready to go...
 
-echo -e time'\t'T hot'\t'T water'\t'T cold'\t'mBar
+echo -e time'\t'T hot'\t'T mid'\t'T cold'\t'mBar
 
 while true; do
-    Tcold=$(query 1 13 :float) 
+    Tcold=$(query 1 11 :float) 
     Tmid=$(query 1 19 :float)
-    Thot=$(query 1 11 :float)
+    Thot=$(query 1 13 :float)
     Pressure=$(query 2 10)
 
     # The range of the WORD register here is [-32000..32000]

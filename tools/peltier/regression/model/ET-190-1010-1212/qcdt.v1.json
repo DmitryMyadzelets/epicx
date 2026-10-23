@@ -1,6 +1,7 @@
 {
     "description": [
         "Data points from Qc=f(dT) charts for ET-190-1010-1212 Peltier module",
+	"Extracted manually",
         "[dT, Qc, Th, I]"
     ],
     "data": [

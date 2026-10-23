@@ -95,7 +95,7 @@ const qhdt = function (fname) {
 }
 
 const peltier = [{
-    qcdt: qcdt(join(dir, "ET-190-1010-1212/qcdt.json")),
+    qcdt: qcdt(join(dir, "ET-190-1010-1212/qcdt.v1.json")),
     qhdt: qhdt(join(dir, "ET-190-1010-1212/qhdt.json"))
 }]
 
